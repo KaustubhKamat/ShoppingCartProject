@@ -1,0 +1,18 @@
+package com.niit.ShoppingCart.DAO.temp;
+
+public class UserDAO {
+
+	public boolean isValidCrdentials(String id,String pwd)
+	{
+		if (id.equals("niit")&& pwd.equals("niit"))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
+
+

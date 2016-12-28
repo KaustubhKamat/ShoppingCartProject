@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+form {
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  float: left;
+}
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</style>
+</head>
+<body>
+
+
+<form action="">
+First Name:<input type="text" name="FirstName"><br>
+Last Name:<input type="text" name="LastName"><br>
+Email ID:<input type="text" name="EmailID"><br>
+Mobile Number:<input type="text" name="MobileNumber"><br>
+Address:<input type="text" name="Address"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
