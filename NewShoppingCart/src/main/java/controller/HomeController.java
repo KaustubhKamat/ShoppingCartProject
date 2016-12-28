@@ -55,17 +55,9 @@ public class HomeController {
 		return mv;
 	}
 	
-	@RequestMapping("/Ciaz")
-	public ModelAndView showCiazPage()
-	{
-		ModelAndView mv= new ModelAndView("Ciaz");
-		return mv;
-			
-	}
-	@RequestMapping("/Wagonr")
-	public ModelAndView showWagonrPage()
-	{
-		ModelAndView mv=new ModelAndView("Wagonr");
+	@RequestMapping("/Home")
+	public ModelAndView showHomePage(){
+		ModelAndView mv=new ModelAndView("Home");
 		return mv;
 	}
 	

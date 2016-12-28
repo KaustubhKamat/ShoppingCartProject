@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,126 +11,83 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
+
 <style>
 body {
-	font-family: cursive;
-	font-size: large;
-	background-color: #f4f7f8
+	font-family: sans-serif;
+	font-size: medium;
+	background-color: #f4f7f8;
 }
- .carousel-control.left, .carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
+
+.navbar-default {
+	background-color: #F75D59;
 }
 </style>
 </head>
 <body>
-<!-- Navigation Bar -->
-<div class="container">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="">ShoppingCart</a>
-    </div>
-    <ul class="nav navbar-nav">
-		<c:if test="${ empty SuccessMessage}">
-			<li><a href="login"> Login </a></li>
-			<li><a href="Register"> Register</a></li>
-			<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="Category">Shop By Category
-			<span class="caret"></span></a>
-			<ul class="dropdown-menu">
-			<li><a href="Ciaz">Ciaz</a></li>
-			<li><a href="Wagonr">Wagonr</a></li>
-			<li><a href="Celerio">Celerio</a></li>
-			<li><a href="Swift">Swift</a></li>
-			<li><a href="Ritz">Ritz</a></li>
+	<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="Home">Shopping Cart</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<!--  <li class="active"><a href=>Link <span class="sr-only">(current)</span></a></li> -->
+				<li class="dropdown"><a href="Category" class="dropdown-toggle"
+					data-toggle="dropdown" role="button">Shop by Category <span
+						class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="Ciaz">Ciaz</a></li>
+						<li><a href="Wagonr">Wagonr</a></li>
+						<li><a href="Celerio">Celerio</a></li>
+						<li><a href="Ritz">Ritz</a></li>
+					</ul></li>
 			</ul>
-		     </li>
-		    <li><a href="Contact Us">Contact Us</a> </li>
-		    <li><a href="About Us">About Us</a> </li>
-		</c:if>
-	</ul> 
+			<form class="navbar-form navbar-left">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+
+				<li><a href="Home">Home <span class="glyphicon glyphicon-home"></span></a> 
+				<li><a href="Cart">Cart <span
+						class="glyphicon glyphicon-shopping-cart"></span></a>
+				<li><a href="login">SignIn <span
+						class="glyphicon glyphicon-user"></span></a></li>
+				<li><a href="Register">SignUp </a></li>
+				<li><a href="About Us">About Us <span class="glyphicon glyphicon-phone-alt"></span></a></li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
 	</div>
-</nav>
-</div>
- 
-	${SuccessMessage}
+	<!-- /.container-fluid --> </nav>
+
 	<c:if test="${showLoginPage}">
 		<jsp:include page="Login.jsp"></jsp:include>
 	</c:if>
 
 	<c:if test="${ not empty ErrorMessage}">
-${ErrorMessage}
 <jsp:include page="Registration.jsp"></jsp:include>
 	</c:if>
 
-
-<!-- Carousel for images -->
-<div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
- 
-    <!-- Wrapper for slides -->
-    <div class="carousel" role="listbox">
-
-      <div class="item active">
-        <img src="Ciaz.jpg" width="500" height="500">
-        <div class="carousel-caption">
-                </div>
-      </div>
-
-      <div class="item">
-        <img src="wagnor.jpg" width="500" height="500">
-        <div class="carousel-caption">
-                  </div>
-      </div>
-    
-      <div class="item">
-        <img src="Celerio.jpg" width="500" height="200">
-        <div class="carousel-caption">
-                           </div>
-      </div>
-
-      <div class="item">
-        <img src="Swift.jpg" width="500" height="500">
-        <div class="carousel-caption">
-                  </div>
-      </div>
-  
-    </div>
-    
-    <div class="item">
-        <img src="Ritz.jpg" width="500" height="500">
-        <div class="carousel-caption">
-                  </div>
-      </div>
-  
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+	<img src="/resources/Celerio.jpg"/width="500" height="500">
 
 
-
-
+	</div>
+	</div>
 </body>
 </html>
 

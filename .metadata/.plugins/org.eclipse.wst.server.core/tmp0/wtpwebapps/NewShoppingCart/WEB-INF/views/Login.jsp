@@ -11,25 +11,78 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 body{
-font-family: cursive;
+font-family: sans-serif;
 
 }
 form {
   margin: 25px auto;
-  font-size : large;
+  font-size : medium;
   padding: 10px 20px;
-  background: #f4f7f8;
   border-radius: 10px;
   text-align:justify;
 }
-
+body
+{
+background: #f4f7f8;
+}
+.navbar-default {
+	background-color: #F75D59;
+}
 
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="Home">Shopping Cart</a>
+		</div>
 
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<!--  <li class="active"><a href=>Link <span class="sr-only">(current)</span></a></li> -->
+				<li class="dropdown"><a href="Category" class="dropdown-toggle"
+					data-toggle="dropdown" role="button">Shop by Category <span
+						class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="Ciaz">Ciaz</a></li>
+						<li><a href="Wagonr">Wagonr</a></li>
+						<li><a href="Celerio">Celerio</a></li>
+						<li><a href="Ritz">Ritz</a></li>
+					</ul></li>
+			</ul>
+			<form class="navbar-form navbar-left">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+
+				<li><a href="Home">Home</a> 
+				<li><a href="Cart">Cart <span
+						class="glyphicon glyphicon-shopping-cart"></span></a>
+				<li><a href="login">SignIn <span
+						class="glyphicon glyphicon-user"></span></a></li>
+				<li><a href="Register">SignUp </a></li>
+				<li><a href="About Us">About Us</a></li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid --> </nav>
 
 <form class="form-horizontal" action="validate">
 <div class="form-group">
