@@ -25,6 +25,7 @@ body {
 </head>
 <body>
 <!-- Navigation Bar -->
+<div class="container">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -51,6 +52,7 @@ body {
 	</ul> 
 	</div>
 </nav>
+</div>
  
 	${SuccessMessage}
 	<c:if test="${showLoginPage}">
@@ -75,30 +77,30 @@ ${ErrorMessage}
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
-
+ 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel" role="listbox">
 
       <div class="item active">
-        <img src="Ciaz.jpg" width="1000" height="500">
+        <img src="Ciaz.jpg" width="500" height="500">
         <div class="carousel-caption">
                 </div>
       </div>
 
       <div class="item">
-        <img src="wagnor.jpg" width="1000" height="500">
+        <img src="wagnor.jpg" width="500" height="500">
         <div class="carousel-caption">
                   </div>
       </div>
     
       <div class="item">
-        <img src="Celerio.jpg" width="1000" height="500">
+        <img src="Celerio.jpg" width="500" height="200">
         <div class="carousel-caption">
                            </div>
       </div>
 
       <div class="item">
-        <img src="Swift.jpg" width="1000" height="500">
+        <img src="Swift.jpg" width="500" height="500">
         <div class="carousel-caption">
                   </div>
       </div>
@@ -106,7 +108,7 @@ ${ErrorMessage}
     </div>
     
     <div class="item">
-        <img src="Ritz.jpg" width="1000" height="500">
+        <img src="Ritz.jpg" width="500" height="500">
         <div class="carousel-caption">
                   </div>
       </div>
@@ -114,7 +116,7 @@ ${ErrorMessage}
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="Ciaz" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>

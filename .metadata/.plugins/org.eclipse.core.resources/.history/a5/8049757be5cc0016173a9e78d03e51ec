@@ -25,7 +25,6 @@ body {
 </head>
 <body>
 <!-- Navigation Bar -->
-<div class="container">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -52,7 +51,6 @@ body {
 	</ul> 
 	</div>
 </nav>
-</div>
  
 	${SuccessMessage}
 	<c:if test="${showLoginPage}">
@@ -70,14 +68,14 @@ ${ErrorMessage}
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    <!-- <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
- 
+ -->
     <!-- Wrapper for slides -->
     <div class="carousel" role="listbox">
 
@@ -94,7 +92,7 @@ ${ErrorMessage}
       </div>
     
       <div class="item">
-        <img src="Celerio.jpg" width="500" height="200">
+        <img src="Celerio.jpg" width="500" height="500">
         <div class="carousel-caption">
                            </div>
       </div>
