@@ -232,3 +232,10 @@
 0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:27:14 +0530] "GET /NewShoppingCart/Celerio.jpg HTTP/1.1" 404 992
 0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:27:14 +0530] "GET /NewShoppingCart/Ritz.jpg HTTP/1.1" 404 992
 0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:27:14 +0530] "GET /NewShoppingCart/Swift.jpg HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:51:20 +0530] "GET /NewShoppingCart/ HTTP/1.1" 200 3546
+0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:51:20 +0530] "GET /NewShoppingCart/Ciaz.jpg HTTP/1.1" 404 1070
+0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:51:20 +0530] "GET /NewShoppingCart/wagnor.jpg HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:51:20 +0530] "GET /NewShoppingCart/Celerio.jpg HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:51:20 +0530] "GET /NewShoppingCart/Swift.jpg HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:51:20 +0530] "GET /NewShoppingCart/Ritz.jpg HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [28/Dec/2016:14:51:22 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 1618
