@@ -71,7 +71,7 @@ background: #f4f7f8;
 			</form>
 			<ul class="nav navbar-nav navbar-right">
 
-				<li><a href="Home">Home</a> 
+				<li><a href="Home">Home<span class="glyphicon glyphicon-home"></span></a> 
 				<li><a href="Cart">Cart <span
 						class="glyphicon glyphicon-shopping-cart"></span></a>
 				<li><a href="login">SignIn <span
@@ -86,7 +86,7 @@ background: #f4f7f8;
 
 <form class="form-horizontal" action="validate">
 <div class="form-group">
-<label class="col-sm-6 control-label">Login</label>
+<label class="col-sm-6 control-label">SignIn</label>
 </div>
 <div class="form-group">
 <label class="col-sm-5 control-label">Email Address</label>

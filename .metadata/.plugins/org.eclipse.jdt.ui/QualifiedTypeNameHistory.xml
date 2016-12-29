@@ -1,13 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.omg.CORBA.PUBLIC_MEMBER"/>
-<fullyQualifiedTypeName name="controller.HomeController"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="com.niit.ShoppingCart.DAO.temp.UserDAO"/>
-<fullyQualifiedTypeName name="com.niit.shoppingcart.DAO.UserDAO"/>
-<fullyQualifiedTypeName name="com.niit.shoppingcart.DAOImpl.UserDAOImpl"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>
