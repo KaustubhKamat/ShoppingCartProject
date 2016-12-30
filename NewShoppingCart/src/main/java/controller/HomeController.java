@@ -37,28 +37,29 @@ public class HomeController {
 		System.out.println("In Validate method");
 		System.out.println("Id is-" + id);
 		System.out.println("Password is-" + pwd);
-		ModelAndView mv = new ModelAndView("Home");	
+		ModelAndView mv = new ModelAndView("Home");
 
-	UserDAO userDAO = new UserDAOImpl();
-	if (userDAO.isValidCredentials(id, pwd) == true) {
+		UserDAO userDAO = new UserDAOImpl();
+		if (userDAO.isValidCredentials(id, pwd) == true) {
 
-		mv.addObject("SuccessMessage", "You Logged in successfully");
-	} else {
-		mv.addObject("ErrorMessage", "No Details Found. Please Register to continue");
+			mv.addObject("SuccessMessage", "You Logged in successfully");
+		} else {
+			mv.addObject("ErrorMessage", "No Details Found. Please Register to continue");
+		}
+		return mv;
+
 	}
-	return mv;
-	
-}
+
 	@RequestMapping("/Category")
-	public ModelAndView showCategoryPage(){
-		ModelAndView mv=new ModelAndView("Category");
+	public ModelAndView showCategoryPage() {
+		ModelAndView mv = new ModelAndView("Category");
 		return mv;
 	}
-	
+
 	@RequestMapping("/Home")
-	public ModelAndView showHomePage(){
-		ModelAndView mv=new ModelAndView("Home");
+	public ModelAndView showHomePage() {
+		ModelAndView mv = new ModelAndView("Home");
 		return mv;
 	}
-	
+
 }

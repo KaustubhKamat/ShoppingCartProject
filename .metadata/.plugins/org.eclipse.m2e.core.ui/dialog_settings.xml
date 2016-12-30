@@ -31,6 +31,18 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.EditDependencyDialog">
+		<item value="480" key="width"/>
+		<item value="443" key="x"/>
+		<item value="64" key="y"/>
+		<item value="450" key="height"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="700" key="x"/>
+		<item value="10" key="y"/>
+		<item value="531" key="height"/>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
@@ -44,6 +56,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Shopping Cart New Project\ShoppingCartBackEnd"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -56,6 +69,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.niit.newshoppingcartbackend"/>
+			<item value="com.niit.shoppingcartNewShoppingCartBackEnd"/>
 			<item value="com.niit.shoppingcart"/>
 			<item value="com.niit.newshoppingcart"/>
 		</list>
@@ -63,6 +78,8 @@
 			<item value="com.niit"/>
 		</list>
 		<list key="artifactId">
+			<item value="NewShoppingCartBackend"/>
+			<item value="NewShoppingCartBackEnd"/>
 			<item value="ShoppingCartBackEnd"/>
 			<item value="NewShoppingCart"/>
 		</list>
@@ -77,5 +94,11 @@
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.editor.dialogs.ManageDependenciesDialog">
+		<item value="721" key="width"/>
+		<item value="323" key="x"/>
+		<item value="64" key="y"/>
+		<item value="450" key="height"/>
 	</section>
 </section>

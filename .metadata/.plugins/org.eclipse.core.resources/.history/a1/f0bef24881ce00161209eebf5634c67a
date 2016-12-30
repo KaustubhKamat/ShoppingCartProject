@@ -1,0 +1,13 @@
+package com.niit.shoppingcart.DAOImpl;
+
+import com.niit.shoppingcart.DAO.UserDAO;
+
+public class UserDAOImpl implements UserDAO {
+
+//Implement all the methods created in UserDAO interface here by impelements statement
+	
+	
+	
+	
+	
+}

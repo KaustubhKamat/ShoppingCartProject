@@ -1,0 +1,7 @@
+package com.niit.shoppingcart.DAOImpl;
+
+public class UserDAOImpl {
+
+//Implement all the methods created in UserDAO interface here by impelements statement	
+	
+}

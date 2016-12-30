@@ -1,0 +1,23 @@
+package com.niit.shoppingcart.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import org.springframework.stereotype.Component;
+
+@Entity
+@Table
+@Component
+public class User1 {
+
+	// write the properties same as db table fields
+	
+	@Id    //To specify this field is primary key
+	public String Emailid;
+	public String name;
+	public String password;
+	public String mobile;
+	
+	
+	
+}
