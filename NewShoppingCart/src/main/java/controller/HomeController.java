@@ -39,16 +39,16 @@ public class HomeController {
 		System.out.println("Password is-" + pwd);
 		ModelAndView mv = new ModelAndView("Home");
 
-		UserDAO userDAO = new UserDAOImpl();
+		/*UserDAO userDAO = new UserDAOImpl();
 		if (userDAO.isValidCredentials(id, pwd) == true) {
 
 			mv.addObject("SuccessMessage", "You Logged in successfully");
 		} else {
 			mv.addObject("ErrorMessage", "No Details Found. Please Register to continue");
-		}
+		}*/
 		return mv;
-
 	}
+
 
 	@RequestMapping("/Category")
 	public ModelAndView showCategoryPage() {

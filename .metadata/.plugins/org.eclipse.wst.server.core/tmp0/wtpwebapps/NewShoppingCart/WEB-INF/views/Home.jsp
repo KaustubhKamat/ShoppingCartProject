@@ -16,7 +16,7 @@
 body {
 	font-family: sans-serif;
 	font-size: medium;
-	background-color: #f4f7f8;
+	background-color: #B3B0AC;
 }
 
 .navbar-default {

@@ -11,6 +11,10 @@
 	background-color: #F75D59;
 	font-size: medium;
 }
+.dropdown-menu > li > a:hover {
+    background-color: ;
+    background-image: none;
+}
 </style>
 <body>
 
@@ -40,7 +44,10 @@
 						<li><a href="Ciaz">Ciaz</a></li>
 						<li><a href="Wagonr">Wagonr</a></li>
 						<li><a href="Celerio">Celerio</a></li>
-						<li><a href="Ritz">Ritz</a></li>
+						<li><a href="Baleno">Baleno</a></li>
+						<li><a href="Swift">Swift</a></li>
+						<li><a href="Ertiga">Ertiga</a></li>
+						
 					</ul></li>
 			</ul>
 			<form class="navbar-form navbar-left">

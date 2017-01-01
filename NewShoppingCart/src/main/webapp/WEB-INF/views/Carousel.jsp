@@ -13,19 +13,23 @@
 			<!-- Wrapper for carousel items -->
 			<div class="carousel-inner">
 				<div class="item active">
+				
 					<img src="resources/Images/Ciaz.jpg" alt="Ciaz" >
 				</div>
 				<div class="item">
-					<img src="resources/Images/wagonr.jpg" alt="Wagonr"
-						width="500" height="500">
+					<img src="resources/Images/wagnor.jpg" alt="Wagonr">
 				</div>
 				<div class="item">
-					<img src="resources/Images/Celerio.jpg" alt="Celerio"
-						width="500" height="500">
+					<img src="resources/Images/Celerio.jpg" alt="Celerio">
 				</div>
 				<div class="item">
-					<img src="resources/Images/Ritz.jpg" alt="Ritz" width="500"
-						height="500">
+					<img src="resources/Images/baleno.jpg" alt="Baleno">
+				</div>
+				<div class="item">
+					<img src="resources/Images/swift.jpg" alt="Swift">
+				</div>
+				<div class="item">
+					<img src="resources/Images/ertiga.jpg" alt="Ertiga">
 				</div>
 			</div>
 			<!-- Carousel controls -->
