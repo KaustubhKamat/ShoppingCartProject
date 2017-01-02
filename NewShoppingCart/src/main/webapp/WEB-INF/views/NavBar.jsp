@@ -12,13 +12,13 @@
 	font-size: medium;
 }
 .dropdown-menu > li > a:hover {
-    background-color: ;
+    background-color: silver; ;
     background-image: none;
 }
 </style>
 <body>
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -42,7 +42,7 @@
 						class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="Ciaz">Ciaz</a></li>
-						<li><a href="Wagonr">Wagonr</a></li>
+						<li><a href="Wagonr">Stingray</a></li>
 						<li><a href="Celerio">Celerio</a></li>
 						<li><a href="Baleno">Baleno</a></li>
 						<li><a href="Swift">Swift</a></li>
@@ -65,7 +65,7 @@
 				<li><a href="login">SignIn <span
 						class="glyphicon glyphicon-user"></span></a></li>
 				<li><a href="Register">SignUp </a></li>
-				<li><a href="About Us">About Us <span
+				<li><a href="AboutUs">About Us <span
 						class="glyphicon glyphicon-phone-alt"></span></a></li>
 			</ul>
 		</div>

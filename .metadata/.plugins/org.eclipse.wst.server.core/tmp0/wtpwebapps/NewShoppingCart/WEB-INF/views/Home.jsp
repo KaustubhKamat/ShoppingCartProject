@@ -16,7 +16,7 @@
 body {
 	font-family: sans-serif;
 	font-size: medium;
-	background-color: #B3B0AC;
+	background-color: white;
 }
 
 .navbar-default {
@@ -40,9 +40,22 @@ body {
 
 	<jsp:include page="Carousel.jsp"></jsp:include>
 
+<hr>
+<div class="col-sm-offset-1 col-sm-15">
+<label class="col-sm-4control-label">Get to know us</label>
+</div>
 
+<div class="col-sm-offset-3 col-sm-15">
+<label class="col-sm-4control-label">Connect with us</label>
+</div>
 
+<div class="col-sm-offset-1 col-sm-15">
+<a href="AboutUs"> About Us</a>
+</div>
 
+<div class="col-sm-offset-3 col-sm-15">
+<a href="www.facebook.com"> Facebook</a>
+</div>
 
 </body>
 </html>

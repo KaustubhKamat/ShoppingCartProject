@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 	<div class="container">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			</ol>
@@ -14,13 +15,13 @@
 			<div class="carousel-inner">
 				<div class="item active">
 				
-					<img src="resources/Images/Ciaz.jpg" alt="Ciaz" >
+					<img src="resources/Images/Ciaz 1.jpg" alt="Ciaz" >
 				</div>
-				<div class="item">
+				<div class="item"> 
 					<img src="resources/Images/wagnor.jpg" alt="Wagonr">
 				</div>
 				<div class="item">
-					<img src="resources/Images/Celerio.jpg" alt="Celerio">
+					<img src="resources/Images/Celerio1.jpg" alt="Celerio">
 				</div>
 				<div class="item">
 					<img src="resources/Images/baleno.jpg" alt="Baleno">

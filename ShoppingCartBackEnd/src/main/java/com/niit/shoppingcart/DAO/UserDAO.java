@@ -27,7 +27,7 @@ public interface UserDAO {/*// we require access specifier as public because if 
 	
 	//save Method. If it is successfully saved then it will show true and else false.
 	
-	public boolean save(User1 user);//Why user1 user 
+	public boolean save(User1 user);//
 	
 	//update Method. if it successfully updated then it will show true and else false.
 	

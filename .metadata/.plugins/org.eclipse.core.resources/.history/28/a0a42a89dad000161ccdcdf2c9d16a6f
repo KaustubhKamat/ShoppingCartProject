@@ -1,0 +1,23 @@
+package com.niit.shoppingcart;
+
+import org.h2.engine.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.UserDAO;
+import com.niit.shoppingcart.model.User1;
+
+public class TestUserDAO {
+
+	
+@Autowired//injects the automatic instance so we can call the methods
+UserDAO userDAO;
+
+@Autowired
+User1 user;
+
+@Autowired
+AnnotationConfigApplicationContext context;
+
+
+}
