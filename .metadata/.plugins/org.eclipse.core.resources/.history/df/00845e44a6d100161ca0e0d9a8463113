@@ -1,0 +1,40 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.UserDAO;
+import com.niit.shoppingcart.model.User1;
+
+public class UserDAOTestCase {
+
+	@Autowired
+	static UserDAO userDAO;
+	
+	@Autowired
+	static User1 user;
+	
+	@Autowired
+	static AnnotationConfigApplicationContext context; 
+
+	
+	@BeforeClass
+	public static void init(){
+		context=new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+		
+		user=(User1) context.getBean("user");
+		userDAO=(UserDAO) context.getBean("userDAOImpl");
+		
+	}
+
+
+
+
+}

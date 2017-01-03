@@ -19,6 +19,7 @@ User1 user;
 @Autowired
 AnnotationConfigApplicationContext context;//context is a bean factory
 
+@Autowired
 public TestUserDAO(){
 	context=new AnnotationConfigApplicationContext();
 	//specify in which package you defined the classes.So to do this we use scan
@@ -37,7 +38,7 @@ public TestUserDAO(){
 
 public boolean validate(String id, String pwd)
 {
-	if (userDAO.vaildate(id, pwd)==null)
+	if (userDAO.validate(id, pwd)==null)
 			{
 		System.out.println("User does not exist");      
 		return false;

@@ -23,7 +23,7 @@ public interface UserDAO {/*// we require access specifier as public because if 
 	
 	
 	//This method will return user, else will return null
-	public User1 vaildate(String Emailid, String password);
+	public User1 validate(String Emailid, String password);
 	
 	//save Method. If it is successfully saved then it will show true and else false.
 	
