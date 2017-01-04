@@ -16,9 +16,42 @@ public class User1 {
 	         the system will know that the email id is primary key.*/
 	@Id
 	public String Emailid;
+	public String getEmailid() {
+		return Emailid;
+	}
+	public void setEmailid(String emailid) {
+		Emailid = emailid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getMobile() {
+		return mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
 	public String name;
 	public String password;
 	public String mobile;
+	public String role;
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	
+	
 	
 }	
 	

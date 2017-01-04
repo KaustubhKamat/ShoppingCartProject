@@ -28,31 +28,59 @@ public class UserDAOTestCase {
 	@BeforeClass
 	public static void init(){
 		context=new AnnotationConfigApplicationContext();
-		context.scan("com.niit");
+		context.scan("com.niit.shoppingcart");
 		context.refresh();
 		
-		user=(User1) context.getBean("userDAO");
+		
+		userDAO= (UserDAO) context.getBean("userDAOImpl");
+		user= (User1) context.getBean("user1");
 		
 	}
 	
-	@SuppressWarnings("deprecation")
-	@Test
+	//@Test
 	public void getUserTestCase()
 	{
-		user= userDAO.get("niit");// we are passing id and getting user
+		user= userDAO.get("kaustubh235@gmail.com");// we are passing id and getting user
 		
 		//Assert statements which can be executed if the current statement is false
-       Assert.assertEquals("User Test Case", "niit", user.getClass());
+       Assert.assertNotNull("getUserTestCase", user);
 
 	}
 	
-	/*@Test
+	//@Test
 	public void validateCrdentials(){
 		userDAO.validate("niit","niit");
-		Assert.assertEquals(message, expected, actual);
-	}*/
-
-
+		Assert.assertNotNull("validateCrdentials", user);
+	
+	}
+	
+	//@Test
+	public void getAllUsersTestCase()
+	{
+		int size=userDAO.list().size();
+		Assert.assertEquals("length check", 1, size);
+	}
+    
+	@Test
+	public void saveTestCase()
+	{
+	user.setEmailid("kamat@gmail.com");
+	user.setName("kamat");
+	user.setPassword("kamat");
+	user.setMobile("9876545690");
+	user.setRole("Customer");
+	
+	Assert.assertEquals("saveTestCase", true, userDAO.save(user));
+	
+	}
+	//@Test
+	public void UpdateTestCase()
+	{
+		user= userDAO.get("kaustubh235@gmail.com");
+		user.setMobile("98989898898");
+		Assert.assertEquals("updateTestCase",true,userDAO.update(user));
+		
+	}
 
 
 }

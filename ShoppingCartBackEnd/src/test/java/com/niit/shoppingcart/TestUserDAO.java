@@ -32,7 +32,7 @@ public TestUserDAO(){
 	userDAO= (UserDAO) context.getBean("userDAOImpl");//it will get the instance of UserDAO. we need to type cast that
 	// we will get the exception as No such bean is avilable
 	
-	user= (User1) context.getBean("user");//it will get the instance of user. we need to type cast that
+	user= (User1) context.getBean("user1");//it will get the instance of user. we need to type cast that
 		
 }
 
@@ -55,5 +55,7 @@ public static void main(String[]args)
 	TestUserDAO t=new TestUserDAO();
 	t.validate("niit", "niit");
 }
+
+
 
 }

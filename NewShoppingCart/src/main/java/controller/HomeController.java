@@ -1,6 +1,7 @@
 package controller;
 
 import org.omg.CORBA.PUBLIC_MEMBER;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +13,12 @@ import com.niit.shoppingcart.DAOImpl.UserDAOImpl;
 @Controller
 public class HomeController {
 
+	@Autowired
+
+	
+	
+	
+	
 	@RequestMapping("")
 	public String Home() {
 		return "Home";

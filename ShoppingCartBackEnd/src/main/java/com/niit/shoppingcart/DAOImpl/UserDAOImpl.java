@@ -7,13 +7,12 @@ import javax.transaction.Transactional;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import com.niit.shoppingcart.DAO.UserDAO;
 import com.niit.shoppingcart.model.User1;
 
 //Implement all the methods created in UserDAO interface here by implements statement
-@Repository("userDAO")
+@Repository
 public class UserDAOImpl implements UserDAO {
 
 	// Session factory is required to do the operations in the database
@@ -56,7 +55,7 @@ public class UserDAOImpl implements UserDAO {
 	// Query from H2 Database-SELECT * FROM USER1 where Emailid ='niit' and
 	// password='niit'
 
-	
+	@Transactional
 	public User1 validate(String Emailid, String password) {
 		String hql = "Select * FROM USER1 where Emailid ='" + Emailid + "' and password='" + password + "'";// we
 																											// have

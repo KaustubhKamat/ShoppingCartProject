@@ -1,0 +1,17 @@
+package com.niit.shoppingcart.DAO;
+
+import java.util.*;
+
+import org.hibernate.validator.internal.util.privilegedactions.GetAnnotationParameter;
+
+import com.niit.shoppingcart.model.Supplier;
+
+public interface SupplierDAO {
+
+	public List <Supplier> list();
+	
+	
+	
+		
+	}
+

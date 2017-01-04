@@ -1,0 +1,7 @@
+package com.niit.shoppingcart.DAOImpl;
+
+import com.niit.shoppingcart.DAO.SupplierDAO;
+
+public class SupplierDAOImpl implements SupplierDAO {
+
+}

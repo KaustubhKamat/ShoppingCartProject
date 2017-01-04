@@ -1,0 +1,12 @@
+package com.niit.shoppingcart.DAO;
+
+import java.util.*;
+
+import com.niit.shoppingcart.model.Supplier;
+import com.niit.shoppingcart.model.User1;
+
+public interface SupplierDAO {
+
+	public List <Supplier> list;
+	public List<User1> list();
+}

@@ -1,0 +1,14 @@
+package com.niit.shoppingcart.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+
+@Entity
+@Table
+@Component
+public class Supplier {
+
+}
