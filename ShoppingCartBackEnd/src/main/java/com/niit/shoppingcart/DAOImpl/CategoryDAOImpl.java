@@ -33,15 +33,15 @@ public class CategoryDAOImpl implements CategoryDAO {
 	}
 
 	@Transactional
-	public Category get(String Emailid) {
-		return (Category) sessionFactory.getCurrentSession().get(Category.class, Emailid);
+	public Category get(String id) {
+		return (Category) sessionFactory.getCurrentSession().get(Category.class, id);
 		
 	}
 
 	//SELECT * FROM CATEGORY where emailid='niit' 
 	@Transactional
-	public Category validate(String Emailid) {
-		String hql= "SELECT * FROM CATEGORY where emailid='" + Emailid +"'";
+	public Category validate(String id) {
+		String hql= "SELECT * FROM CATEGORY where emailid='" + id +"'";
 		Query query=sessionFactory.getCurrentSession().createQuery(hql);
 		return (Category) query.uniqueResult();
 	}
@@ -72,5 +72,18 @@ public class CategoryDAOImpl implements CategoryDAO {
 		return true;
 	}
 
-	
+	@Transactional
+	public boolean delete(Category category)
+	{
+		
+		try {
+			sessionFactory.getCurrentSession().delete(category);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+		
+	}
 }

@@ -38,9 +38,9 @@ public class SupplierDAOTestCase {
 	//@Test
 	public void saveTestCase()
 	{
-		supplier.setId("S102");
-		supplier.setName("Vijay");
-		supplier.setAddress("Bangalore");
+		supplier.setId("S103");
+		supplier.setName("Arun");
+		supplier.setAddress("Deccan,Pune");
 		
 		Assert.assertEquals("saveTestCase", true, supplierDAO.save(supplier));
 		
@@ -55,13 +55,20 @@ public class SupplierDAOTestCase {
 	}
 	
 	@SuppressWarnings("deprecation")
-	@Test
+	//@Test
 	public void updateTestCase()
 	{
-		supplier=supplierDAO.get("s102");
+		supplier= supplierDAO.get("s102");
 		supplier.setName("Amit");
-		Assert.assertEquals("updateTestCase",true,supplierDAO.update(supplier));
+		Assert.assertEquals("updateTestCase",false,supplierDAO.update(supplier));
 		
 	}
 	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void deleteTestCase()
+	{
+    		supplier= supplierDAO.get("s101");
+    		Assert.assertEquals("deleteTestCase", true, supplierDAO.delete(supplier));
+	}
 }

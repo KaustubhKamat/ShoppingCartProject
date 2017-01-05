@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,17 +32,19 @@ public class SupplierDAOImpl implements SupplierDAO {
 		return query.list();
 
 	}
-    @Transactional 
+
+	@Transactional
 	public Supplier get(String id) {
 		return (Supplier) sessionFactory.getCurrentSession().get(Supplier.class, id);
-		
+
 	}
-	//SELECT * FROM SUPPLIER where id='kaustubh'
+
+	// SELECT * FROM SUPPLIER where id='kaustubh'
 	@Transactional
-    public Supplier validate(String id) {
-		String hql="SELECT * FROM SUPPLIER where id='" +id + "'";
-		Query query= sessionFactory.getCurrentSession().createQuery(hql);
-		
+	public Supplier validate(String id) {
+		String hql = "SELECT * FROM SUPPLIER where id='" + id + "'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+
 		return (Supplier) query.uniqueResult();
 	}
 
@@ -58,11 +61,26 @@ public class SupplierDAOImpl implements SupplierDAO {
 
 	@Transactional
 	public boolean update(Supplier supplier) {
-		
+
+		try {
 			sessionFactory.getCurrentSession().update(supplier);
-		
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+
 		return true;
 	}
 
-	
+	@Transactional
+	public boolean delete(Supplier supplier)
+	{
+		try {
+			sessionFactory.getCurrentSession().delete(supplier);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return true;
+		}
+		return false;
+	}
 }

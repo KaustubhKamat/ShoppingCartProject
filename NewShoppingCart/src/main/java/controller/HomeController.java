@@ -14,10 +14,6 @@ import com.niit.shoppingcart.DAOImpl.UserDAOImpl;
 public class HomeController {
 
 	@Autowired
-
-	
-	
-	
 	
 	@RequestMapping("")
 	public String Home() {

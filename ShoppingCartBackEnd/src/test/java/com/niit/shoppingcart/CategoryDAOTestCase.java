@@ -37,9 +37,9 @@ public class CategoryDAOTestCase {
 	//@Test
 	public void saveTestCase()
 	{
-		category.setEmailid("0101");
-		category.setName("Ciaz");
-		category.setDescription("This is 1.2 version");
+		category.setid("0103");
+		category.setName("Maruti Ritz");
+		category.setDescription("This is a petrol ZXI version");
 		
 		Assert.assertEquals("saveTestCase",true,categoryDAO.save(category));
 	}
@@ -47,12 +47,20 @@ public class CategoryDAOTestCase {
 	@Test
 	public void updateTestCase()
 	{
-		category=categoryDAO.get("0101");
+		category=categoryDAO.get("0102");
 		category.setName("Ritz");
 		
 		Assert.assertEquals("updateTestCase", true, categoryDAO.update(category));
 		
 	}
 
+	//@Test
+	public void deleteTestCase()
+	{
+		category=categoryDAO.get("0101");
+		
+		Assert.assertEquals("deleteTestCase", true, categoryDAO.delete(category));
+		
+	}
 
 }

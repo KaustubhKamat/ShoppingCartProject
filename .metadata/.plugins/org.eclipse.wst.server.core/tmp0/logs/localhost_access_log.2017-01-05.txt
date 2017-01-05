@@ -1,0 +1,17 @@
+127.0.0.1 - - [05/Jan/2017:14:53:29 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:30 +0530] "GET /NewShoppingCart/ HTTP/1.1" 200 5056
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:33 +0530] "GET /NewShoppingCart/resources/Images/baleno.jpg HTTP/1.1" 200 370857
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:33 +0530] "GET /NewShoppingCart/resources/Images/Celerio1.jpg HTTP/1.1" 200 145578
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:33 +0530] "GET /NewShoppingCart/resources/Images/swift.jpg HTTP/1.1" 200 147522
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:33 +0530] "GET /NewShoppingCart/resources/Images/Ciaz%201.jpg HTTP/1.1" 200 373767
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:33 +0530] "GET /NewShoppingCart/resources/Images/ertiga.jpg HTTP/1.1" 200 239705
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:33 +0530] "GET /NewShoppingCart/resources/Images/wagnor.jpg HTTP/1.1" 200 1201585
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:33 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:35 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 4284
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:53:40 +0530] "GET /NewShoppingCart/validate?id=niit&Password=niit HTTP/1.1" 200 5056
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:14:54:04 +0530] "GET /NewShoppingCart/Ertiga HTTP/1.1" 404 1038
+127.0.0.1 - - [05/Jan/2017:15:47:06 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:15:47:07 +0530] "GET /NewShoppingCart/ HTTP/1.1" 200 5056
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:15:47:11 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 4284
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:15:47:18 +0530] "GET /NewShoppingCart/validate?id=kaustubh&Password=kaustubh HTTP/1.1" 200 5056
+0:0:0:0:0:0:0:1 - - [05/Jan/2017:15:47:22 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 4284

@@ -1,0 +1,66 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.ProductDAO;
+import com.niit.shoppingcart.model.Product;
+
+import junit.framework.Assert;
+
+public class ProductDAOTestCase {
+
+	@Autowired
+	static ProductDAO productDAO;
+
+	@Autowired
+	static Product product;
+
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+
+	@BeforeClass
+	public static void init() {
+		context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+
+		productDAO = (ProductDAO) context.getBean("productDAOImpl");
+		product = (Product) context.getBean("product");
+	}
+
+	//@Test
+	public void saveTestCase() {
+		product.setId("M0102");
+		product.setName("Maruti Ritz");
+		product.setDescription("This is VXI + version");
+		product.setPrice("1500");
+		product.setStock("2");
+
+		Assert.assertEquals("saveTestCase", true, productDAO.save(product));
+
+	}
+
+	//@Test
+	public void updateTestCase()
+    {
+    	
+    	product=productDAO.get("M0101");
+    	product.setDescription("This is VXI model");
+    	Assert.assertEquals("updateTestCase", true, productDAO.update(product));	
+    	
+    }
+	
+	public void deleteTestCase()
+	{
+		product=productDAO.get("M0101");
+		Assert.assertEquals("deleteTestCase", true, productDAO.delete(product));
+		
+		
+	}
+
+}

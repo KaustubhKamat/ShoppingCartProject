@@ -12,12 +12,12 @@ import org.springframework.stereotype.Component;
 public class Category {
 	
 	@Id
-	public String Emailid;
-	public String getEmailid() {
-		return Emailid;
+	public String id;
+	public String getid() {
+		return id;
 	}
-	public void setEmailid(String emailid) {
-		Emailid = emailid;
+	public void setid(String id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;

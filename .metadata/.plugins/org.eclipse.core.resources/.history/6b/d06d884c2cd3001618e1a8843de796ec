@@ -1,0 +1,18 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.niit.shoppingcart.DAO.ProductDAO;
+import com.niit.shoppingcart.model.Product;
+
+public class ProductDAOTestCase {
+
+	@Autowired
+	static ProductDAO productDAO;
+	
+	static Product product;
+
+}

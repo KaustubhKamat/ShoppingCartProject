@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.shoppingcart.model.Category;
+import com.niit.shoppingcart.model.Product;
 import com.niit.shoppingcart.model.Supplier;
 import com.niit.shoppingcart.model.User1;
 
@@ -55,6 +56,7 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(User1.class);
 		sessionBuilder.addAnnotatedClass(Supplier.class);
 		sessionBuilder.addAnnotatedClass(Category.class);
+		sessionBuilder.addAnnotatedClass(Product.class);
         return sessionBuilder.buildSessionFactory();
 		
 	}

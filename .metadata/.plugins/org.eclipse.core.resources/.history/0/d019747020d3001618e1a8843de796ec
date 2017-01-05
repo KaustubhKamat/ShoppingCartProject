@@ -1,0 +1,13 @@
+package com.niit.shoppingcart.model;
+
+public class Product {
+
+public String id;
+public String name;
+public String description;
+public String category_id;
+public String supplier_id;
+public String price;
+public String stock;
+	
+}

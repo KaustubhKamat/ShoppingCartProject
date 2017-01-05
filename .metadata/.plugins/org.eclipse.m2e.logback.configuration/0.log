@@ -8733,3 +8733,630 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2017-01-04 22:42:59,318 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
 2017-01-04 22:42:59,319 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-01-04 22:42:59,319 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 13:36:18,617 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 13:36:18,672 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-05 13:36:18,675 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 13:36:18,676 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\NewShoppingCart\src\test\resources
+2017-01-05 13:36:42,648 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:36:42,649 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 13:36:42,651 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:36:42,652 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 13:37:08,480 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:37:08,480 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 13:37:08,481 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:37:08,482 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 13:51:50,535 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:51:50,535 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 13:51:50,537 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:51:50,537 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 13:54:15,685 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:54:15,685 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 13:54:15,687 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:54:15,687 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 13:54:56,245 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:54:56,246 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 13:54:56,247 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:54:56,247 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 13:55:22,704 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:55:22,704 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 13:55:22,705 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:55:22,705 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 13:56:26,524 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:56:26,525 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 13:56:26,530 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 13:56:26,531 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:01:47,241 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:01:47,243 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:01:47,244 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:01:47,245 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:02:36,863 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:02:36,863 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:02:36,864 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:02:36,865 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:02:44,428 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:02:44,428 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:02:44,430 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:02:44,430 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:03:37,576 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:03:37,577 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:03:37,578 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:03:37,579 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:04:05,707 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:04:05,708 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:04:05,709 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:04:05,710 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:04:10,550 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:04:10,550 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:04:10,551 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:04:10,551 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:04:23,660 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:04:23,660 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:04:23,661 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:04:23,661 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:07:13,967 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:07:13,967 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:07:13,969 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:07:13,969 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:07:55,223 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:07:55,224 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:07:55,225 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:07:55,225 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:08:03,598 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:08:03,599 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:08:03,600 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:08:03,600 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:08:07,694 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:08:07,694 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:08:07,695 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:08:07,696 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:08:21,469 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:08:21,469 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:08:21,470 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:08:21,470 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:14:40,896 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:14:40,896 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:14:40,897 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:14:40,898 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:14:44,737 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:14:44,737 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:14:44,738 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:14:44,738 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:14:54,301 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:14:54,301 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:14:54,302 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:14:54,302 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:15:05,050 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:15:05,050 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:15:05,051 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:15:05,051 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:15:12,401 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:15:12,401 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:15:12,403 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:15:12,403 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:15:20,304 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:15:20,305 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:15:20,306 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:15:20,306 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:16:22,445 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:22,445 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:16:22,447 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:22,447 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:16:32,616 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:32,617 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:16:32,617 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:32,618 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:16:48,595 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:48,595 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:16:48,596 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:48,596 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:16:59,451 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:59,451 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:16:59,453 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:16:59,453 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:17:29,652 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:17:29,653 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:17:29,654 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:17:29,654 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:17:32,772 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:17:32,772 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:17:32,773 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:17:32,773 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:18:03,974 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:18:03,974 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:18:03,976 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:18:03,976 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:18:25,158 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:18:25,158 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:18:25,159 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:18:25,160 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:19:17,127 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:19:17,128 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:19:17,129 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:19:17,129 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:20:03,881 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:20:03,881 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:20:03,882 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:20:03,882 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:20:07,787 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:20:07,787 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:20:07,788 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:20:07,788 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:30:25,430 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:30:25,430 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:30:25,431 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:30:25,431 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:54:52,453 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:54:52,453 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:54:52,455 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:54:52,455 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:56:21,270 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:56:21,271 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:56:21,272 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:56:21,272 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:57:17,280 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:57:17,280 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:57:17,281 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:57:17,281 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:57:57,424 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:57:57,424 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:57:57,425 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:57:57,426 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 14:59:02,370 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:59:02,370 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 14:59:02,371 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 14:59:02,371 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:00:02,162 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:00:02,162 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:00:02,163 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:00:02,164 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:00:24,884 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:00:24,884 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:00:24,885 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:00:24,886 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:01:17,151 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:01:17,152 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:01:17,154 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:01:17,154 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:02:06,529 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:02:06,529 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:02:06,530 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:02:06,530 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:02:30,356 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:02:30,356 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:02:30,357 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:02:30,357 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:02:37,872 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:02:37,873 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:02:37,873 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:02:37,874 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:03:55,132 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:03:55,132 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:03:55,133 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:03:55,133 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:03:58,719 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:03:58,719 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:03:58,720 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:03:58,721 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:04:40,274 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:04:40,274 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:04:40,275 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:04:40,276 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:06:22,033 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:06:22,033 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:06:22,034 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:06:22,034 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:06:51,288 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:06:51,288 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:06:51,291 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:06:51,291 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:07:31,577 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:31,577 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:07:31,578 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:31,578 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:07:41,988 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:41,988 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:07:41,988 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:41,988 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:07:52,536 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:52,536 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:07:52,537 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:52,537 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:07:58,908 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:58,909 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:07:58,910 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:07:58,910 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:08:33,066 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:33,066 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:08:33,067 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:33,067 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:08:37,940 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:37,940 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:08:37,941 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:37,941 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:08:42,508 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:42,508 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:08:42,509 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:42,509 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:08:55,063 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:55,063 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:08:55,064 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:08:55,064 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:09:34,804 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:09:34,804 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:09:34,805 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:09:34,805 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:09:58,461 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:09:58,462 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:09:58,463 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:09:58,464 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:10:05,406 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:05,406 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:10:05,407 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:05,407 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:10:34,421 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:34,421 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:10:34,422 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:34,422 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:10:46,362 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:46,362 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:10:46,363 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:46,363 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:10:49,926 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:49,927 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:10:49,927 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:10:49,927 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:11:29,589 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:29,589 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:11:29,590 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:29,590 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:11:34,091 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:34,091 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:11:34,092 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:34,092 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:11:49,701 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:49,702 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:11:49,702 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:49,702 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:11:59,527 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:59,527 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:11:59,528 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:11:59,528 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:12:30,194 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:30,194 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:12:30,195 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:30,195 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:12:34,165 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:34,165 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:12:34,166 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:34,166 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:12:43,239 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:43,239 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:12:43,240 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:43,240 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:12:59,272 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:59,272 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:12:59,273 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:12:59,273 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:13:05,265 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:13:05,265 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:13:05,266 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:13:05,266 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:16:06,613 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:16:06,613 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:16:06,614 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:16:06,614 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:16:36,775 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:16:36,775 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:16:36,776 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:16:36,776 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:17:49,359 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:17:49,360 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:17:49,360 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:17:49,360 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:18:47,078 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:18:47,078 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:18:47,079 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:18:47,079 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:19:49,964 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:19:49,965 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:19:49,965 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:19:49,966 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:21:55,361 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:21:55,362 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:21:55,363 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:21:55,363 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:22:50,772 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:22:50,772 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:22:50,773 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:22:50,773 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:23:01,925 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:23:01,925 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:23:01,926 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:23:01,926 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:23:37,440 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:23:37,440 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:23:37,441 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:23:37,441 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:23:49,002 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:23:49,002 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:23:49,003 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:23:49,003 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:29:42,645 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:29:42,645 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:29:42,646 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:29:42,646 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:30:07,064 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:30:07,065 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:30:07,065 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:30:07,065 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:32:59,124 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:32:59,124 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:32:59,125 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:32:59,125 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:34:02,010 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:34:02,011 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:34:02,011 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:34:02,012 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:34:16,720 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:34:16,720 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:34:16,720 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:34:16,720 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:35:31,727 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:35:31,727 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:35:31,728 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:35:31,728 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:36:29,806 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:36:29,807 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:36:29,807 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:36:29,807 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:41:02,410 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:41:02,410 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:41:02,411 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:41:02,411 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:41:46,660 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:41:46,660 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:41:46,661 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:41:46,661 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:46:51,561 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:46:51,561 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:46:51,562 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:46:51,563 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:55:36,585 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 15:55:36,837 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-05 15:55:36,839 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 15:55:36,841 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\NewShoppingCart\src\test\resources
+2017-01-05 15:58:37,143 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:58:37,143 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:58:37,144 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:58:37,144 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:59:17,032 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:59:17,032 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:59:17,033 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:59:17,033 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:59:46,613 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:59:46,613 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:59:46,614 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:59:46,614 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 15:59:50,275 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:59:50,276 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 15:59:50,279 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 15:59:50,279 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:00:05,006 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:00:05,006 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:00:05,007 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:00:05,007 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:00:07,850 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:00:07,850 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:00:07,851 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:00:07,851 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:06:03,814 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:06:03,815 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:06:03,815 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:06:03,815 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:26:01,068 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:01,069 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:26:01,069 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:01,070 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:26:04,384 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:04,384 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:26:04,384 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:04,384 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:26:12,792 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:12,792 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:26:12,793 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:12,793 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:26:15,686 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:15,686 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:26:15,687 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:15,687 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:26:22,439 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:22,439 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:26:22,440 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:26:22,440 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:28:31,288 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:28:31,289 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:28:31,289 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:28:31,289 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:28:35,600 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:28:35,600 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:28:35,601 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:28:35,601 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:28:40,517 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:28:40,517 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:28:40,517 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:28:40,517 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:30:29,812 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 16:30:29,814 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-05 16:30:29,816 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 16:30:29,817 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\NewShoppingCart\src\test\resources
+2017-01-05 16:32:28,267 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:32:28,268 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:32:28,269 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:32:28,269 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:33:22,473 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:33:22,473 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:33:22,474 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:33:22,474 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:33:46,352 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:33:46,352 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:33:46,353 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:33:46,353 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:33:52,875 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:33:52,875 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:33:52,876 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:33:52,876 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:34:04,892 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:34:04,892 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:34:04,893 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:34:04,893 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:34:24,098 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:34:24,098 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:34:24,098 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:34:24,099 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:35:15,343 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:35:15,343 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:35:15,344 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:35:15,344 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:37:13,025 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:37:13,025 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:37:13,026 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:37:13,026 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:37:19,751 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:37:19,751 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:37:19,752 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:37:19,752 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:37:25,224 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:37:25,225 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:37:25,225 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:37:25,225 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:38:26,233 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:38:26,233 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:38:26,234 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:38:26,234 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:40:36,613 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:40:36,614 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:40:36,614 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:40:36,614 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:41:08,979 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:41:08,979 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:41:08,980 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:41:08,980 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:43:28,132 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:43:28,132 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:43:28,133 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:43:28,134 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:45:59,454 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:45:59,454 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:45:59,455 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:45:59,455 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:46:03,645 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:46:03,645 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:46:03,646 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:46:03,646 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:50:00,740 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:50:00,740 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:50:00,740 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:50:00,741 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:51:41,653 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:51:41,653 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:51:41,653 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:51:41,653 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:53:07,304 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:53:07,304 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:53:07,305 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:53:07,305 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:53:16,273 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:53:16,273 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:53:16,274 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:53:16,275 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:53:59,803 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:53:59,803 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:53:59,804 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:53:59,804 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:54:13,939 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:54:13,939 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:54:13,939 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:54:13,939 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:54:17,951 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:54:17,951 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:54:17,952 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:54:17,952 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:55:31,480 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:55:31,480 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:55:31,480 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:55:31,480 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:55:41,139 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:55:41,140 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:55:41,141 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:55:41,141 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:56:37,963 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:56:37,963 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:56:37,964 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:56:37,964 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 16:56:42,669 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:56:42,669 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 16:56:42,670 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 16:56:42,670 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:00:05,350 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:00:05,350 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:00:05,351 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:00:05,351 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:01:09,076 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:01:09,076 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:01:09,077 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:01:09,078 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:01:11,658 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:01:11,659 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:01:11,659 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:01:11,659 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:04:55,335 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:04:55,336 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:04:55,336 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:04:55,336 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:08:51,157 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:08:51,157 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:08:51,158 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:08:51,158 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:08:53,837 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:08:53,837 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:08:53,838 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:08:53,838 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:09:17,749 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:09:17,749 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:09:17,750 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:09:17,750 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:09:33,732 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:09:33,732 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:09:33,732 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:09:33,732 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:15:20,328 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:20,329 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:15:20,329 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:20,329 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:15:25,175 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:25,175 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:15:25,176 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:25,177 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:15:31,086 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:31,087 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:15:31,087 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:31,087 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:15:56,945 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:56,945 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:15:56,946 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:15:56,946 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:16:28,190 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:16:28,190 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:16:28,191 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:16:28,191 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:16:35,924 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:16:35,924 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\main\resources
+2017-01-05 17:16:35,925 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-01-05 17:16:35,925 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\ShoppingCartBackEnd\src\test\resources
+2017-01-05 17:18:03,206 [Worker-110] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.3.4.Final/hibernate-core-4.3.4.Final-sources.jar
+2017-01-05 17:18:12,199 [Worker-110] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.3.4.Final/hibernate-core-4.3.4.Final-sources.jar
+2017-01-05 17:18:12,916 [Worker-110] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hibernate:hibernate-core:4.3.4.Final
+2017-01-05 17:18:14,521 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 17:18:14,522 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-05 17:18:14,524 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-05 17:18:14,525 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\NewShoppingCart\src\test\resources

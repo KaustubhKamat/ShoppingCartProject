@@ -1,0 +1,45 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.ProductDAO;
+import com.niit.shoppingcart.model.Product;
+
+public class ProductDAOTestCase {
+
+	@Autowired
+	static ProductDAO productDAO;
+	
+	@Autowired
+	static Product product;
+	
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+
+	public static void init()
+	{
+		context=new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+		
+		productDAO=(ProductDAO) context.getBean("productDAOImpl");
+		product=(Product) context.getBean("product");
+	}
+   public void saveTestCase()
+   {
+	   product.setCategory_id("0101");
+	   product.setId("M0101");
+	   product.setName("Maruti Ciaz");
+	   product.setDescription("This is ZXI + version");
+	   product.setSupplier_id("0101");
+	   product.setPrice("2500000");
+	   product.setStock(5);
+	   
+	   
+   }
+
+}

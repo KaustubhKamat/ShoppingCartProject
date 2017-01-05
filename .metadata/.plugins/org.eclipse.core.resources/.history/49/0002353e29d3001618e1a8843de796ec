@@ -1,0 +1,9 @@
+package com.niit.shoppingcart.DAOImpl;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class ProductDAOImpl {
+	
+	
+}
