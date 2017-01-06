@@ -1,0 +1,46 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.Supplier;
+
+import junit.framework.Assert;
+
+public class SupplierDAOTestCase {
+
+	@Autowired
+	static SupplierDAO supplierDAO;
+
+	@Autowired
+	static Supplier supplier;
+
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+
+	@BeforeClass
+	public static void init() {
+		context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+
+		supplierDAO = (SupplierDAO) context.getBean("supplierDAOImpl");
+		supplier = (Supplier) context.getBean("supplier");
+	}
+
+	@Test
+	public void saveTestCase()
+	{
+		supplier.setId("0101");
+		supplier.setName("Ajay Motors");
+		supplier.setAddress("Katraj,Pune");
+		
+		Assert.assertEquals("saveTestCase", supplierDAO.save(supplier));
+	}
+	
+}

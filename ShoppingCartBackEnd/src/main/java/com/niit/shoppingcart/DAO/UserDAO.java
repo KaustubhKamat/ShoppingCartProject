@@ -12,6 +12,7 @@ public interface UserDAO {/*// we require access specifier as public because if 
 	//CRUD operations + validations
 	//method signature
 	//access_specifier return_type methodName(parameter_list)
+
 	
 	//get all users by using list. if anyone calls list we will return the list of users objects so using list.
 	public List<User1> list();

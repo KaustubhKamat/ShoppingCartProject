@@ -1,0 +1,20 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.config.ApplicationContextConfig;
+import com.niit.shoppingcart.model.Supplier;
+
+public class SupplierDAOTestCase {
+
+	static SupplierDAO supplierDAO;
+	
+	static Supplier supplier;
+	
+	static AnnotationConfigApplicationContext context;
+
+}

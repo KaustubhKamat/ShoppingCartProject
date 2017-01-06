@@ -15,6 +15,10 @@ import com.niit.shoppingcart.model.Supplier;
 
 @Repository
 public class SupplierDAOImpl implements SupplierDAO {
+	
+	public SupplierDAOImpl() {
+		// TODO Auto-generated constructor stub
+	}
 
 	@Autowired
 	private SessionFactory sessionFactory;

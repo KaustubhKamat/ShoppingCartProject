@@ -7,7 +7,10 @@ import javax.transaction.Transactional;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
 import com.niit.shoppingcart.DAO.UserDAO;
 import com.niit.shoppingcart.model.User1;
 
@@ -17,6 +20,11 @@ public class UserDAOImpl implements UserDAO {
 
 	// Session factory is required to do the operations in the database
 
+	
+	public UserDAOImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	@Autowired
 	private SessionFactory sessionfactory;
 

@@ -33,34 +33,33 @@ public class CategoryDAOTestCase {
 		category = (Category) context.getBean("category");
 	}
 
-	
 	//@Test
-	public void saveTestCase()
-	{
-		category.setid("0103");
-		category.setName("Maruti Ritz");
-		category.setDescription("This is a petrol ZXI version");
-		
-		Assert.assertEquals("saveTestCase",true,categoryDAO.save(category));
+	@SuppressWarnings("deprecation")
+	public void saveTestCase() {
+		category.setid("0104");
+		category.setName("Maruti Celerio");
+		category.setDescription("This is a petrol VXI version");
+
+		Assert.assertEquals("saveTestCase", true, categoryDAO.save(category));
+	}
+
+	@SuppressWarnings("deprecation")
+	//@Test
+	public void updateTestCase() {
+		category = categoryDAO.get("0102");
+		category.setName("Ritz");
+
+		Assert.assertEquals("updateTestCase", true, categoryDAO.update(category));
+
 	}
 
 	@Test
-	public void updateTestCase()
-	{
-		category=categoryDAO.get("0102");
-		category.setName("Ritz");
-		
-		Assert.assertEquals("updateTestCase", true, categoryDAO.update(category));
-		
-	}
+	@SuppressWarnings("deprecation")
+	public void deleteTestCase() {
+		category = categoryDAO.get("0104");
 
-	//@Test
-	public void deleteTestCase()
-	{
-		category=categoryDAO.get("0101");
-		
 		Assert.assertEquals("deleteTestCase", true, categoryDAO.delete(category));
-		
+
 	}
 
 }

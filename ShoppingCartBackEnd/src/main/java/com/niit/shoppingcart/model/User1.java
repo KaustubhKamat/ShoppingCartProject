@@ -1,8 +1,13 @@
 package com.niit.shoppingcart.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
 @Entity
@@ -15,6 +20,7 @@ public class User1 {
 	   /* While using hibernate we need one Id key for each table. This id key is mentioned above emaild so
 	         the system will know that the email id is primary key.*/
 	@Id
+	@Column(unique=true, nullable=false)
 	public String Emailid;
 	public String getEmailid() {
 		return Emailid;
@@ -28,6 +34,8 @@ public class User1 {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Min(3)
+	@Max(15)
 	public String getPassword() {
 		return password;
 	}
@@ -40,6 +48,7 @@ public class User1 {
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
+	@NotEmpty(message="This field cannot be kept empty")
 	public String name;
 	public String password;
 	public String mobile;
