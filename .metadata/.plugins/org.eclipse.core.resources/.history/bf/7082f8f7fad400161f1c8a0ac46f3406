@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style>
+</style>
+</head>
+<body>
+
+
+	<jsp:include page="NavBar.jsp"></jsp:include>
+	<div class="container">
+		<jsp:include page="CarousalForAboutUs.jsp"></jsp:include>
+		<div class="col-sm-offset-0 col-sm-15">
+			<h1>About Us</h1>
+		</div>
+			<p>All Consumers on Shopping Cart have an easy and convenient
+				access to almost 10 Maruti Suzuki Products.They are benefited from the safe ordering experience,
+				convenient payments,24x7 customer care, add to cart facilities</p>
+			<div class="col-sm-offset-0 col-sm-25">
+				<h1>For Customer Service please find below details</h1>
+			</div>
+			<div class="col-md-5">
+			<p><label class="col-sm-4control-label">Email-ID--  </label>
+			<a href="mailto:webmaster@example.com">customer_service@shoppingcart.com</a></p>
+			
+			<p><label class="col-sm-4control-label">Toll-Free Number-- 1800-000-0000  </label></p>
+			<h2>Registered Office Address</h2>
+			<div class="col-md-5">
+			<p>Shopping Cart Private Limited</p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

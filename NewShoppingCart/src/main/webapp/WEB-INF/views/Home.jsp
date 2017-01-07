@@ -22,6 +22,11 @@ body {
 .navbar-default {
 	background-color: #F75D59;
 }
+h4 {
+	font-family: sans-serif;
+	font-size: medium;
+	font-weight: bold;
+}
 </style>
 </head>
 <body>
@@ -40,23 +45,49 @@ body {
 
 	<jsp:include page="Carousel.jsp"></jsp:include>
 
-<hr>
-<div class="col-sm-offset-1 col-sm-15">
-<label class="col-sm-4control-label">Get to know us</label>
-</div>
 
-<div class="col-sm-offset-3 col-sm-15">
-<label class="col-sm-4control-label">Connect with us</label>
-</div>
-
-<div class="col-sm-offset-1 col-sm-15">
-<a href="AboutUs"> About Us</a>
-</div>
-
-<div class="col-sm-offset-3 col-sm-15">
-<a href="www.facebook.com"> Facebook</a>
-</div>
-
+ <div class="container text-center">
+    <hr />
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+      <h4>Get to know Us</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="AboutUs">About Us</a></li>
+          <li><a href="AboutUs">24x7 Customer Care</a></li>
+        </ul>
+      </div>
+   <div class="col-md-3">
+   <h4>Connect With Us</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="http://www.facebook.com">Facebook</a></li>
+          <li><a href="http://twitter.com">Twitter</a></li>
+          <li><a href="http://github.com/KaustubhKamat/ShoppingCartProject">My GitHub</a></li>
+          
+        </ul>
+      </div>
+       <div class="col-md-3">
+       <h4>Let us Help you</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="login">Sign In</a></li>
+          <li><a href="Register">Sign Up</a></li>
+          <li><a href="Cart">Cart</a></li>
+                    
+        </ul>
+      </div>
+       <div class="col-md-3">
+       <h4>Let us Help you</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="login">Sign In</a></li>
+          <li><a href="Register">Sign Up</a></li>
+          <li><a href="Cart">Cart</a></li>
+                    
+        </ul>
+      </div>
+      
+      </div>
+      </div>
+      </div>
 </body>
 </html>
 

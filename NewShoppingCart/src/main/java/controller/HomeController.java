@@ -45,14 +45,14 @@ public class HomeController {
 	}
 
 	@RequestMapping("/validate")
-	public ModelAndView validate(@RequestParam("emailid") String emailid, @RequestParam("password") String password) {
+	public ModelAndView validate(@RequestParam("Emailid") String Emailid, @RequestParam("password") String password) {
 		System.out.println("In Validate method");
 		System.out.println("Id is-" + password);
 		System.out.println("Password is-" + password);
 		ModelAndView mv = new ModelAndView("Home");
 
 		
-		  if (userDAO.validate(emailid, password)!=null)
+		  if (userDAO.validate(Emailid, password)!=null)
 {
 	mv.addObject("successMsg","You logged in successfully");
 }
@@ -75,4 +75,9 @@ public class HomeController {
 		return mv;
 	}
 
+	@RequestMapping("/AboutUs")
+	public ModelAndView showAboutUsPage() {
+		ModelAndView mv = new ModelAndView("AboutUs");
+		return mv;
+	}
 }
