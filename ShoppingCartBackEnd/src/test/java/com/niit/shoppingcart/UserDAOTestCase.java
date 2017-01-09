@@ -61,13 +61,14 @@ public class UserDAOTestCase {
 		Assert.assertEquals("length check", 1, size);
 	}
     
+	@SuppressWarnings("deprecation")
 	@Test
 	public void saveTestCase()
 	{
-	user.setEmailid("kamat@gmail.com");
-	user.setName("kamat");
-	user.setPassword("kamat");
-	user.setMobile("9876545690");
+	user.setEmailid("tiger@gmail.com");
+	user.setName("Tiger_Motors");
+	user.setPassword("khgufduv");
+	user.setMobile("89764738");
 	user.setRole("Customer");
 	
 	Assert.assertEquals("saveTestCase", true, userDAO.save(user));

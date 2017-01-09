@@ -4,8 +4,10 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.apache.commons.logging.LogFactory;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
@@ -18,12 +20,11 @@ import com.niit.shoppingcart.model.User1;
 @Repository
 public class UserDAOImpl implements UserDAO {
 
+	
 	// Session factory is required to do the operations in the database
 
 	
-	public UserDAOImpl() {
-		// TODO Auto-generated constructor stub
-	}
+	
 	
 	@Autowired
 	private SessionFactory sessionfactory;
@@ -64,8 +65,8 @@ public class UserDAOImpl implements UserDAO {
 	// password='niit'
 
 	@Transactional
-	public User1 validate(String Emailid, String password) {
-		String hql = "Select * FROM USER1 where Emailid ='" + Emailid + "' and password='" + password + "'";// we
+	public User1 validate(String emailid, String password) {
+		String hql = "FROM User1 where Emailid ='" + emailid + "' and password='" + password + "'";// we
 																											// have
 																											// to
 																											// not

@@ -36,8 +36,10 @@ h4 {
 	<c:if test="${showLoginPage}">
 		<jsp:include page="Login.jsp"></jsp:include>
 	</c:if>
-
+	
 	<c:if test="${ not empty ErrorMessage}">
+	
+	{{InvalidCredentials}}
 		<jsp:include page="Registration.jsp"></jsp:include>
 	</c:if>
 
@@ -75,16 +77,6 @@ h4 {
                     
         </ul>
       </div>
-       <div class="col-md-3">
-       <h4>Let us Help you</h4>
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="login">Sign In</a></li>
-          <li><a href="Register">Sign Up</a></li>
-          <li><a href="Cart">Cart</a></li>
-                    
-        </ul>
-      </div>
-      
       </div>
       </div>
       </div>

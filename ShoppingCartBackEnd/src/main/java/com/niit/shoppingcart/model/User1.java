@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
@@ -34,11 +35,11 @@ public class User1 {
 	public void setName(String name) {
 		this.name = name;
 	}
-	@Min(3)
-	@Max(15)
+	
 	public String getPassword() {
 		return password;
 	}
+	
 	public void setPassword(String password) {
 		this.password = password;
 	}
@@ -50,6 +51,8 @@ public class User1 {
 	}
 	@NotEmpty(message="This field cannot be kept empty")
 	public String name;
+	
+	@Size(min=5 , max=12)
 	public String password;
 	public String mobile;
 	public String role;

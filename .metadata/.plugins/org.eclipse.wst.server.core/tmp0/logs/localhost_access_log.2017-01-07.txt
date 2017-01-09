@@ -277,3 +277,6 @@
 0:0:0:0:0:0:0:1 - - [07/Jan/2017:23:27:10 +0530] "GET /NewShoppingCart/Home HTTP/1.1" 200 5787
 0:0:0:0:0:0:0:1 - - [07/Jan/2017:23:29:17 +0530] "GET /NewShoppingCart/Home HTTP/1.1" 200 5795
 0:0:0:0:0:0:0:1 - - [07/Jan/2017:23:29:22 +0530] "GET /NewShoppingCart/AboutUs HTTP/1.1" 200 6408
+0:0:0:0:0:0:0:1 - - [07/Jan/2017:23:40:05 +0530] "GET /NewShoppingCart/Home HTTP/1.1" 200 5795
+0:0:0:0:0:0:0:1 - - [07/Jan/2017:23:41:38 +0530] "GET /NewShoppingCart/AboutUs HTTP/1.1" 200 6408
+0:0:0:0:0:0:0:1 - - [07/Jan/2017:23:41:41 +0530] "GET /NewShoppingCart/Home HTTP/1.1" 200 5795

@@ -44,7 +44,7 @@ public class HomeController {
 		return mv;
 	}
 
-	@RequestMapping("/validate")
+	/*@RequestMapping("/validate")
 	public ModelAndView validate(@RequestParam("Emailid") String Emailid, @RequestParam("password") String password) {
 		System.out.println("In Validate method");
 		System.out.println("Id is-" + password);
@@ -61,7 +61,7 @@ public class HomeController {
 			  mv.addObject("ErrorMsg","Invalid crdenetials");
 		  }	 
 		return mv;
-	}
+	}*/
 
 	@RequestMapping("/Category")
 	public ModelAndView showCategoryPage() {

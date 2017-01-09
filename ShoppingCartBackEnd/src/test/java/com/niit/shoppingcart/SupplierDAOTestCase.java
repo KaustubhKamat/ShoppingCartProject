@@ -33,21 +33,21 @@ public class SupplierDAOTestCase {
 		supplier = (Supplier) context.getBean("supplier");
 	}
 
-	@Test
+	//@Test
 	@SuppressWarnings("deprecation")
 	public void saveTestCase() {
-		supplier.setId("S013");
-		supplier.setName("SagarMotors");
-		supplier.setAddress("Deccan,Pune");
+		supplier.setId("S014");
+		supplier.setName("Vinayak_Motors");
+		supplier.setAddress("Katraj,Pune");
 
 		Assert.assertEquals("saveTestCase", true, supplierDAO.save(supplier));
 	}
 
 	@SuppressWarnings("deprecation")
-	// @Test
+	@Test
 	public void updateTestCase() {
-		supplier = supplierDAO.get("S012");
-		supplier.setName("Kamat");
+		supplier = supplierDAO.get("S103");
+		supplier.setName("Arun_Motors");
 		Assert.assertEquals("updateTestCase", true, supplierDAO.update(supplier));
 	}
 
