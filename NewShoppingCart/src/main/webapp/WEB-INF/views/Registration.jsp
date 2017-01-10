@@ -34,7 +34,7 @@ body {
 </head>
 <body>
 	
-	<jsp:include page="NavBar.jsp"></jsp:include>
+	<%--  <jsp:include page="NavBar.jsp"></jsp:include> --%>
 
 	<form class="form-horizontal">
 		<div class="form-group">

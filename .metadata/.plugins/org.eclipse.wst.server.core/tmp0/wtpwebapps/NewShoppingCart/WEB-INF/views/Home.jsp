@@ -33,13 +33,15 @@ h4 {
 	<!-- Navigation bar code -->
 	<jsp:include page="NavBar.jsp"></jsp:include>
 
-	<c:if test="${showLoginPage}">
-		<jsp:include page="Login.jsp"></jsp:include>
+
+	<c:if test="${validate}">
+
+		
+	
 	</c:if>
+	${ErrorMessage}
 	
 	<c:if test="${ not empty ErrorMessage}">
-	
-	{{InvalidCredentials}}
 		<jsp:include page="Registration.jsp"></jsp:include>
 	</c:if>
 
@@ -48,6 +50,9 @@ h4 {
 	<jsp:include page="Carousel.jsp"></jsp:include>
 
 
+<%-- <jsp:include page="NavBarForLogin.jsp"></jsp:include>
+		<jsp:include page="Login.jsp"></jsp:include> --%> 
+	
  <div class="container text-center">
     <hr />
   <div class="row">

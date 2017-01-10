@@ -24,18 +24,18 @@ public class HomeController {
 	@Autowired
 	User1 user;
 
-	@RequestMapping("")
+	@RequestMapping("/")
 	public String Home() {
 		return "Home";
 	}
 
-	@RequestMapping("/login")
+	/*@RequestMapping("/login")
 	public ModelAndView showLoginPage() {
 		ModelAndView mv = new ModelAndView("Login");
-		mv.addObject("Message", "");
+		mv.addObject("Message", "Welcome to Login Page");
 		return mv;
 
-	}
+	}*/
 
 	@RequestMapping("/Register")
 	public ModelAndView showRegistrationPage() {
@@ -80,4 +80,10 @@ public class HomeController {
 		ModelAndView mv = new ModelAndView("AboutUs");
 		return mv;
 	}
+	@RequestMapping("/HatchBack")
+	public ModelAndView showHatchBackPage() {
+		ModelAndView mv = new ModelAndView("HatchBack");
+		return mv;
+	}
+
 }
