@@ -63,7 +63,7 @@ public class UserController {
 
 	}
 
-	@RequestMapping(value = "/validate", method = RequestMethod.GET)
+	@RequestMapping(value = "/validate", method = RequestMethod.POST)
 	public ModelAndView validate(@RequestParam(value = "id") String emailid,
 			@RequestParam(value = "Password") String password, HttpSession session) {
 		log.debug("Starting the method validate");
@@ -86,7 +86,7 @@ public class UserController {
 
 			session.setAttribute("user", user);
 
-			if (user.getRole().equals("Role_Admin")) {
+			if (user.getRole().equals("Admin")) {
 				mv.addObject("isAdmin", true);
 				session.setAttribute("supplier", supplier);
 				session.setAttribute("supplierList", supplierDAO.list());

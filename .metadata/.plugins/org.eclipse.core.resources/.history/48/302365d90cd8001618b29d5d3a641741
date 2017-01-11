@@ -1,0 +1,36 @@
+package controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.niit.shoppingcart.DAO.CategoryDAO;
+import com.niit.shoppingcart.DAO.ProductDAO;
+import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.Category;
+import com.niit.shoppingcart.model.Product;
+import com.niit.shoppingcart.model.Supplier;
+
+@Controller
+public class AdminController {
+
+	@Autowired
+	public SupplierDAO supplierDAO;
+	
+	@Autowired
+	public Supplier supplier;
+	
+	@Autowired
+	public CategoryDAO categoryDAO;
+	
+	@Autowired
+	public Category category;
+	
+	@Autowired
+	public ProductDAO productDAO;
+	
+	@Autowired
+	public Product product;
+	
+	
+	
+}

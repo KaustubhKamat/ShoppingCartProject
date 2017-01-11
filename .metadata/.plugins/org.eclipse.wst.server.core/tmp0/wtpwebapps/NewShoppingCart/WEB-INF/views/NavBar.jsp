@@ -20,7 +20,7 @@
 </style>
 <body>
 
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
@@ -45,8 +45,6 @@
 						<li><a href="HatchBack">Hatchback</a></li>
 						<li><a href="Sedan">Sedan</a></li>
 						<li><a href="SUV">SUV</a></li>
-
-
 					</ul></li>
 			</ul>
 			<form class="navbar-form navbar-left">
@@ -62,35 +60,45 @@
 						class="glyphicon glyphicon-home"></span></a>
 				<li><a href="Cart">Cart <span
 						class="glyphicon glyphicon-shopping-cart"></span></a></li> 
+				
 				<c:if test="${not empty LoggedInUser}">
-				<li>${LoggedInUser}</li>
+				<li>Welcome ${LoggedInUser}</li>
 				</c:if>
 				 <c:if test="${empty LoggedInUser}">
 				<li><a href="login">SignIn <span class="glyphicon glyphicon-user"></span></a></li>
 				</c:if>
+				
 
-				<c:choose>
+				<%-- <c:choose>
 						<c:when test="${empty LoggedInUser}">
 							<li><a href="login">SignIn <span class="glyphicon glyphicon-user"></span></a></li>
 						</c:when> 
 						<c:otherwise>
 							<li>${LoggedInUser}</li>
 						</c:otherwise>
-						</c:choose>
+						</c:choose>  --%>
 						
-						<c:choose>
+						<c:if test="${empty LoggedInUser}">
+				<li><a href="Register">SignUp <span class="glyphicon glyphicon-user"></span></a></li>
+				</c:if>
+				 <c:if test="${not empty LoggedInUser}">
+				<li><a href="Logout">Logout</a></li>
+				</c:if>
+						
+						<%-- <c:choose>
 						<c:when test="${empty LoggedInUser} }">
 						<li><a href="Register">SignUp </a></li>
 						</c:when>
 						<c:otherwise> 
 						<li><a href="Logout">LogOut </a></li>
 						</c:otherwise>
-						</c:choose>  
+						</c:choose>   --%>
 
 
 				<li><a href="AboutUs">About Us <span
 						class="glyphicon glyphicon-phone-alt"></span></a></li>
-
+<li><a href="Category">Category <span
+						class="glyphicon glyphicon-phone-alt"></span></a></li>
 			</ul>
 
 			</ul>

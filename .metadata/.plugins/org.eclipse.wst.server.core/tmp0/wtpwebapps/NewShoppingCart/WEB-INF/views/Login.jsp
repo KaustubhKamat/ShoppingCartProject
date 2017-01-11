@@ -37,7 +37,7 @@ background: #f4f7f8;
 
 <%--  <jsp:include page="NavBar.jsp"></jsp:include> --%>
 
-<form class="form-horizontal" action="validate">
+<form class="form-horizontal" action="validate" method="post">
 <div class="form-group">
 <label class="col-sm-6 control-label">SignIn</label>
 </div>
