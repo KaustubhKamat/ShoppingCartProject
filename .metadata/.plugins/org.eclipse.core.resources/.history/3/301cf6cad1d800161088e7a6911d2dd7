@@ -1,0 +1,64 @@
+package controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.niit.shoppingcart.DAO.CategoryDAO;
+import com.niit.shoppingcart.model.Category;
+
+public class CategoryController {
+
+	public static Logger log =LoggerFactory.getLogger(CategoryController.class);
+	
+	@Autowired
+	public CategoryDAO categoryDAO;
+	
+	@Autowired
+	public  Category category;
+	
+	public ModelAndView listOfCategories()
+	{
+		ModelAndView mv=new ModelAndView("/Home");
+		mv.addObject("category", category);
+		mv.addObject("categoryList", categoryDAO.list());
+		mv.addObject("AdminHasClickedCategories", "true");
+		return mv;
+	}
+	
+	public ModelAndView addCategory()
+	{
+		ModelAndView mv=new ModelAndView("/Home");
+		if (categoryDAO.save(category)==true)
+		{
+			mv.addObject("SuccessSaveMessage", "SuccessfullyCreatedTheCategory");
+		}
+		else {
+			mv.addObject("ErrorSaveMessage", "CategoryNotSaved");
+		}
+		return mv;
+	}
+	
+	public ModelAndView updateCategory()
+	{
+		ModelAndView mv= new ModelAndView("/Home");
+		if(categoryDAO.update(category)==true)
+		{
+			mv.addObject("SuccessUpdateMessage", "SuccessfullyUpdatedTheCategory");
+		}
+		else
+		{
+			mv.addObject("ErrorUpdateMessage", "CategoryNotUpdated");
+		}
+		return mv;	
+	}
+	
+	public ModelAndView deleteCategory()
+	{
+	ModelAndView mv=new ModelAndView("/Home");
+	boolean category=categoryDAO.delete(category);
+	
+	}
+}

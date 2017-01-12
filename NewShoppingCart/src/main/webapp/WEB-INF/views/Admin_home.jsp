@@ -14,16 +14,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <style>
 a {
-	float: center;
+	float: inherit;
+	font-family: sans-serif;
+	font-size: medium;
+	padding-top: 40 px;
+	
 }
 </style>
 <title>Insert title here</title>
 </head>
 <body>
 <div id="AdminHome">
-&nbsp;&nbsp;<a href="Manage_Category">Manage Categories</a> &nbsp;&nbsp;
-<a href="Manage_Supplier">Manage Suppliers</a>&nbsp;&nbsp;
-<a href="Manage_Product">Manage Products</a>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="ManageCategory">Manage Categories</a> &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="ManageSupplier" >Manage Suppliers</a>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="ManageProduct">Manage Products</a>&nbsp;&nbsp;
 </div>
 </body>
 </html>

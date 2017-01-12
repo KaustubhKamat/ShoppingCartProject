@@ -1,9 +1,0 @@
-package com.niit.shoppingcart.model;
-
-public class Category {
-
-	
-	public String Emailid;
-	public String name;
-	public String description;
-}

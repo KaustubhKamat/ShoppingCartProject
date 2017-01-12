@@ -1,0 +1,27 @@
+package controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Controller;
+
+import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.Supplier;
+
+@Controller
+@ComponentScan("com.niit.shoppingcart")
+public class SupplierController {
+
+	public static Logger log= LoggerFactory.getLogger(SupplierController.class);
+	
+	@Autowired
+	public SupplierDAO supplierDAO;
+	
+	public Supplier supplier;
+	
+	
+
+
+
+}

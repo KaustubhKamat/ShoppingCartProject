@@ -16,11 +16,16 @@
 .dropdown-menu>li>a:hover {
 	background-color: silver;;
 	background-image: none;
+	
 }
+${LoggedInUser}{
+color: white;
+}
+
 </style>
 <body>
 
-	<nav class="navbar navbar-">
+	<nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
@@ -97,11 +102,9 @@
 
 				<li><a href="AboutUs">About Us <span
 						class="glyphicon glyphicon-phone-alt"></span></a></li>
-<li><a href="Category">Category <span
-						class="glyphicon glyphicon-phone-alt"></span></a></li>
-			</ul>
 
 			</ul>
+
 		</div>
 		<!-- /.navbar-collapse -->
 	</div>

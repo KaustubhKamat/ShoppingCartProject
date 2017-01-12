@@ -63,11 +63,11 @@ public class HomeController {
 		return mv;
 	}*/
 
-	@RequestMapping("/Category")
+	/*@RequestMapping("/Category")
 	public ModelAndView showCategoryPage() {
 		ModelAndView mv = new ModelAndView("Category");
 		return mv;
-	}
+	}*/
 
 	@RequestMapping("/Home")
 	public ModelAndView showHomePage() {

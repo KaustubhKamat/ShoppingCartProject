@@ -37,20 +37,20 @@ public class AdminController {
 	@Autowired
 	public Product product;
 	
-	@RequestMapping("/Manage_Supplier")
+	@RequestMapping("/ManageSupplier")
 	public ModelAndView showSuppliers()
 	{
-		ModelAndView mv= new ModelAndView("/Home");
+		ModelAndView mv= new ModelAndView("/ManageSupplier");
 		mv.addObject("supplier", supplier);
 		mv.addObject("adminhasclickedthecategories", true);
 		mv.addObject("supplierList", supplierDAO.list());
 		return mv;
 	}
 	
-	@RequestMapping("/Manage_Category")
+	@RequestMapping("/ManageCategory")
 	public ModelAndView showCategories()
 	{
-		ModelAndView mv=new ModelAndView("/Home");
+		ModelAndView mv=new ModelAndView("/ManageCategory");
 		mv.addObject("category", category);
 		mv.addObject("adminhasclickedthecategories", true);
 		mv.addObject("categoryList", categoryDAO.list());		
@@ -58,10 +58,10 @@ public class AdminController {
 		
 	}
 	
-	@RequestMapping("/Manage_Product")
+	@RequestMapping("/ManageProduct")
 	public ModelAndView showProducts()
 	{
-		ModelAndView mv=new ModelAndView("/Home");
+		ModelAndView mv=new ModelAndView("/ManageProduct");
 		mv.addObject("Product", product);
 		mv.addObject("adminhasclickedtheproducts", true);
 		mv.addObject("productList", productDAO.list());
