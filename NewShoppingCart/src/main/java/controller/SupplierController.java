@@ -30,33 +30,52 @@ public class SupplierController {
 	@Autowired
 	private HttpSession session;
 	
-	/*@RequestMapping("/AddSupplier")
-	public ModelAndView validate(@RequestParam(value="supplier_id")String id,HttpSession session)
-	{
-		log.debug("starting the method validate of supplier");
-		ModelAndView mv=new ModelAndView("/AddSupplier");
-		supplier=supplierDAO.validate(id);
-		
-		if(supplier != null)
-		{
-			supplier.getId();
-			session.setAttribute("SuuplierIsRegisteredWithName", supplier.getName());
-			session.setAttribute("SupplierisRegisteredWithAddress", supplier.getAddress());
-		}
-		
-		return mv;*/
+	public ModelAndView listOfSuppliers() {
+		ModelAndView mv = new ModelAndView("/Home");
+		mv.addObject("supplier", supplier);
+		mv.addObject("supplierList", supplierDAO.list());
+		mv.addObject("AdminHasClickedSupplier", "true");
+		return mv;
+	}
 
-	public ModelAndView save()
-	{
-		log.debug("starting the method save");
-		ModelAndView mv=new ModelAndView("AddSupplier");
-		
-		return null;
-		
+	@RequestMapping("/AddSupplier")
+	public ModelAndView addSupplier() {
+		ModelAndView mv = new ModelAndView("AddSupplier");
+		if (supplierDAO.save(supplier)) {
+			mv.addObject("SuccessSaveMessage", "SuccessfullyAddedTheSupplier");
+		} else {
+			mv.addObject("ErrorSaveMessage", "SupplierNotAdded");
+		}
+		return mv;
 	}
-	
-	
+
+	public ModelAndView updateSupplier() {
+		ModelAndView mv = new ModelAndView("UpdateSupplier");
+		if (supplierDAO.update(supplier) == true) {
+			mv.addObject("SuccessUpdateMessage", "SuccessfullyUpdatedTheSupplier");
+		} else {
+			mv.addObject("ErrorUpdateMessage", "SupplierNotUpdated");
+		}
+		return mv;
 	}
+
+	@RequestMapping(value="validate_supplier", method = RequestMethod.POST)
+	public ModelAndView deleteSupplier(@RequestParam(value="supplier_id")String id) {
+		ModelAndView mv = new ModelAndView("DeleteSupplier");
+		boolean flag=supplierDAO.delete(supplier);
+
+		if (flag != true) {
+			mv.addObject("SuccessDeleteMessage", "SuccessfullyDeletedTheSupplier");
+		} else {
+			mv.addObject("ErrorDeleteMessage", "SupplierNotDeleted");
+		}
+		return mv;
+	}
+   
+    
+     
+}
+
 
 	
 

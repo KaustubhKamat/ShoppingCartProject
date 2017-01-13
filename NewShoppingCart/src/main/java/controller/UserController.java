@@ -57,8 +57,8 @@ public class UserController {
 
 	@RequestMapping("/login")
 	public ModelAndView showLoginPage() {
-		ModelAndView mv = new ModelAndView("Login");
-		mv.addObject("Message", "Welcome to Login Page");
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("UserHasClickedLogin", true);
 		return mv;
 
 	}

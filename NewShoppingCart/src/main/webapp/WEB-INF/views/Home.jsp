@@ -31,21 +31,34 @@ h4 {
 </style>
 </head>
 <body>
-	
 
-	
+
+
 	<jsp:include page="NavBar.jsp"></jsp:include>
-	
-	<c:if test="${isAdmin==true}">
-	<jsp:include page="Admin_home.jsp"></jsp:include>		
-	</c:if>
-	
+
+	<c:if test="${carousaltobedisplayed==true}">
 		<jsp:include page="Carousel.jsp"></jsp:include>
-	
+	</c:if>
+
+
+	<c:if test="${UserHasClickedLogin==true}">
+		<jsp:include page="Login.jsp"></jsp:include>
+	</c:if>
+
+	<c:if test="${UserhasclickedAboutUs==true}">
+		<jsp:include page="AboutUs.jsp"></jsp:include>
+	</c:if>
+
+	<c:if test="${UserHasClickedRegister==true}">
+		<jsp:include page="Registration.jsp"></jsp:include>
+	</c:if>
+
+	<c:if test="${isAdmin==true}">
+		<jsp:include page="Admin_home.jsp"></jsp:include>
+	</c:if>
+
+
 	<c:if test="${validate}">
-
-
-
 	</c:if>
 	${ErrorMessage}
 
@@ -53,15 +66,35 @@ h4 {
 		<jsp:include page="Registration.jsp"></jsp:include>
 	</c:if>
 
+	<c:if test="${adminHasClickedManageCategories==true}">
+		<jsp:include page="ManageCategory.jsp"></jsp:include>
+	</c:if>
 
+<c:if test="${adminHasClickedManageProducts==true}">
+		<jsp:include page="ManageProduct.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${adminHasClickedManageSuppliers==true}">
+		<jsp:include page="ManageSupplier.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${AdminHasClickedAddCategory==true}">
+		<jsp:include page="AddCategory.jsp"></jsp:include>
+	</c:if>
 	<jsp:include page="Footer.jsp"></jsp:include>
 
+<<%-- c:if test="${AdminHasClickedCategories==true}">
+		<jsp:include page="ManageSupplier.jsp"></jsp:include>
+	</c:if>
+	<jsp:include page="Footer.jsp"></jsp:include>
+
+<c:if test="${AdminHasClickedCategories==true}">
+		<jsp:include page="ManageProduct.jsp"></jsp:include>
+	</c:if>
+	<jsp:include page="Footer.jsp"></jsp:include>
+ --%>
 
 
-
-
-
-	
 </body>
 </html>
 

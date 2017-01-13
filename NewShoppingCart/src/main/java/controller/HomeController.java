@@ -39,8 +39,8 @@ public class HomeController {
 
 	@RequestMapping("/Register")
 	public ModelAndView showRegistrationPage() {
-		ModelAndView mv = new ModelAndView("Registration");
-		mv.addObject("Message", "You have clicked the Registration Link");
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("UserHasClickedRegister", true);
 		return mv;
 	}
 
@@ -72,12 +72,14 @@ public class HomeController {
 	@RequestMapping("/Home")
 	public ModelAndView showHomePage() {
 		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("carousaltobedisplayed", true);
 		return mv;
 	}
 
 	@RequestMapping("/AboutUs")
 	public ModelAndView showAboutUsPage() {
-		ModelAndView mv = new ModelAndView("AboutUs");
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("UserhasclickedAboutUs", true);
 		return mv;
 	}
 	@RequestMapping("/HatchBack")

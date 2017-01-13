@@ -1,10 +1,14 @@
 package controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.shoppingcart.DAO.CategoryDAO;
@@ -37,12 +41,17 @@ public class AdminController {
 	@Autowired
 	public Product product;
 	
+	@Autowired
+	public HttpSession session;
+	
 	@RequestMapping("/ManageSupplier")
 	public ModelAndView showSuppliers()
 	{
-		ModelAndView mv= new ModelAndView("/ManageSupplier");
+		ModelAndView mv= new ModelAndView("Home");
 		mv.addObject("supplier", supplier);
-		mv.addObject("adminhasclickedthecategories", true);
+		mv.addObject("adminhasclickedManageSuppliers", true);
+		session.setAttribute("adminhasclickedManageSuppliers", true);
+
 		mv.addObject("supplierList", supplierDAO.list());
 		return mv;
 	}
@@ -50,9 +59,10 @@ public class AdminController {
 	@RequestMapping("/ManageCategory")
 	public ModelAndView showCategories()
 	{
-		ModelAndView mv=new ModelAndView("/ManageCategory");
+		ModelAndView mv=new ModelAndView("Home");
 		mv.addObject("category", category);
-		mv.addObject("adminhasclickedthecategories", true);
+		mv.addObject("adminHasClickedManageCategories", true);
+		session.setAttribute("adminHasClickedManageCategories", true);
 		mv.addObject("categoryList", categoryDAO.list());		
 		return mv;
 		
@@ -61,13 +71,15 @@ public class AdminController {
 	@RequestMapping("/ManageProduct")
 	public ModelAndView showProducts()
 	{
-		ModelAndView mv=new ModelAndView("/ManageProduct");
+		ModelAndView mv=new ModelAndView("Home");
 		mv.addObject("Product", product);
-		mv.addObject("adminhasclickedtheproducts", true);
+		mv.addObject("adminHasClickedManageProducts", true);
+		session.setAttribute("adminHasClickedManageProducts", true);
 		mv.addObject("productList", productDAO.list());
 		return mv;
 	}
 
 	
 	
+
 }
