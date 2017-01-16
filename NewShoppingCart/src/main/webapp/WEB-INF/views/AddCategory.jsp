@@ -22,8 +22,8 @@ table, th, td {
 
 </head>
 <body>
-<jsp:include page="NavBar.jsp"></jsp:include>
-<form class="form-horizontal" action="validate_category" method="post">
+
+<form class="form-horizontal" action="add_category" method="post">
 <div class="form-group">
 <label class="col-sm-5 control-label">Enter Category Id</label>
 <div class="col-sm-15">
@@ -49,7 +49,7 @@ table, th, td {
   </div>
 </form>
 <hr>
-<div class="col-sm-offset-5 col-sm-35">
+<div class="col-sm-offset-4 col-sm-35">
 <h3>Existing Category List</h3>
 </div>
 <div class="col-sm-offset-3 col-sm-20">
@@ -59,18 +59,14 @@ table, th, td {
 				<th width="150">Category ID</th>
 				<th width="150">Category Name</th>
 				<th width="200">Category Description</th>
-				<th width="100">Edit</th>
-				<th width="150">Delete</th>
-			</tr>
+						</tr>
 			</div>
 			<c:forEach items="${categoryList}" var="category">
 				<tr>
 					<td>${category.id}</td>
 					<td>${category.name}</td>
 					<td>${category.description}</td>
-					<td><a href="<c:url value='/manage_category_edit/${category.id}' />">Edit</a></td>
 					
-					<td><a href="<c:url value='/manage_category_remove/${category.id}' />">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>

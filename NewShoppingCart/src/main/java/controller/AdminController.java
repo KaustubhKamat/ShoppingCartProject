@@ -51,7 +51,6 @@ public class AdminController {
 		mv.addObject("supplier", supplier);
 		mv.addObject("adminhasclickedManageSuppliers", true);
 		session.setAttribute("adminhasclickedManageSuppliers", true);
-
 		mv.addObject("supplierList", supplierDAO.list());
 		return mv;
 	}

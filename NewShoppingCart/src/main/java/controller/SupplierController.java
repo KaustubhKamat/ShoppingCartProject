@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.shoppingcart.DAO.CategoryDAO;
 import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.Category;
 import com.niit.shoppingcart.model.Supplier;
 
 @Controller
@@ -30,6 +32,30 @@ public class SupplierController {
 	@Autowired
 	private HttpSession session;
 	
+	@RequestMapping("/AddSupplier")
+	public ModelAndView showAddSupplierPage() {
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("categoryList", supplierDAO.list());
+		mv.addObject("AdminHasClickedAddSupplier", "true");
+		return mv;
+	}
+	
+	@RequestMapping("/DeleteSupplier")
+	public ModelAndView showDeleteSupplierPage() {
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("categoryList", supplierDAO.list());
+		mv.addObject("AdminHasClickedDeleteSupplier", "true");
+		return mv;
+	}
+	
+	@RequestMapping("/UpdateSupplier")
+	public ModelAndView showUpdateSupplierPage() {
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("categoryList", supplierDAO.list());
+		mv.addObject("AdminHasClickedUpdateSupplier", "true");
+		return mv;
+	}
+
 	public ModelAndView listOfSuppliers() {
 		ModelAndView mv = new ModelAndView("/Home");
 		mv.addObject("supplier", supplier);
@@ -38,9 +64,17 @@ public class SupplierController {
 		return mv;
 	}
 
-	@RequestMapping("/AddSupplier")
-	public ModelAndView addSupplier() {
-		ModelAndView mv = new ModelAndView("AddSupplier");
+	@RequestMapping(value ="/validate_supplier", method = RequestMethod.POST)
+	public ModelAndView processAddSupplier(@RequestParam(value="supplier_id")String id , @RequestParam(value="supplier_name")
+	String name, @RequestParam(value="supplier_address")String address) 
+	
+	{
+		ModelAndView mv = new ModelAndView("Home");
+		
+		supplier.setId(id);
+		supplier.setName(name);
+		supplier.setAddress(address);
+		
 		if (supplierDAO.save(supplier)) {
 			mv.addObject("SuccessSaveMessage", "SuccessfullyAddedTheSupplier");
 		} else {
@@ -48,30 +82,6 @@ public class SupplierController {
 		}
 		return mv;
 	}
-
-	public ModelAndView updateSupplier() {
-		ModelAndView mv = new ModelAndView("UpdateSupplier");
-		if (supplierDAO.update(supplier) == true) {
-			mv.addObject("SuccessUpdateMessage", "SuccessfullyUpdatedTheSupplier");
-		} else {
-			mv.addObject("ErrorUpdateMessage", "SupplierNotUpdated");
-		}
-		return mv;
-	}
-
-	@RequestMapping(value="validate_supplier", method = RequestMethod.POST)
-	public ModelAndView deleteSupplier(@RequestParam(value="supplier_id")String id) {
-		ModelAndView mv = new ModelAndView("DeleteSupplier");
-		boolean flag=supplierDAO.delete(supplier);
-
-		if (flag != true) {
-			mv.addObject("SuccessDeleteMessage", "SuccessfullyDeletedTheSupplier");
-		} else {
-			mv.addObject("ErrorDeleteMessage", "SupplierNotDeleted");
-		}
-		return mv;
-	}
-   
     
      
 }

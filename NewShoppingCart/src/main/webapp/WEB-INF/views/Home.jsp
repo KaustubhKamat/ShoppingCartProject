@@ -44,6 +44,10 @@ h4 {
 	<c:if test="${UserHasClickedLogin==true}">
 		<jsp:include page="Login.jsp"></jsp:include>
 	</c:if>
+	
+	<c:if test="${UserhasclickedLogout==true}">
+		<jsp:include page="Home.jsp"></jsp:include>
+	</c:if>
 
 	<c:if test="${UserhasclickedAboutUs==true}">
 		<jsp:include page="AboutUs.jsp"></jsp:include>
@@ -65,34 +69,58 @@ h4 {
 	<c:if test="${ not empty ErrorMessage}">
 		<jsp:include page="Registration.jsp"></jsp:include>
 	</c:if>
+	
+	<!-- Categories Related -->
 
 	<c:if test="${adminHasClickedManageCategories==true}">
 		<jsp:include page="ManageCategory.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${AdminHasClickedAddCategory==true}">
+		<jsp:include page="AddCategory.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${  empty SuccessSaveMessage}">
+	${SuccessSaveMessage}		
+	</c:if> 
+	
+	
+	<c:if test="${AdminHasClickedUpdateCategory==true}">
+		<jsp:include page="UpdateCategory.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${AdminHasClickedDeleteCategory==true}">
+		<jsp:include page="DeleteCategory.jsp"></jsp:include>
+	</c:if>
+	
+	<!-- Supplier Related -->
+	<c:if test="${adminhasclickedManageSuppliers==true}">
+		<jsp:include page="ManageSupplier.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${AdminHasClickedAddSupplier==true}">
+		<jsp:include page="AddSupplier.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${AdminHasClickedUpdateSupplier==true}">
+		<jsp:include page="UpdateSupplier.jsp"></jsp:include>
+	</c:if>
+	
+	<c:if test="${AdminHasClickedDeleteSupplier==true}">
+		<jsp:include page="DeleteSupplier.jsp"></jsp:include>
 	</c:if>
 
 <c:if test="${adminHasClickedManageProducts==true}">
 		<jsp:include page="ManageProduct.jsp"></jsp:include>
 	</c:if>
 	
-	<c:if test="${adminHasClickedManageSuppliers==true}">
-		<jsp:include page="ManageSupplier.jsp"></jsp:include>
-	</c:if>
 	
-	<c:if test="${AdminHasClickedAddCategory==true}">
-		<jsp:include page="AddCategory.jsp"></jsp:include>
-	</c:if>
-	<jsp:include page="Footer.jsp"></jsp:include>
+	
+	
+	
 
-<<%-- c:if test="${AdminHasClickedCategories==true}">
-		<jsp:include page="ManageSupplier.jsp"></jsp:include>
-	</c:if>
 	<jsp:include page="Footer.jsp"></jsp:include>
-
-<c:if test="${AdminHasClickedCategories==true}">
-		<jsp:include page="ManageProduct.jsp"></jsp:include>
-	</c:if>
-	<jsp:include page="Footer.jsp"></jsp:include>
- --%>
+ 
 
 
 </body>

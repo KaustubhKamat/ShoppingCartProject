@@ -24,10 +24,12 @@ public class HomeController {
 	@Autowired
 	User1 user;
 
-	@RequestMapping("/")
+	/*@RequestMapping("/")
 	public String Home() {
+    		
+		
 		return "Home";
-	}
+	}*/
 
 	/*@RequestMapping("/login")
 	public ModelAndView showLoginPage() {
@@ -69,17 +71,33 @@ public class HomeController {
 		return mv;
 	}*/
 
+	@RequestMapping("/")
+	public ModelAndView Home() {
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("carousaltobedisplayed", true);
+		return mv;
+	}
+	
 	@RequestMapping("/Home")
 	public ModelAndView showHomePage() {
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("carousaltobedisplayed", true);
 		return mv;
 	}
+	
+	
 
 	@RequestMapping("/AboutUs")
 	public ModelAndView showAboutUsPage() {
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("UserhasclickedAboutUs", true);
+		return mv;
+	}
+	
+	@RequestMapping("/Logout")
+	public ModelAndView showLogoutPage() {
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("UserhasclickedLogout", true);
 		return mv;
 	}
 	@RequestMapping("/HatchBack")

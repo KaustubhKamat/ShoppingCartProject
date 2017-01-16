@@ -35,8 +35,6 @@ p {
 </head>
 <body>
 
-
-	<jsp:include page="NavBar.jsp"></jsp:include>
 	<div class="container">
 		<jsp:include page="CarousalForAboutUs.jsp"></jsp:include>
 		<div class="col-sm-offset-0 col-sm-15">
