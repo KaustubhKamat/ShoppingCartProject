@@ -1,0 +1,57 @@
+package com.niit.shoppingcart.DAOImpl;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.niit.shoppingcart.DAO.Employee_TestDAO;
+import com.niit.shoppingcart.model.Category;
+import com.niit.shoppingcart.model.Employee_Test;
+import com.niit.shoppingcart.model.Employee_Test.Employee;
+
+public class Employee_TestDAOImpl implements Employee_TestDAO {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	public Employee_TestDAOImpl(SessionFactory sessionFactory)
+	{
+			
+		this.sessionFactory=sessionFactory;
+	}
+	
+	
+	@SuppressWarnings("unchecked")
+	public List<Employee> list() {
+		String hql= "from Category";
+		Query query=sessionFactory.getCurrentSession().createQuery(hql);
+		return query.list();
+
+	}
+
+	public Employee get(String id) {
+		return (Category) sessionFactory.getCurrentSession().get(Employee_Test.class, id);
+		return null;
+	}
+
+	public boolean save(Employee employee) {
+		return false;
+	}
+
+	public boolean update(Employee employee) {
+		
+		return false;
+	}
+
+	public boolean delete(Employee employee) {
+				return false;
+	}
+
+
+
+
+
+}
+

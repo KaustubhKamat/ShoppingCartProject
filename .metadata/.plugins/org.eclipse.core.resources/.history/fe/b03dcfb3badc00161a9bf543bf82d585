@@ -1,0 +1,77 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.Employee_TestDAO;
+import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.Employee_Test;
+import com.niit.shoppingcart.model.Supplier;
+
+import junit.framework.Assert;
+
+public class Employee_TestDAOTestCase {
+
+	@Autowired
+	static Employee_TestDAO employee_TestDAO;
+
+	@Autowired
+	static Employee_Test employee_test;
+
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+
+	@BeforeClass
+	public static void init() {
+		context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+
+		employee_TestDAO=(Employee_TestDAO) context.getBean("employee_TestDAOImpl");
+		employee_test=context.getBean("employee_test");
+		
+		supplierDAO = (SupplierDAO) context.getBean("supplierDAOImpl");
+		supplier = (Supplier) context.getBean("supplier");
+	}
+
+	//@Test
+	@SuppressWarnings("deprecation")
+	public void saveTestCase() {
+		supplier.setId("018");
+		supplier.setName("Abhay_Motors");
+		supplier.setAddress("Pune");
+
+		Assert.assertEquals("saveTestCase", true, supplierDAO.save(supplier));
+	}
+
+	@SuppressWarnings("deprecation")
+	//@Test
+	public void updateTestCase() {
+		supplier = supplierDAO.get("S103");
+		supplier.setName("Kamat_Motors");
+		Assert.assertEquals("updateTestCase", true, supplierDAO.update(supplier));
+	}
+
+	@SuppressWarnings("deprecation")
+	@Test
+	public void deleteTestCase() {
+		supplier = supplierDAO.get("S016");
+		Assert.assertEquals("deleteTestCase",  true,supplierDAO.delete(supplier));
+
+	}
+
+	@SuppressWarnings("deprecation")
+	//@Test
+	public void getTestCase() {
+		supplier = supplierDAO.get("S102");
+		Assert.assertNotNull("getTestCase", supplier);
+
+	}
+}
+
+
+

@@ -16,12 +16,19 @@
 .dropdown-menu>li>a:hover {
 	background-color: silver;;
 	background-image: none;
-	
 }
-${LoggedInUser}{
-color: white;
+${
+LoggedInUser
 }
+{
+color
+:
+ 
+white
+;
 
+
+}
 </style>
 <body>
 
@@ -64,15 +71,16 @@ color: white;
 				<li><a href="Home">Home <span
 						class="glyphicon glyphicon-home"></span></a>
 				<li><a href="Cart">Cart <span
-						class="glyphicon glyphicon-shopping-cart"></span></a></li> 
-				
+						class="glyphicon glyphicon-shopping-cart"></span></a></li>
+
 				<c:if test="${not empty LoggedInUser}">
-				<li>Welcome ${LoggedInUser}</li>
+					<li>Welcome ${LoggedInUser}</li>
 				</c:if>
-				 <c:if test="${empty LoggedInUser}">
-				<li><a href="login">SignIn <span class="glyphicon glyphicon-user"></span></a></li>
+				<c:if test="${empty LoggedInUser}">
+					<li><a href="login">SignIn <span
+							class="glyphicon glyphicon-user"></span></a></li>
 				</c:if>
-				
+
 
 				<%-- <c:choose>
 						<c:when test="${empty LoggedInUser}">
@@ -82,15 +90,16 @@ color: white;
 							<li>${LoggedInUser}</li>
 						</c:otherwise>
 						</c:choose>  --%>
-						
-						<c:if test="${empty LoggedInUser}">
-				<li><a href="Register">SignUp <span class="glyphicon glyphicon-user"></span></a></li>
+
+				<c:if test="${empty LoggedInUser}">
+					<li><a href="Register">SignUp <span
+							class="glyphicon glyphicon-user"></span></a></li>
 				</c:if>
-				 <c:if test="${not empty LoggedInUser}">
-				<li><a href="Logout">Logout</a></li>
+				<c:if test="${not empty LoggedInUser}">
+					<li><a href="Logout">Logout</a></li>
 				</c:if>
-						
-						<%-- <c:choose>
+
+				<%-- <c:choose>
 						<c:when test="${empty LoggedInUser} }">
 						<li><a href="Register">SignUp </a></li>
 						</c:when>
@@ -102,7 +111,8 @@ color: white;
 
 				<li><a href="AboutUs">About Us <span
 						class="glyphicon glyphicon-phone-alt"></span></a></li>
-
+				<li><a href="Test_form">Test Form <span
+						class="glyphicon glyphicon-phone-alt"></span></a></li>`
 			</ul>
 
 		</div>

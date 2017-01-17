@@ -39,6 +39,10 @@ h4 {
 	<c:if test="${carousaltobedisplayed==true}">
 		<jsp:include page="Carousel.jsp"></jsp:include>
 	</c:if>
+	
+	<c:if test="${ClickedEmployee}==true}">
+		<jsp:include page="Test_form.jsp"></jsp:include>
+	</c:if>
 
 
 	<c:if test="${UserHasClickedLogin==true}">
@@ -59,6 +63,10 @@ h4 {
 
 	<c:if test="${isAdmin==true}">
 		<jsp:include page="Admin_home.jsp"></jsp:include>
+	</c:if>
+
+<c:if test="${! empty UserSuccessSaveMessage}">
+		${UserSuccessSaveMessage}
 	</c:if>
 
 

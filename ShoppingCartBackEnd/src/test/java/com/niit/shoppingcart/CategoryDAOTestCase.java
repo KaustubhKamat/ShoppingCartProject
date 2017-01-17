@@ -33,7 +33,7 @@ public class CategoryDAOTestCase {
 		category = (Category) context.getBean("category");
 	}
 
-	@Test
+	//@Test
 	@SuppressWarnings("deprecation")
 	public void saveTestCase() {
 		category.setid("0106");
@@ -53,10 +53,10 @@ public class CategoryDAOTestCase {
 
 	}
 
-	//@Test
+	@Test
 	@SuppressWarnings("deprecation")
 	public void deleteTestCase() {
-		category = categoryDAO.get("0104");
+		category = categoryDAO.get("0107");
 
 		Assert.assertEquals("deleteTestCase", true, categoryDAO.delete(category));
 

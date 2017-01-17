@@ -65,11 +65,11 @@ public class UserDAOTestCase {
 	@Test
 	public void saveTestCase()
 	{
-	user.setEmailid("yogesh@yahoo.com");
-	user.setName("Yogesh");
-	user.setPassword("yogesh1234");
+	user.setEmailid("abhi@yahoo.com");
+	user.setName("abhi");
+	user.setPassword("abhi1234");
 	user.setMobile("787678909");
-	user.setRole("Admin");
+	user.setRole("Customer");
 	
 	Assert.assertEquals("saveTestCase", true, userDAO.save(user));
 	

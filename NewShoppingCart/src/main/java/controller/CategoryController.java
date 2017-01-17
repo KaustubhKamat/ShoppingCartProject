@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,6 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.shoppingcart.DAO.CategoryDAO;
 import com.niit.shoppingcart.model.Category;
+import com.niit.shoppingcart.model.Employee_Test;
+
 @Controller
 @ComponentScan("com.niit.shoppingcart")
 public class CategoryController {
@@ -25,7 +28,7 @@ public class CategoryController {
 
 	@Autowired
 	public Category category;
-	
+
 	@RequestMapping("/AddCategory")
 	public ModelAndView showAddCategoryPage() {
 		ModelAndView mv = new ModelAndView("Home");
@@ -42,7 +45,7 @@ public class CategoryController {
 		mv.addObject("AdminHasClickedDeleteCategory", "true");
 		return mv;
 	}
-	
+
 	@RequestMapping("/UpdateCategory")
 	public ModelAndView showUpdateCategoryPage() {
 		ModelAndView mv = new ModelAndView("Home");
@@ -50,7 +53,7 @@ public class CategoryController {
 		mv.addObject("AdminHasClickedCategory", "true");
 		return mv;
 	}
-	
+
 	public ModelAndView listOfCategories() {
 		ModelAndView mv = new ModelAndView("/Home");
 		mv.addObject("category", category);
@@ -59,47 +62,51 @@ public class CategoryController {
 		return mv;
 	}
 
-	@RequestMapping(value ="/add_category", method = RequestMethod.POST)
-	public ModelAndView processAddCategory(@RequestParam(value="category_id")String id , @RequestParam(value="category_name")
-	String name, @RequestParam(value="category_description")String description) 
-	
-	{
-		ModelAndView mv = new ModelAndView("Home");
-		category.setid(id);
-		category.setName(name);
-		category.setDescription(description);
+	/*
+	 * @RequestMapping(value ="/add_category", method = RequestMethod.POST)
+	 * public ModelAndView
+	 * processAddCategory(@RequestParam(value="category_id")String id
+	 * , @RequestParam(value="category_name") String
+	 * name, @RequestParam(value="category_description")String description)
+	 * 
+	 * { ModelAndView mv = new ModelAndView("Home"); category.setid(id);
+	 * category.setName(name); category.setDescription(description); if
+	 * (categoryDAO.save(category) == true) { mv.addObject("SuccessSaveMessage",
+	 * "SuccessfullyCreatedTheCategory"); } else {
+	 * mv.addObject("ErrorSaveMessage", "CategoryNotSaved"); } return mv; }
+	 */
+
+	public String processAddCategory(@ModelAttribute("category") Category category, Model model) {
 		if (categoryDAO.save(category) == true) {
-			mv.addObject("SuccessSaveMessage", "SuccessfullyCreatedTheCategory");
+			model.addAttribute("SuccessMessage", "You have successfully created the category");
 		} else {
-			mv.addObject("ErrorSaveMessage", "CategoryNotSaved");
+			model.addAttribute("ErrorMessage", "The Category is not created. Please try again");
 		}
-		return mv;
-	}
-
-	
-	public ModelAndView updateCategory() {
-		ModelAndView mv = new ModelAndView("UpdateCategory");
-		if (categoryDAO.update(category) == true) {
-			mv.addObject("SuccessUpdateMessage", "SuccessfullyUpdatedTheCategory");
-		} else {
-			mv.addObject("ErrorUpdateMessage", "CategoryNotUpdated");
-		}
-		return mv;
-	}
-    
-	@RequestMapping("/delete_category/{category}")
-	public String processDeleteCategory(@PathVariable("category_id")String id,@PathVariable("category_name")String name,
-	@PathVariable("category_description")String description	,Model model) throws Exception
-	{
-		ModelAndView mv=new ModelAndView("/Home");
-		boolean b=categoryDAO.delete(category);
 		model.addAttribute("category", category);
-		
-		return "return/DeleteCategory";
-		
+		model.addAttribute("categoryList", categoryDAO.list());
+
+		return "/Home";
+
 	}
 
-    
-     
-}
+	public String processDeleteCategory(@PathVariable("id") String id, Model model) {
+		boolean b = categoryDAO.delete(category);
 
+		if (b != true) {
+			model.addAttribute("SuccessDeleteCategory", "CategoryIsSuccesfullyDeleted");
+		} else {
+			model.addAttribute("ErrorDeleteCategory", "CategoryIsNotCreated");
+		}
+
+		return "forward:/AddCategory";
+
+	}
+
+	/*
+	 * @RequestMapping("AddCategory/edit") public ModelAndView
+	 * editUser(@RequestParam String id,
+	 * 
+	 * @ModelAttribute ) { String employeeObject = employee_Test.getId(); return
+	 * new ModelAndView("edit", "employeeObject", employeeObject); }
+	 */
+}

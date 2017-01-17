@@ -35,21 +35,20 @@ body {
 <body>
 	
 	<%--  <jsp:include page="NavBar.jsp"></jsp:include> --%>
-
-	<form class="form-horizontal">
+<form class="form-horizontal" action="user_register" method="post">
 		<div class="form-group">
 			<label class="col-sm-6 control-label">Create Account</label>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-5 control-label">FirstName</label>
+			<label class="col-sm-5 control-label">Name</label>
 			<div class="col-sm-15">
-				<input type="text" name="FirstName">
+				<input type="text" name="Name">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-5 control-label">LastName</label>
+			<label class="col-sm-5 control-label">Mobile Number</label>
 			<div class="col-sm-15">
-				<input type="text" name="LastName"><br>
+				<input type="text" name="Mobile_number"><br>
 			</div>
 		</div>
 		<div class="form-group">
@@ -64,18 +63,7 @@ body {
 				<input type="password" name="password"><br>
 			</div>
 		</div>
-		<div class="form-group">
-			<label class="col-sm-5 control-label">Mobile Number</label>
-			<div class="col-sm-15">
-				<input type="text" name="MobileNo"><br>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-5 control-label">Address</label>
-			<div class="col-sm-15">
-				<input type="text" name="Address"><br>
-			</div>
-		</div>
+		
 		<div class="form-group">
 			<div class="col-sm-offset-5 col-sm-20">
 				<button type="submit" class="btn btn-default">Submit</button>

@@ -60,9 +60,9 @@ table, th, td {
 					<td>${supplier.id}</td>
 					<td>${supplier.name}</td>
 					<td>${supplier.address}</td>
-					<td><a href="<c:url value='/manage_category_edit/${supplier.id}'/>">Edit</a></td>
+					<td><a href="<c:url value='/add_supplier_edit/${supplier.id}'/>">Edit</a></td>
 					
-					<td><a href="<c:url value='/manage_category_remove/${supplier.id}' />">Delete</a></td>
+					<td><a href="<c:url value='/add_supplier_delete/${supplier.id}' />">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>
