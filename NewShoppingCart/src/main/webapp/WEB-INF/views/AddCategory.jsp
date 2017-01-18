@@ -19,16 +19,16 @@ table, th, td {
 </head>
 <body>
 ${msg}
-	<h2>Add Category</h2>
+	<h3>Add Category</h3>
 	<c:url var="addAction" value="/AddCategory_add"></c:url>
-	<form:form action="${addAction}" commandName="category"  method="post">
+	<form:form action="${addAction}" modelAttribute="category"  method="post">
 		<table>
 			<tr>
 			
-		<td><form:label path="id"  > <spring:message text="ID" /><label class="col-sm-5 control-label"></label>	</form:label></td>
+		<td><form:label path="id"  > <spring:message text="Enter ID" /><label class="col-sm-5 control-label"></label>	</form:label></td>
 				<c:choose>
 					<c:when test="${!empty category.id}">
-						<td><form:input path="id" disabled="true" readonly="true" /></td>
+						<td><form:input path="id"  readonly="true" /></td>
 					</c:when>
 					<c:otherwise>
 						<td><form:input path="id" pattern=".{3,7}" required="true"
@@ -37,11 +37,12 @@ ${msg}
 				</c:choose>
 				</div>
 			<tr>
-				<td><form:label path="name" >	<spring:message text="Name" /><label class="col-sm-5 control-label"></label> </form:label></td>
+			<form:input path="id" hidden="true"></form:input>
+				<td><form:label path="name" >	<spring:message text="Enter Name" /><label class="col-sm-5 control-label"></label> </form:label></td>
 				<td><form:input path="name" required="true" /></td>
 			</tr>
 			<tr>
-				<td><form:label path="description" > <spring:message text="Description"/><label class="col-sm-5 control-label"></label></form:label></td>
+				<td><form:label path="description" > <spring:message text="Enter Description"/><label class="col-sm-5 control-label"></label></form:label></td>
 				<td><form:input path="description" required="true" /></td>
 			</tr>
 			
@@ -53,7 +54,6 @@ ${msg}
 						<input type="submit" value="<spring:message text="Add Category"/>" />
 					</c:if></td>
 			</tr>
-			
 		</table>
 	</form:form>
 	<br>
@@ -70,14 +70,14 @@ ${msg}
 				<th width="150">Edit</th>
 				<th width="150">Delete</th>
 			</tr>
-			<c:forEach items="${categoryList}" >
+			<c:forEach items="${categoryList}" var="category" >
 				<tr>
 					<td>${category.id}</td>
 					<td>${category.name}</td>
 					<td>${category.description}</td>
-					<td><a href="<c:url value='/AddCategory/edit/${category.id}' />">Edit</a></td>
+					<td><a href="<c:url value="/AddCategory/edit?cid=${category.id}" />">Edit</a></td>
 					
-					<td><a href="<c:url value='/AddCategory/delete/${category.id}' />">Delete</a></td>
+					<td><a href="<c:url value='/AddCategory/delete?cid=${category.id}' />">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>

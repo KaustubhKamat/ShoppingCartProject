@@ -36,8 +36,8 @@ public class CategoryDAOTestCase {
 	//@Test
 	@SuppressWarnings("deprecation")
 	public void saveTestCase() {
-		category.setid("0106");
-		category.setName("Maruti Ciaz");
+		category.setid("0107");
+		category.setName("Maruti");
 		category.setDescription("This is a petrol VXI version");
 
 		Assert.assertEquals("saveTestCase", true, categoryDAO.save(category));
@@ -46,20 +46,27 @@ public class CategoryDAOTestCase {
 	@SuppressWarnings("deprecation")
 	//@Test
 	public void updateTestCase() {
-		category = categoryDAO.get("0102");
+		category = categoryDAO.get("1234");
 		category.setName("Ritz");
 
 		Assert.assertEquals("updateTestCase", true, categoryDAO.update(category));
 
 	}
-
-	@Test
+	
+	//@Test
 	@SuppressWarnings("deprecation")
 	public void deleteTestCase() {
-		category = categoryDAO.get("0107");
+		category = categoryDAO.get("0102");
 
 		Assert.assertEquals("deleteTestCase", true, categoryDAO.delete(category));
 
 	}
+	@Test
+	@SuppressWarnings("deprecation")
+	public void getNameTestCase() {
+		category = categoryDAO.get("0107");
 
+		Assert.assertEquals("getNameTestCase", category);
+
+	}
 }

@@ -31,7 +31,7 @@ public class CategoryController {
 
 	@RequestMapping("/AddCategory")
 	public ModelAndView showAddCategoryPage() {
-		ModelAndView mv = new ModelAndView("Home");
+		ModelAndView mv = new ModelAndView("/Home");
 		mv.addObject("category", category);
 		mv.addObject("categoryList", categoryDAO.list());
 		mv.addObject("AdminHasClickedAddCategory", "true");
@@ -46,13 +46,6 @@ public class CategoryController {
 		return mv;
 	}
 
-	@RequestMapping("/UpdateCategory")
-	public ModelAndView showUpdateCategoryPage() {
-		ModelAndView mv = new ModelAndView("Home");
-		mv.addObject("categoryList", categoryDAO.list());
-		mv.addObject("AdminHasClickedCategory", "true");
-		return mv;
-	}
 
 	public ModelAndView listOfCategories() {
 		ModelAndView mv = new ModelAndView("/Home");
@@ -76,7 +69,12 @@ public class CategoryController {
 	 * mv.addObject("ErrorSaveMessage", "CategoryNotSaved"); } return mv; }
 	 */
 
-	public String processAddCategory(@ModelAttribute("category") Category category, Model model) {
+	@RequestMapping("/AddCategory_add")
+	public String processAddCategory(@ModelAttribute("category") Category category, Model model) throws Exception
+	
+	{
+		
+		categoryDAO.save(category); 
 		if (categoryDAO.save(category) == true) {
 			model.addAttribute("SuccessMessage", "You have successfully created the category");
 		} else {
@@ -89,7 +87,8 @@ public class CategoryController {
 
 	}
 
-	public String processDeleteCategory(@PathVariable("id") String id, Model model) {
+	@RequestMapping("/AddCategory/delete")
+	public String processDeleteCategory(@RequestParam("cid") String id, Model model) {
 		boolean b = categoryDAO.delete(category);
 
 		if (b != true) {
@@ -102,11 +101,15 @@ public class CategoryController {
 
 	}
 
-	/*
-	 * @RequestMapping("AddCategory/edit") public ModelAndView
-	 * editUser(@RequestParam String id,
-	 * 
-	 * @ModelAttribute ) { String employeeObject = employee_Test.getId(); return
-	 * new ModelAndView("edit", "employeeObject", employeeObject); }
-	 */
+	@RequestMapping("/AddCategory/edit")
+	public String processEditCategory(@RequestParam("cid")String id, Model model)
+	{
+		log.debug("The processEditCategory method is started");
+		category=categoryDAO.get(id);
+		category.setid(id);
+		model.addAttribute("category", category);
+		log.debug("The processEditCategory method is finished");
+		return "forward:/AddCategory";
+	}
+	
 }

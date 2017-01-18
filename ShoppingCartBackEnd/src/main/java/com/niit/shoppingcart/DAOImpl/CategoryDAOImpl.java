@@ -86,4 +86,15 @@ public class CategoryDAOImpl implements CategoryDAO {
 		return true;
 		
 	}
+	
+	public Category getName(String name)
+	{
+		String hql= "SELECT * FROM CATEGORY where NAME='" + name +"'";
+		Query query=sessionFactory.getCurrentSession().createQuery(hql);
+		return (Category) query.uniqueResult();
+	
+		
+		
+	}
+
 }

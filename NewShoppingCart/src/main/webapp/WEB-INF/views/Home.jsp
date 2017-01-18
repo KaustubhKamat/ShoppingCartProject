@@ -40,11 +40,6 @@ h4 {
 		<jsp:include page="Carousel.jsp"></jsp:include>
 	</c:if>
 	
-	<c:if test="${ClickedEmployee}==true}">
-		<jsp:include page="Test_form.jsp"></jsp:include>
-	</c:if>
-
-
 	<c:if test="${UserHasClickedLogin==true}">
 		<jsp:include page="Login.jsp"></jsp:include>
 	</c:if>
@@ -80,9 +75,6 @@ h4 {
 	
 	<!-- Categories Related -->
 
-	<c:if test="${adminHasClickedManageCategories==true}">
-		<jsp:include page="ManageCategory.jsp"></jsp:include>
-	</c:if>
 	
 	<c:if test="${AdminHasClickedAddCategory==true}">
 		<jsp:include page="AddCategory.jsp"></jsp:include>
@@ -91,16 +83,6 @@ h4 {
 	<c:if test="${  empty SuccessSaveMessage}">
 	${SuccessSaveMessage}		
 	</c:if> 
-	
-	
-	<c:if test="${AdminHasClickedUpdateCategory==true}">
-		<jsp:include page="UpdateCategory.jsp"></jsp:include>
-	</c:if>
-	
-	<c:if test="${AdminHasClickedDeleteCategory==true}">
-		<jsp:include page="DeleteCategory.jsp"></jsp:include>
-	</c:if>
-	
 	<!-- Supplier Related -->
 	<c:if test="${adminhasclickedManageSuppliers==true}">
 		<jsp:include page="ManageSupplier.jsp"></jsp:include>
@@ -109,20 +91,13 @@ h4 {
 	<c:if test="${AdminHasClickedAddSupplier==true}">
 		<jsp:include page="AddSupplier.jsp"></jsp:include>
 	</c:if>
-	
-	<c:if test="${AdminHasClickedUpdateSupplier==true}">
-		<jsp:include page="UpdateSupplier.jsp"></jsp:include>
-	</c:if>
-	
-	<c:if test="${AdminHasClickedDeleteSupplier==true}">
-		<jsp:include page="DeleteSupplier.jsp"></jsp:include>
-	</c:if>
-
 <c:if test="${adminHasClickedManageProducts==true}">
 		<jsp:include page="ManageProduct.jsp"></jsp:include>
 	</c:if>
 	
-	
+	<c:if test="${AdminHasClickedAddProduct==true}">
+		<jsp:include page="AddProduct.jsp"></jsp:include>
+	</c:if>
 	
 	
 	

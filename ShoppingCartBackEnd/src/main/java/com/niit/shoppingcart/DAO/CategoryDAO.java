@@ -10,6 +10,8 @@ public interface CategoryDAO {
 	
 	public Category get(String id);
 	
+	public Category getName(String name);
+	
 	public Category validate(String id);
 	
 	public boolean save(Category category);

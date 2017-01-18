@@ -1,71 +1,92 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
 <html>
 <head>
+<title>Add Supplier Page</title>
 <style>
 table, th, td {
-	border-style: ridge;
+	border-style:groove;
 	text-align: center;
-	padding: 10px;
+	font-family:sans-serif;
+	font-size:medium;
+	padding: 1px;
+	text-align: center;
 }
 </style>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+
 </head>
 <body>
-<form class="form-horizontal" action="validate_supplier" method="post">
-<div class="form-group">
-<label class="col-sm-5 control-label">Enter Supplier Id</label>
-<div class="col-sm-15">
-<input type="text" name="supplier_id">
-</div>
-</div>
-<div class="form-group">
-<label class="col-sm-5 control-label">Enter Supplier Name</label>
-<div class="col-sm-15">
-<input type="text" name="supplier_name">
-</div>
-</div>
-<div class="form-group">
-<label class="col-sm-5 control-label">Enter Supplier Address</label>
-<div class="col-sm-15">
-<input type="text" name="supplier_address">
-</div>
-</div>
-<hr>
-<div class="form-group">
-    <div class="col-sm-offset-5 col-sm-20">
-      <button type="submit" class="btn btn-default">Add Supplier</button>
-    </div>
-  </div>
-</form>
-<div class="col-sm-offset-4 col-sm-35">
-<h3>Existing Supplier List</h3>
-</div>
-<div class="col-sm-offset-2 col-sm-20">
-	<c:if test="${!empty supplierList}">
+${msg}
+	<h3>Add Supplier</h3>
+	<c:url var="addAction" value="/AddSupplier_add"></c:url>
+	<form:form action="${addAction}" modelAttribute="supplier"  method="post">
+		<table>
+			<tr>
+			
+		<td><form:label path="id"> <spring:message text="Enter Supplier ID" /><label class="col-sm-5 control-label"></label>	</form:label></td>
+				<c:choose>
+					<c:when test="${!empty supplier.id}">
+						<td><form:input path="id"  readonly="true" /></td>
+					</c:when>
+					<c:otherwise>
+						<td><form:input path="id" pattern=".{3,7}" required="true"
+								title="id should contains 3 to 7 characters" /></td>
+					</c:otherwise>
+				</c:choose>
+				</div>
+			<tr>
+				<td><form:label path="name" ><spring:message text="Enter Supplier Name" /><label class="col-sm-5 control-label"></label> </form:label></td>
+				<td><form:input path="name" required="true" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="address"><spring:message text="Enter Supplier Address"/><label class="col-sm-5 control-label"></label></form:label></td>
+				<td><form:input path="address" required="true" /></td>
+			</tr>
+			
+				
+			<tr>
+				<td colspan="2"><c:if test="${!empty supplier.name}">
+						<input type="submit" value="<spring:message text="Update Category"/>" />
+					</c:if> <c:if test="${empty supplier.name}">
+						<input type="submit" value="<spring:message text="Add Category"/>" />
+					</c:if></td>
+			</tr>
+			
+		</table>
+	</form:form>
+	<br>
+	<div class="col-sm-offset-3 col-sm-20">
+	<h3>Supplier List</h3>
+	</div>
+	<div class="col-sm-offset-2 col-sm-20">
+	<c:if test="${!empty supplierListGet}">
 		<table class="tg">
 			<tr>
-				<th width="150">Supplier ID</th>
-				<th width="150">Supplier Name</th>
+				<th width="200">Supplier ID</th>
+				<th width="200">Supplier Name</th>
 				<th width="200">Supplier Address</th>
-				<th width="100">Edit</th>
+				<th width="150">Edit</th>
 				<th width="150">Delete</th>
 			</tr>
-			</div>
-			<c:forEach items="${supplierList}" var="supplier">
+			<c:forEach items="${supplierListGet}" var="supplier" >
 				<tr>
 					<td>${supplier.id}</td>
 					<td>${supplier.name}</td>
 					<td>${supplier.address}</td>
-					<td><a href="<c:url value='/add_supplier_edit/${supplier.id}'/>">Edit</a></td>
+					<td><a href="<c:url value="/AddSupplier/edit?sid=${supplier.id}" />">Edit</a></td>
 					
-					<td><a href="<c:url value='/add_supplier_delete/${supplier.id}' />">Delete</a></td>
+					<td><a href="<c:url value='/AddSupplier/delete?sid=${supplier.id}' />">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>
 	</c:if>
 </body>
 </html>
+
+
+
+
+
+

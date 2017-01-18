@@ -32,8 +32,7 @@ a {
 			</a>
 				<ul class="dropdown-menu">
 					<li><a href="AddCategory">Add Category</a></li>
-					<li><a href="UpdateCategory">Update Category</a></li>
-					<li><a href="DeleteCategory">Delete Category</a></li>
+					
 				</ul></li>
 			<li class="dropdown"><a href="ManageSupplier"
 				class="dropdown-toggle" data-toggle="dropdown" role="button">Manage
@@ -41,8 +40,7 @@ a {
 			</a>
 				<ul class="dropdown-menu">
 					<li><a href="AddSupplier">Add Supplier</a></li>
-					<li><a href="UpdateSupplier">Update Supplier</a></li>
-					<li><a href="DeleteSupplier">Delete Supplier</a></li>
+					
 				</ul></li>
 			<li class="dropdown"><a href="ManageProduct"
 				class="dropdown-toggle" data-toggle="dropdown" role="button">Manage
@@ -50,8 +48,7 @@ a {
 			</a>
 				<ul class="dropdown-menu">
 					<li><a href="AddProduct">Add Product</a></li>
-					<li><a href="UpdateProduct">Update Product</a></li>
-					<li><a href="DeleteProduct">Delete Product</a></li>
+					
 				</ul></li>
 	</div>
 </body>

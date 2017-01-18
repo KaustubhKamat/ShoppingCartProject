@@ -28,12 +28,6 @@ font-size: medium;
 		<div class="form-group">
 			<a href="AddSupplier" class="col-md-6 control-label">Add Product</a>
 			</div>
-		<div class="form-group">
-			<a href="DeleteSupplier" class="col-md-6 control-label">Delete Product</a>
-			</div>
-		<div class="form-group">
-			<a href="UpdateSupplier" class="col-md-6 control-label">Update Product</a>
-			</div>
-			</form>
+					</form>
 </body>
 </html>

@@ -40,37 +40,27 @@ public class SupplierController {
 	
 	@RequestMapping("/AddSupplier")
 	public ModelAndView showAddSupplierPage() {
+		log.debug("The method showAddSupplierPage is executed");
 		ModelAndView mv = new ModelAndView("Home");
-		mv.addObject("supplierList", supplierDAO.list());
+		mv.addObject("supplier",supplier);
+		mv.addObject("supplierListGet", supplierDAO.list());
 		mv.addObject("AdminHasClickedAddSupplier", "true");
+		log.debug("The method showAddSupplierPage is finished");
 		return mv;
 	}
 	
-	@RequestMapping("/DeleteSupplier")
-	public ModelAndView showDeleteSupplierPage() {
-		ModelAndView mv = new ModelAndView("Home");
-		mv.addObject("supplierList", supplierDAO.list());
-		mv.addObject("AdminHasClickedDeleteSupplier", "true");
-		return mv;
-	}
-	
-	@RequestMapping("/UpdateSupplier")
-	public ModelAndView showUpdateSupplierPage() {
-		ModelAndView mv = new ModelAndView("Home");
-		mv.addObject("supplierList", supplierDAO.list());
-		mv.addObject("AdminHasClickedUpdateSupplier", "true");
-		return mv;
-	}
 
 	public ModelAndView listOfSuppliers() {
 		ModelAndView mv = new ModelAndView("/Home");
 		mv.addObject("supplier", supplier);
-		mv.addObject("supplierList", supplierDAO.list());
+		mv.addObject("supplierList",supplierDAO.list());
 		mv.addObject("AdminHasClickedSupplier", "true");
 		return mv;
 	}
 
-	@RequestMapping(value ="/validate_supplier", method = RequestMethod.POST)
+	
+	//This method was for HTML forms
+	/*@RequestMapping(value ="/validate_supplier", method = RequestMethod.POST)
 	public ModelAndView processAddSupplier(@RequestParam(value="supplier_id")String id , @RequestParam(value="supplier_name")
 	String name, @RequestParam(value="supplier_address")String address) 
 	
@@ -87,18 +77,52 @@ public class SupplierController {
 			mv.addObject("ErrorSaveMessage", "SupplierNotAdded");
 		}
 		return mv;
-	}
-	@RequestMapping(value="DeleteSupplier", method=RequestMethod.POST)
-	public ModelAndView processDeleteSupplier(@ModelAttribute("command")Supplier supplier,
-	   BindingResult result) 
+	}*/
+	
+	@RequestMapping(value="/AddSupplier_add")
+	public String processAddCategory(@ModelAttribute("supplier") Supplier supplier, Model model) throws Exception
+	
 	{
-	  supplierDAO.delete((supplier));
-	  Map<String, Object> model = new HashMap<String, Object>();
-	  model.put("supplier", null);
-	  model.put("supplier", supplierDAO.list());
-	  return new ModelAndView("DeleteSupplier", model);
-	 }
+		supplierDAO.save(supplier);
+		model.addAttribute("supplier", supplier);
+		model.addAttribute("supplierList", supplierDAO.list());
+		
+		if (supplierDAO.save(supplier)== true) {
+			model.addAttribute("SuccessMessage", "You have successfully created the Supplier");
+		} else {
+			model.addAttribute("ErrorMessage", "The Supplier is not created. Please try again");
+		}
 
+		return "/Home";
+
+	}
+	
+	@RequestMapping("/AddSupplier/delete")
+	public String processDeleteCategory(@RequestParam("sid") String id, Model model) {
+		log.debug("The method process delete supplier is started");
+		boolean b = supplierDAO.delete(supplier);
+
+		if (b != true) {
+			model.addAttribute("SuccessDeleteSupplier", "SupplierIsSuccesfullyDeleted");
+		} else {
+			model.addAttribute("ErrorDeleteSupplier", "SupplierIsNotCreated");
+		}
+
+		return "forward:/AddSupplier";
+
+	}
+	
+	
+	@RequestMapping("/AddSupplier/edit")
+	public String processEditCategory(@RequestParam("sid")String id, Model model)
+	{
+		log.debug("The process Edit Category method is started");
+		supplier=supplierDAO.get(id);
+		model.addAttribute("supplier", supplier);
+		log.debug("The process Edit Category method is finished");
+		return "forward:/AddSupplier";
+	}
+	
 }
 
 
