@@ -62,7 +62,7 @@ public class UserDAOTestCase {
 	}
     
 	@SuppressWarnings("deprecation")
-	@Test
+	//@Test
 	public void saveTestCase()
 	{
 	user.setEmailid("abhi@yahoo.com");

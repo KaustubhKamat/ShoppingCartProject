@@ -1,2 +1,8 @@
-com\niit\ShoppingCart\DAO\temp\UserDAO.class
+controller\AdminController.class
+controller\SupplierController.class
 controller\HomeController.class
+controller\AddCategory.class
+controller\CategoryController.class
+controller\UserController.class
+controller\ProductController.class
+controller\Employee_Test_Controller.class

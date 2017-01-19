@@ -64,9 +64,8 @@ public class CategoryDAOTestCase {
 	@Test
 	@SuppressWarnings("deprecation")
 	public void getNameTestCase() {
-		category = categoryDAO.get("0107");
+		category = categoryDAO.getName("Hatchback");
 
-		Assert.assertEquals("getNameTestCase", category);
-
+		Assert.assertNotNull("getNameTestCase", category);
 	}
 }

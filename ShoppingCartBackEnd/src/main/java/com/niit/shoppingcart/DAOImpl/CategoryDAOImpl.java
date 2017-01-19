@@ -41,7 +41,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	//SELECT * FROM CATEGORY where emailid='niit' 
 	@Transactional
 	public Category validate(String id) {
-		String hql= "SELECT * FROM CATEGORY where emailid='" + id +"'";
+		String hql= "FROM CATEGORY where emailid='" + id +"'";
 		Query query=sessionFactory.getCurrentSession().createQuery(hql);
 		return (Category) query.uniqueResult();
 	}
@@ -87,10 +87,11 @@ public class CategoryDAOImpl implements CategoryDAO {
 		
 	}
 	
+	@Transactional
 	public Category getName(String name)
 	{
-		String hql= "SELECT * FROM CATEGORY where NAME='" + name +"'";
-		Query query=sessionFactory.getCurrentSession().createQuery(hql);
+		String hql1= "FROM Category WHERE name='" + name +"'";
+		Query query=sessionFactory.getCurrentSession().createQuery(hql1);
 		return (Category) query.uniqueResult();
 	
 		

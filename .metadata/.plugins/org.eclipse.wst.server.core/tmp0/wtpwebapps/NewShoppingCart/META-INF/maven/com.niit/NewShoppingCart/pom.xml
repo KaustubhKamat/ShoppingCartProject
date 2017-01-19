@@ -8,12 +8,6 @@
 	<name>NewShoppingCart Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-	<dependency>
-	<groupId>com.niit</groupId>
-  <artifactId>ShoppingCartBackEnd</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <type>jar</type>
-	</dependency>
 	
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>
@@ -70,6 +64,12 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+		<groupId>com.niit</groupId>
+  <artifactId>ShoppingCartBackEnd</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <type>jar</type>
+	</dependency>	
 	</dependencies>
 	<build>
 		<finalName>NewShoppingCart</finalName>

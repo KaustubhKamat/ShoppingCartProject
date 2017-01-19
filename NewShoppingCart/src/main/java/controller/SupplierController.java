@@ -83,7 +83,7 @@ public class SupplierController {
 	public String processAddCategory(@ModelAttribute("supplier") Supplier supplier, Model model) throws Exception
 	
 	{
-		supplierDAO.save(supplier);
+		
 		model.addAttribute("supplier", supplier);
 		model.addAttribute("supplierList", supplierDAO.list());
 		

@@ -1,6 +1,10 @@
 package controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.omg.CORBA.PUBLIC_MEMBER;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
@@ -14,15 +18,21 @@ import com.niit.shoppingcart.DAO.UserDAO;
 import com.niit.shoppingcart.DAOImpl.UserDAOImpl;
 import com.niit.shoppingcart.model.User1;
 
+import sun.print.resources.serviceui;
+
 @Controller
 @ComponentScan("com.niit.shoppingcart")
 public class HomeController {
 
+	Logger log=LoggerFactory.getLogger(HomeController.class);
 	@Autowired
 	UserDAO userDAO;
 
 	@Autowired
 	User1 user;
+	
+	@Autowired
+	public HttpSession session;
 
 	/*@RequestMapping("/")
 	public String Home() {
@@ -41,8 +51,11 @@ public class HomeController {
 
 	@RequestMapping("/Register")
 	public ModelAndView showRegistrationPage() {
+		log.debug("The method showRegistrationPage is started");
+		
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("UserHasClickedRegister", true);
+		log.debug("The method showRegistrationPage is executed");
 		return mv;
 	}
 
@@ -73,15 +86,19 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public ModelAndView Home() {
+		log.debug("The Home Method is started");
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("carousaltobedisplayed", true);
+		log.debug("The method Home is executed");
 		return mv;
 	}
 	
 	@RequestMapping("/Home")
 	public ModelAndView showHomePage() {
+		log.debug("The method showHomePage is started");
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("carousaltobedisplayed", true);
+		log.debug("The method showHomePage is executed");
 		return mv;
 	}
 	
@@ -89,15 +106,21 @@ public class HomeController {
 
 	@RequestMapping("/AboutUs")
 	public ModelAndView showAboutUsPage() {
+		log.debug("The method showAboutUsPage is started");
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("UserhasclickedAboutUs", true);
+		log.debug("The method showAboutUsPage is executed");
 		return mv;
 	}
 	
 	@RequestMapping("/Logout")
 	public ModelAndView showLogoutPage() {
+		log.debug("The method showLogoutPage is started");
 		ModelAndView mv = new ModelAndView("Home");
+		session.invalidate();
 		mv.addObject("UserhasclickedLogout", true);
+		mv.addObject("logoutMessage", "You have successfully logged out");
+		log.debug("The method showLogoutPage is executed");
 		return mv;
 	}
 	@RequestMapping("/HatchBack")

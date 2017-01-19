@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.Category;
 import com.niit.shoppingcart.model.Supplier;
 
 @Repository
@@ -90,5 +91,16 @@ public class SupplierDAOImpl implements SupplierDAO {
 			return true;
 		}
 		return false;
+	}
+	
+	@Transactional
+	public Supplier getName(String name)
+	{
+		String hql1= "FROM Supplier WHERE name='" + name +"'";
+		Query query=sessionFactory.getCurrentSession().createQuery(hql1);
+		return (Supplier) query.uniqueResult();
+	
+		
+		
 	}
 }

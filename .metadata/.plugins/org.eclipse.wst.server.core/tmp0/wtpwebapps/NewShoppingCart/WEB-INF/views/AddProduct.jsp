@@ -19,7 +19,6 @@ table, th, td {
 
 </head>
 <body>
-	${msg}
 	<h2>Add Product</h2>
 	<c:url var="addAction" value="/AddProduct_add"></c:url>
 	<form:form action="${addAction}" modelAttribute="product"
@@ -40,8 +39,8 @@ table, th, td {
 								title="id should contains 3 to 7 characters" /></td>
 					</c:otherwise>
 				</c:choose>
-				</div>
 			<tr>
+			<form:input path="id" hidden="true"/>
 				<td><form:label path="name">
 						<spring:message text="Enter Product Name" />
 						<label class="col-sm-5 control-label"></label>
@@ -85,17 +84,16 @@ table, th, td {
 					</form:label></td>
 				<td><form:input path="stock" required="true" /></td>
 			</tr>
-			<tr>
+			 <tr>
 				<td align="left"><form:label path="image">
 						<spring:message text=" Image" />
 					</form:label></td>
 				<td align="left"><form:input type="file" name="image"
 						path="image" /></td>
-			</tr>
+			</tr> 
 			<tr>
 				<td colspan="2"><c:if test="${!empty product.name}">
-						<input type="submit"
-							value="<spring:message text="Update Product"/>" />
+						<input type="submit" value="<spring:message text="Edit Product"/>" />
 					</c:if> <c:if test="${empty product.name}">
 						<input type="submit" value="<spring:message text="Add Product"/>" />
 					</c:if></td>
