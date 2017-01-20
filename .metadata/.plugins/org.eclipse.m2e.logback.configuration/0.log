@@ -23600,3 +23600,7 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2017-01-19 22:57:55,610 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-01-19 22:57:55,611 [Worker-136] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-01-19 22:57:55,612 [Worker-136] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\NewShoppingCart\src\test\resources
+2017-01-20 10:39:35,338 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 10:39:35,383 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-20 10:39:35,387 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 10:39:35,387 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Shopping Cart New Project\NewShoppingCart\src\test\resources
