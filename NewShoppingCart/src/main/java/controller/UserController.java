@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -132,5 +133,27 @@ public class UserController {
 		return mv;
 	}
 
+	@RequestMapping("/LoginError")
+	public ModelAndView showLoginError(Model model)
+	{
+		ModelAndView mv=new ModelAndView("Home");
+		log.debug("The method getLoginError is started");
+		model.addAttribute("ErrorLoginMessage", "LoginError");
+		log.debug("The method getLoginError has been ended");
+		return mv;			
+	}
+	
+	
+	@RequestMapping("/AccessDenied")
+	public ModelAndView showAccessDeniedPage(Model model)
+	{
+		ModelAndView mv=new ModelAndView("Home");
+		log.debug("The method showAccessDeniedPage has been started");
+	    model.addAttribute("AccessDeniedError", "The Admin can only access this page");
+		
+		return null;
+		
+	}
+	
 }
 

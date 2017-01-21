@@ -77,4 +77,6 @@ public class ApplicationContextConfig {
 	    resolver.setDefaultEncoding("utf-8");
 	    return resolver;
 	}
+	
+
 }

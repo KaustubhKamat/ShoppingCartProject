@@ -78,13 +78,17 @@ public class ProductController {
 		{
 			log.debug("The method processaddproduct is started ");
 			category=categoryDAO.getName(product.getCategory().getName());
-			supplier=supplierDAO.getName(product.getSupplier().getName());
+			//supplier=supplierDAO.getName(product.getSupplier().getName());
 			
+			supplier=supplierDAO.getName(product.getCategory().getName());
 			product.setCategory(category);
 			product.setSupplier(supplier);
 			
+			
+			//product.setSupplier_id(supplier.getId());
 			product.setCategory_id(category.getid());
-			product.setSupplier_id(supplier.getId());
+			
+			product.setId(product.getId());
 			productDAO.save(product);
 			
             FileUtil.imageUpload(path, file, product.getId()+ ".jpg");

@@ -75,11 +75,19 @@ public class SupplierDAOTestCase {
 		Assert.assertEquals("length check", 12, size);
 		
 	}
-	@Test
+	//@Test
 	@SuppressWarnings("deprecation")
 	public void getNameTestCase() {
 		
-		supplier=supplierDAO.getName("ABC Motors");
+		supplier=supplierDAO.getName("Chougule Motors");
+
+		Assert.assertNotNull("getNameTestCase", supplier);
+	}
+	@Test
+	@SuppressWarnings("deprecation")
+	public void getIdTestCase() {
+		
+		supplier=supplierDAO.get("S014");
 
 		Assert.assertNotNull("getNameTestCase", supplier);
 	}
