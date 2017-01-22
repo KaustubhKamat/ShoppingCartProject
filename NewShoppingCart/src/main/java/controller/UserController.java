@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -155,5 +156,18 @@ public class UserController {
 		
 	}
 	
+	@RequestMapping("/Logout")
+	public ModelAndView showLogoutPage() {
+		log.debug("The method showLogoutPage is started");
+		ModelAndView mv = new ModelAndView("Home");
+		session.invalidate();
+		session.setAttribute("category", category);
+		session.setAttribute("product", product);
+		session.setAttribute("categoryList", categoryDAO.list());
+		mv.addObject("UserhasclickedLogout", true);
+		mv.addObject("logoutMessage", "You have successfully logged out");
+		log.debug("The method showLogoutPage is executed");
+		return mv;
+	}
 }
 

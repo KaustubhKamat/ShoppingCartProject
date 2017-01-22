@@ -59,6 +59,7 @@ public class HomeController {
 		return mv;
 	}
 
+	//This method is moved in user controller
 	/*@RequestMapping("/validate")
 	public ModelAndView validate(@RequestParam("Emailid") String Emailid, @RequestParam("password") String password) {
 		System.out.println("In Validate method");
@@ -113,16 +114,7 @@ public class HomeController {
 		return mv;
 	}
 	
-	@RequestMapping("/Logout")
-	public ModelAndView showLogoutPage() {
-		log.debug("The method showLogoutPage is started");
-		ModelAndView mv = new ModelAndView("Home");
-		session.invalidate();
-		mv.addObject("UserhasclickedLogout", true);
-		mv.addObject("logoutMessage", "You have successfully logged out");
-		log.debug("The method showLogoutPage is executed");
-		return mv;
-	}
+	
 	@RequestMapping("/HatchBack")
 	public ModelAndView showHatchBackPage() {
 		ModelAndView mv = new ModelAndView("HatchBack");

@@ -17,16 +17,8 @@
 	background-color: silver;;
 	background-image: none;
 }
-${
-LoggedInUser
-}
-{
-color
-:
- 
-white
-;
-
+.LoggedInUser{
+color: white;
 
 }
 </style>

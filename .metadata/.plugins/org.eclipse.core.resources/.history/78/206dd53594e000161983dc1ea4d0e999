@@ -1,0 +1,18 @@
+package com.niit.shoppingcart.model;
+
+import java.io.Serializable;
+
+public class Order implements Serializable {
+
+	public String id;
+	
+	public String orderId;
+	
+	public ShippingAddress shippingAddress;
+	
+	public BillingAddress billingAddress;
+	
+	
+	
+	
+}

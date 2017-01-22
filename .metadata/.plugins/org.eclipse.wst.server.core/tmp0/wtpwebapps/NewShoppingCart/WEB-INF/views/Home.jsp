@@ -45,7 +45,7 @@ h4 {
 	</c:if>
 	
 	<c:if test="${UserhasclickedLogout==true}">
-		<jsp:include page="Home.jsp"></jsp:include>
+      ${logoutMessage}
 	</c:if>
 
 	<c:if test="${UserhasclickedAboutUs==true}">
