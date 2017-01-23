@@ -41,6 +41,7 @@ table, th, td {
 				</c:choose>
 			<tr>
 			<form:input path="id" hidden="true"/>
+			
 				<td><form:label path="name">
 						<spring:message text="Enter Product Name" />
 						<label class="col-sm-5 control-label"></label>

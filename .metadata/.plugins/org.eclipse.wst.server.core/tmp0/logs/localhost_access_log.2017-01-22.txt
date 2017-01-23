@@ -200,3 +200,14 @@
 0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:25:44 +0530] "GET /NewShoppingCart/resources/Images/swift1.jpg HTTP/1.1" 200 12363
 0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:25:44 +0530] "GET /NewShoppingCart/resources/Images/alto800.jpg HTTP/1.1" 200 23185
 0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:25:48 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 6820
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:37:57 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 6821
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:40:47 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 6794
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:06 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 6793
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:11 +0530] "GET /NewShoppingCart/Home HTTP/1.1" 200 6317
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:11 +0530] "GET /NewShoppingCart/resources/Images/Ciaz%201.jpg HTTP/1.1" 200 373767
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:11 +0530] "GET /NewShoppingCart/resources/Images/Celerio1.jpg HTTP/1.1" 200 145578
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:11 +0530] "GET /NewShoppingCart/resources/Images/ertiga.jpg HTTP/1.1" 200 239705
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:11 +0530] "GET /NewShoppingCart/resources/Images/baleno.jpg HTTP/1.1" 200 370857
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:11 +0530] "GET /NewShoppingCart/resources/Images/swift.jpg HTTP/1.1" 200 147522
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:11 +0530] "GET /NewShoppingCart/resources/Images/wagnor.jpg HTTP/1.1" 200 1201585
+0:0:0:0:0:0:0:1 - - [22/Jan/2017:21:41:48 +0530] "GET /NewShoppingCart/login HTTP/1.1" 200 6793

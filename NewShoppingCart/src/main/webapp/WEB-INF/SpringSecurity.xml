@@ -5,15 +5,15 @@
 						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 	
 	<http auto-config="true">
-		<intercept-url pattern="/Add**" access="hasRole('Admin')" /> 
+		<intercept-url pattern="/Add**" access="hasRole('Role_Admin')" /> 
 		<intercept-url pattern="/MyCart" access="hasRole('Customer')" />
 		<!-- <intercept-url pattern="/" access="ROLE_ADMIN" /> -->
 
 
-		<form-login login-page='/Login' username-parameter="id"
-			password-parameter="Password" default-target-url="/LoginError"
-			authentication-failure-url="/AccessDenied" />
-		<logout logout-success-url="/Logout" />
+		<form-login login-page='/login' username-parameter="username"
+			password-parameter="password" authentication-failure-url="/LoginError" />
+			<access-denied-handler error-page="/AccessDenied"/>
+		<logout logout-url="/Logout" />
 	</http>
 <!-- 
 	<authentication-manager> <authentication-provider> <user-service> <user 
@@ -24,10 +24,9 @@
 	<authentication-manager>
 		<authentication-provider>
 			<jdbc-user-service data-source-ref="dataSource"
-				users-by-username-query="select id,Password, 'true' as enabled from user1 where id=?"
-				authorities-by-username-query="select id, role from user1 where id =?  " />
+				users-by-username-query="select emailid,Password, 'true' as enabled from user1 where emailid=?"
+				authorities-by-username-query="select emailid, role from user1 where emailid =?  " />
 		</authentication-provider>
 	</authentication-manager>
 
 </b:beans>
- 

@@ -63,7 +63,8 @@ public class ProductController {
 		return mv;
 	}
 
-	public ModelAndView listOfProducts() {
+	@RequestMapping("/AddProduct/getList")
+	public ModelAndView showlistOfProducts() {
 		ModelAndView mv = new ModelAndView("/Home");
 		mv.addObject("product", product);
 		mv.addObject("productList", productDAO.list());

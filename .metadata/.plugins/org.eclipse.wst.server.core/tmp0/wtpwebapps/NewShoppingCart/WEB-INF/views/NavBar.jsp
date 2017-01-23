@@ -42,14 +42,15 @@ color: white;
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<!--  <li class="active"><a href=>Link <span class="sr-only">(current)</span></a></li> -->
-				<li class="dropdown"><a href="Category" class="dropdown-toggle"
-					data-toggle="dropdown" role="button">Shop by Category <span
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" >Category<span
 						class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="HatchBack">Hatchback</a></li>
-						<li><a href="Sedan">Sedan</a></li>
-						<li><a href="SUV">SUV</a></li>
-					</ul></li>
+					<ul class="dropdown-menu" role="menu">
+					<c:forEach items="${productList}" var="product">
+						<li><a href="/AddProduct/getList?pid=${product.id}">${product.name}</a></li>
+						
+						</c:forEach>
+					</ul> </li>		
 			</ul>
 			<form class="navbar-form navbar-left">
 

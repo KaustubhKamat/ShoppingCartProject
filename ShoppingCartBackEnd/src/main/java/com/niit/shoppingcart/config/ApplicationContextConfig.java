@@ -16,6 +16,8 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import com.niit.shoppingcart.model.Category;
 import com.niit.shoppingcart.model.Employee_Test;
+import com.niit.shoppingcart.model.Order;
+import com.niit.shoppingcart.model.OrderWebFlow;
 import com.niit.shoppingcart.model.Product;
 import com.niit.shoppingcart.model.Supplier;
 import com.niit.shoppingcart.model.User1;
@@ -60,6 +62,8 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Category.class);
 		sessionBuilder.addAnnotatedClass(Product.class);
 		sessionBuilder.addAnnotatedClass(Employee_Test.class);
+		sessionBuilder.addAnnotatedClass(Order.class);
+		sessionBuilder.addAnnotatedClass(OrderWebFlow.class);
         return sessionBuilder.buildSessionFactory();
 		
 	}

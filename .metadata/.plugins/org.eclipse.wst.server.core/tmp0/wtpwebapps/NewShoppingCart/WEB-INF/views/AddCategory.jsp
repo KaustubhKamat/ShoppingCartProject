@@ -38,6 +38,7 @@ ${msg}
 				</div>
 			<tr>
 			<form:input path="id" hidden="true"></form:input>
+			
 				<td><form:label path="name" >	<spring:message text="Enter Name" /><label class="col-sm-5 control-label"></label> </form:label></td>
 				<td><form:input path="name" required="true" /></td>
 			</tr>
