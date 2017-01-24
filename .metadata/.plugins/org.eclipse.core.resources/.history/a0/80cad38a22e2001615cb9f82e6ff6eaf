@@ -1,0 +1,8 @@
+package com.niit.shoppingcart.DAO;
+
+import java.util.*;
+
+public interface CartDAO {
+
+	public List
+}

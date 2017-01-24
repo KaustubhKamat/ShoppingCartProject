@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import com.niit.shoppingcart.model.Cart;
 import com.niit.shoppingcart.model.Category;
 import com.niit.shoppingcart.model.Employee_Test;
 import com.niit.shoppingcart.model.Order;
@@ -64,6 +65,7 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Employee_Test.class);
 		sessionBuilder.addAnnotatedClass(Order.class);
 		sessionBuilder.addAnnotatedClass(OrderWebFlow.class);
+		sessionBuilder.addAnnotatedClass(Cart.class);
         return sessionBuilder.buildSessionFactory();
 		
 	}

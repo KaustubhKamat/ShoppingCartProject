@@ -1,0 +1,7 @@
+package com.niit.shoppingcart.DAO;
+
+
+public interface CartDAO {
+
+	public List
+}

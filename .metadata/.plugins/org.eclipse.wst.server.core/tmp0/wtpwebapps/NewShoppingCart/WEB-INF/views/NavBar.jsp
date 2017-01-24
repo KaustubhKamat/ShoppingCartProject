@@ -46,7 +46,7 @@ color: white;
 					data-toggle="dropdown" >Category<span
 						class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-					<c:forEach items="${productList}" var="product">
+					<c:forEach items="${categoryList}" var="category">
 						<li><a href="/AddProduct/getList?pid=${product.id}">${product.name}</a></li>
 						
 						</c:forEach>

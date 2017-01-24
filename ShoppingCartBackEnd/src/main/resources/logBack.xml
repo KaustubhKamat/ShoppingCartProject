@@ -1,20 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-	<timestamp key="byDay" datePattern="yyyyMMdd'T'HHmmss" />
+<?xml version="1.0"?>
 
-	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+<configuration>
+
+	<timestamp datePattern="yyyyMMdd'T'HHmmss" key="byDay" />
+	<appender class="ch.qos.logback.core.ConsoleAppender" name="STDOUT">
 		<encoder>
-			<Pattern>%d{HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
-			</Pattern>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
 		</encoder>
 	</appender>
 
-	<logger name="com.mkyong.web" level="debug" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
+	<appender class="ch.qos.logback.core.FileAppender" name="FILE">
+		<file> D:\Shopping Cart New Project\log-${byDay}.txt </file>
+		<append>true</append>
 
-	<root level="error">
+
+
+		<encoder>
+
+			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n
+			</pattern>
+
+		</encoder>
+
+	</appender>
+
+	<!-- fatal, error, debug, warn , info -->
+
+
+	<root level="debug">
+
+		<appender-ref ref="FILE" />
+
 		<appender-ref ref="STDOUT" />
+
 	</root>
 
 </configuration>

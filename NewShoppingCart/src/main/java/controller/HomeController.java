@@ -14,8 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.shoppingcart.DAO.CategoryDAO;
+import com.niit.shoppingcart.DAO.ProductDAO;
 import com.niit.shoppingcart.DAO.UserDAO;
 import com.niit.shoppingcart.DAOImpl.UserDAOImpl;
+import com.niit.shoppingcart.model.Category;
+import com.niit.shoppingcart.model.Product;
 import com.niit.shoppingcart.model.User1;
 
 import sun.print.resources.serviceui;
@@ -27,7 +31,20 @@ public class HomeController {
 	Logger log=LoggerFactory.getLogger(HomeController.class);
 	@Autowired
 	UserDAO userDAO;
-
+	
+	@Autowired
+	CategoryDAO categoryDAO;
+	
+	@Autowired
+	Category category;
+	
+	@Autowired
+	ProductDAO productDAO;
+	
+	@Autowired
+	Product product;
+	
+	
 	@Autowired
 	User1 user;
 	
@@ -99,6 +116,9 @@ public class HomeController {
 		log.debug("The method showHomePage is started");
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("carousaltobedisplayed", true);
+		session.setAttribute("categoryList",categoryDAO.list() );
+		session.setAttribute("category", category);
+		session.setAttribute("productList", productDAO.list());
 		log.debug("The method showHomePage is executed");
 		return mv;
 	}

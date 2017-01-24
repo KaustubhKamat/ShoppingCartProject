@@ -1,0 +1,27 @@
+package com.niit.shoppingcart.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
+@Table
+public class Cart implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
+	public long id;
+	
+	public String product_name;
+	
+	@Column
+	public Date date;
+	
+	
+}

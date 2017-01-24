@@ -1,0 +1,16 @@
+package com.niit.shoppingcart.DAO;
+
+import java.util.*;
+
+import org.springframework.security.web.context.SaveContextOnUpdateOrErrorResponseWrapper;
+
+import com.niit.shoppingcart.model.Cart;
+
+public interface CartDAO {
+
+	public List<Cart> list(long id);
+	
+	public Save(Cart cart);
+	
+	
+}

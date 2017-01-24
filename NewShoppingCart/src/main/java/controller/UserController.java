@@ -28,7 +28,7 @@ import com.niit.shoppingcart.model.User1;
 @ComponentScan("com.niit.shoppingcart")
 public class UserController {
 
-	public static Logger log = LoggerFactory.getLogger("UserController.class");
+	public static Logger log = LoggerFactory.getLogger(UserController.class);
 
 	@Autowired
 	UserDAO userDAO;
@@ -59,8 +59,12 @@ public class UserController {
 
 	@RequestMapping("/login")
 	public ModelAndView showLoginPage() {
+		log.debug("Starting the method showLoginPage");
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("UserHasClickedLogin", true);
+		mv.addObject("categoryList",categoryDAO.list() );
+		mv.addObject("productList", productDAO.list());
+		log.debug("The method showLoginPage has been executed");
 		return mv;
 
 	}
@@ -111,6 +115,7 @@ public class UserController {
 
 		}
 
+		log.debug("Ending the method validate");
 		return mv;
 	}
 
@@ -119,6 +124,7 @@ public class UserController {
 	String mobile, @RequestParam(value="EmailId")String emailid, @RequestParam(value="password")String password ) 
 	
 	{
+		log.debug("Starting the method user_register");
 		ModelAndView mv = new ModelAndView("Home");
 		
 		user.setName(name);
@@ -131,6 +137,7 @@ public class UserController {
 		} else {
 			mv.addObject("UserErrorSaveMessage", "New User not added. Please try Again");
 		}
+		log.debug("Ending the method user_register");
 		return mv;
 	}
 
