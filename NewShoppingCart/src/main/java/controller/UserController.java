@@ -171,6 +171,7 @@ public class UserController {
 		session.setAttribute("category", category);
 		session.setAttribute("product", product);
 		session.setAttribute("categoryList", categoryDAO.list());
+		session.setAttribute("productList", productDAO.list());
 		mv.addObject("UserhasclickedLogout", true);
 		mv.addObject("logoutMessage", "You have successfully logged out");
 		log.debug("The method showLogoutPage is executed");

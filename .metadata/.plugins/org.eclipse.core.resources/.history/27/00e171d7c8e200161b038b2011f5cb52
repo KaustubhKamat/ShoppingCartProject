@@ -1,0 +1,73 @@
+package com.niit.shoppingcart;
+
+
+
+import org.junit.BeforeClass;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.CartDAO;
+import com.niit.shoppingcart.model.Cart;
+
+import junit.framework.Assert;
+
+public class CartDAOTestCase {
+
+	@Autowired
+	static CartDAO cartDAO;
+
+	@Autowired
+	static Cart cart;
+
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+
+	@BeforeClass
+	public static void init() {
+		context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+
+		cartDAO =  (CartDAO) context.getBean("cartDAOImpl");
+		cart = (Cart) context.getBean("cart");
+	}
+
+	//@Test
+	@SuppressWarnings("deprecation")
+	public void saveTestCase() {
+		cart.setId(100L);
+		cart.setEmailid("kaustubh235@gmail.com");
+		cart.setProduct_name("Maruti Ritz");
+		cart.setQuantity("5");
+		cart.setTotal_Price("50000");
+
+		Assert.assertEquals("saveTestCase", cartDAO.Save(cart));
+	}
+
+	@SuppressWarnings("deprecation")
+	//@Test
+	public void updateTestCase() {
+		category = categoryDAO.get("1234");
+		category.setName("Ritz");
+
+		Assert.assertEquals("updateTestCase", true, categoryDAO.update(category));
+
+	}
+	
+	//@Test
+	@SuppressWarnings("deprecation")
+	public void deleteTestCase() {
+		category = categoryDAO.get("0102");
+
+		Assert.assertEquals("deleteTestCase", true, categoryDAO.delete(category));
+
+	}
+	@Test
+	@SuppressWarnings("deprecation")
+	public void getNameTestCase() {
+		category = categoryDAO.getName("Hatchback");
+
+		Assert.assertNotNull("getNameTestCase", category);
+	}
+}
+

@@ -5,24 +5,48 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
 @Entity
 @Component
-@Table
+@Table(name="cart")
 public class Cart implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
-	public String id;
+	@Id
+	public Long id;
 	
-	public String getId() {
+	@Column
+	public String emailid;
+
+	@Column
+	public String Total_Price;
+	
+	public String getTotal_Price() {
+		return Total_Price;
+	}
+
+	public void setTotal_Price(String total_Price) {
+		Total_Price = total_Price;
+	}
+
+	public String getEmailid() {
+		return emailid;
+	}
+
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -34,18 +58,10 @@ public class Cart implements Serializable{
 		this.product_name = product_name;
 	}
 
-	public Date getDate() {
-		return date;
-	}
-
-	public void setDate(Date date) {
-		this.date = date;
-	}
 
 	public String product_name;
 	
-	@Column
-	public Date date;
+	
 	
 	public String Quantity;
 

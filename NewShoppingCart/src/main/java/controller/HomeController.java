@@ -119,6 +119,7 @@ public class HomeController {
 		session.setAttribute("categoryList",categoryDAO.list() );
 		session.setAttribute("category", category);
 		session.setAttribute("productList", productDAO.list());
+		session.setAttribute("category.product", productDAO.list());
 		log.debug("The method showHomePage is executed");
 		return mv;
 	}

@@ -1,7 +1,0 @@
-package com.niit.shoppingcart.DAOImpl;
-
-import com.niit.shoppingcart.DAO.CartDAO;
-
-public class CartDAOImpl implements CartDAO {
-
-}

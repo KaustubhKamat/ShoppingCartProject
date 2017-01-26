@@ -68,6 +68,7 @@ public class ProductController {
 		ModelAndView mv = new ModelAndView("/Home");
 		mv.addObject("product", product);
 		mv.addObject("productList", productDAO.list());
+		mv.addObject("category.product", productDAO.list());
 		mv.addObject("AdminHasClickedProducts", "true");
 		return mv;
 	}

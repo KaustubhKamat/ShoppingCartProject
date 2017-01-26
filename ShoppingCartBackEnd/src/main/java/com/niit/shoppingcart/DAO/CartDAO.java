@@ -14,7 +14,7 @@ public interface CartDAO {
 	
 	public boolean Delete(String id);
 	
-	public String getTotalAmount(String emailid);
+	public long getTotalAmount(String emailid);
 	
 	
 }

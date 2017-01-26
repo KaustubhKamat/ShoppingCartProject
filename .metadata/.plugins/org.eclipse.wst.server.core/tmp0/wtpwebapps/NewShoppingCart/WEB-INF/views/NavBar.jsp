@@ -42,15 +42,17 @@ color: white;
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<!--  <li class="active"><a href=>Link <span class="sr-only">(current)</span></a></li> -->
+				<c:forEach items="${categoryList}" var="category">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown" >Category<span
+					data-toggle="dropdown" >${category.name} <span
 						class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-					<c:forEach items="${categoryList}" var="category">
+					<c:forEach items="${productList}" var="product">
 						<li><a href="/AddProduct/getList?pid=${product.id}">${product.name}</a></li>
 						
 						</c:forEach>
-					</ul> </li>		
+					</ul> </li>
+					</c:forEach>
 			</ul>
 			<form class="navbar-form navbar-left">
 
