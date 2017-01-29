@@ -44,7 +44,6 @@
 <fullyQualifiedTypeName name="org.springframework.security.web.context.SaveContextOnUpdateOrErrorResponseWrapper"/>
 <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.slf4j.Logger"/>
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="com.niit.shoppingcart.DAOImpl.CartDAOImpl"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
 </qualifiedTypeNameHistroy>

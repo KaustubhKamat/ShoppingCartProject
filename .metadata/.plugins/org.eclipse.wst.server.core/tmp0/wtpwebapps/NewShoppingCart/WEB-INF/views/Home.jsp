@@ -40,6 +40,10 @@ h4 {
 		<jsp:include page="Carousel.jsp"></jsp:include>
 	</c:if>
 	
+	<c:if test="${UserhasclickedCategoryList==true}">
+		<jsp:include page="CategoryList.jsp"></jsp:include>
+	</c:if>
+	
 	<c:if test="${UserHasClickedLogin==true}">
 		<jsp:include page="Login.jsp"></jsp:include>
 	</c:if>

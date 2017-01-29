@@ -14,8 +14,7 @@
 		<intercept-url pattern="/MyCart" access="hasRole('Role_Customer')" />
 		<!-- <intercept-url pattern="/" access="ROLE_ADMIN" /> -->
 
-		<form-login login-page='/login' username-parameter="username"
-			password-parameter="password"  authentication-failure-url="/AccessDenied" />
+		<form-login login-page='/login' authentication-success-forward-url="/validate/" authentication-failure-url="/AccessDenied" />
 		<logout logout-url="/NavBar/Logout" />
 	</http>
 	

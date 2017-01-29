@@ -28,7 +28,7 @@ import sun.print.resources.serviceui;
 @ComponentScan("com.niit.shoppingcart")
 public class HomeController {
 
-	Logger log=LoggerFactory.getLogger(HomeController.class);
+	public static Logger log=LoggerFactory.getLogger(HomeController.class);
 	@Autowired
 	UserDAO userDAO;
 	
@@ -72,6 +72,9 @@ public class HomeController {
 		
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("UserHasClickedRegister", true);
+		session.setAttribute("categoryList",categoryDAO.list() );
+		session.setAttribute("category", category);
+		session.setAttribute("productList", productDAO.list());
 		log.debug("The method showRegistrationPage is executed");
 		return mv;
 	}
@@ -107,6 +110,9 @@ public class HomeController {
 		log.debug("The Home Method is started");
 		ModelAndView mv = new ModelAndView("Home");
 		mv.addObject("carousaltobedisplayed", true);
+		session.setAttribute("categoryList",categoryDAO.list() );
+		session.setAttribute("category", category);
+		session.setAttribute("productList", productDAO.list());
 		log.debug("The method Home is executed");
 		return mv;
 	}
@@ -130,11 +136,25 @@ public class HomeController {
 	public ModelAndView showAboutUsPage() {
 		log.debug("The method showAboutUsPage is started");
 		ModelAndView mv = new ModelAndView("Home");
+		session.setAttribute("categoryList",categoryDAO.list() );
+		session.setAttribute("category", category);
+		session.setAttribute("productList", productDAO.list());
 		mv.addObject("UserhasclickedAboutUs", true);
 		log.debug("The method showAboutUsPage is executed");
 		return mv;
 	}
 	
+	@RequestMapping("/CategoryList")
+	public ModelAndView showCategoryListPage() {
+		log.debug("The method showCategoryListPage is started");
+		ModelAndView mv = new ModelAndView("Home");
+		session.setAttribute("categoryList",categoryDAO.list() );
+		session.setAttribute("category", category);
+		session.setAttribute("productList", productDAO.list());
+		mv.addObject("UserhasclickedCategoryList", true);
+		log.debug("The method showCategoryListPage is executed");
+		return mv;
+	}
 	
 	@RequestMapping("/HatchBack")
 	public ModelAndView showHatchBackPage() {
