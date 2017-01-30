@@ -14,36 +14,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 <style >
-body {
-    font-family:sans-serif;
+    ul {
+    list-style: square;
     font-size:medium;
-    text-align: center;
-}
-
-#main { background: #eee }
-#indexLeftColumn {
-    height: 400px;
-    width: 350px;
-    float: left;
-}
-
-#indexRightColumn {
-    height: 400px;
-    width: 800px;
-    float: left;
-  
-}
-
-.categoryBox {
-    height: 300px;
-    width: 300px;
-    margin: 40px 50px 30px;
-    float: inherit;
-}
-
-.categoryLabelText {
-    line-height: 150%;
-    font-size: medium;
+    padding: 7px;
+    margin: 5px;
+    display: compact;
 }
 }
 
@@ -53,41 +29,24 @@ body {
 <body>
  <div id="main">
         
-        
-        <div id="indexLeftColumn">
-           <div id="welcomeText">
-        <p>You are In HatchBack Section of Category</p>
-    </div>
-        </div>
-
-        <div id="indexRightColumn">
-            <div class="categoryBox">
-        <a href="Wagonr.jsp">
-        <img src="resources/Images/WagonR1.jpg" alt="Wagonr" >
-            <span class="categoryLabelText">Wagonr</span>
-        </a>
-    </div>
-    <div class="categoryBox">
-        <a href="Celerio">
-        <img src="resources/Images/Celerio2.jpg" alt="Celerio" >
-            <span class="categoryLabelText">Celerio</span>
-        </a>
-    </div>
-    <div class="categoryBox">
-        <a href="Swift">
-        <img src="resources/Images/swift1.jpg" alt="Swift" >
-            <span class="categoryLabelText">Swift</span>
-        </a>
-    </div>
-    <div class="categoryBox">
-        <a href="Alto800">
-        <img src="resources/Images/alto800.jpg" alt="Alto800" >
-            <span class="categoryLabelText">Alto 800</span>
-        </a>
-    </div>
-        </div>
-
        
-    </div>
+    <ul class="nav navbar-nav">
+			<!--  <li class="active"><a href=>Link <span class="sr-only">(current)</span></a></li> -->
+			<c:forEach items="${categoryList}" var="category">
+			<li class="dropdown"><a href="#"
+				class="dropdown-toggle" data-toggle="dropdown" role="button">${category.name}<span class="caret"></span>
+			</a> 
+				<ul class="dropdown-menu">
+				<c:forEach items="${category.products}" var="product">
+				<c:url var="SelectedProduct" value="SelectedProduct?pid=${product.id}"></c:url>
+                 <li><a href="${SelectedProduct}" >${product.name}</a></li>
+					</c:forEach>
+				</ul>
+				</li>
+				</c:forEach>
+   </ul>
+   
+   
+    </div> 
 </body>
 </html>

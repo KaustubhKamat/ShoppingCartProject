@@ -14,12 +14,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import com.niit.shoppingcart.model.BillingAddress;
 import com.niit.shoppingcart.model.Cart;
 import com.niit.shoppingcart.model.Category;
 import com.niit.shoppingcart.model.Employee_Test;
 import com.niit.shoppingcart.model.Order;
 import com.niit.shoppingcart.model.OrderWebFlow;
 import com.niit.shoppingcart.model.Product;
+import com.niit.shoppingcart.model.ShippingAddress;
 import com.niit.shoppingcart.model.Supplier;
 import com.niit.shoppingcart.model.User1;
 
@@ -66,6 +68,8 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Order.class);
 		sessionBuilder.addAnnotatedClass(OrderWebFlow.class);
 		sessionBuilder.addAnnotatedClass(Cart.class);
+		sessionBuilder.addAnnotatedClass(ShippingAddress.class);
+		sessionBuilder.addAnnotatedClass(BillingAddress.class);
         return sessionBuilder.buildSessionFactory();
 		
 	}
@@ -77,12 +81,12 @@ public class ApplicationContextConfig {
 		return transactionManager;
 	}
 
-	@Bean
+	/*@Bean
 	public CommonsMultipartResolver multipartResolver() {
 	    CommonsMultipartResolver resolver=new CommonsMultipartResolver();
 	    resolver.setDefaultEncoding("utf-8");
 	    return resolver;
-	}
+	}*/
 	
 
 }

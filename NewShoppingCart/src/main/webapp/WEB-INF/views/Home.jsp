@@ -28,6 +28,15 @@ h4 {
 	font-size: medium;
 	font-weight: bold;
 }
+#Footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
 </style>
 </head>
 <body>
@@ -35,31 +44,38 @@ h4 {
 
 
 	<jsp:include page="NavBar.jsp"></jsp:include>
-
+	
+	<!-- carousal will be displayed -->
 	<c:if test="${carousaltobedisplayed==true}">
 		<jsp:include page="Carousel.jsp"></jsp:include>
 	</c:if>
 	
+    <!-- If user clicks category list  -->
 	<c:if test="${UserhasclickedCategoryList==true}">
 		<jsp:include page="CategoryList.jsp"></jsp:include>
 	</c:if>
 	
+	<!-- If user clicks Login -->
 	<c:if test="${UserHasClickedLogin==true}">
 		<jsp:include page="Login.jsp"></jsp:include>
 	</c:if>
 	
+	<!--If user clicks logout -->
 	<c:if test="${UserhasclickedLogout==true}">
       ${logoutMessage}
 	</c:if>
 
+    <!--If user clicks About us  --> 
 	<c:if test="${UserhasclickedAboutUs==true}">
 		<jsp:include page="AboutUs.jsp"></jsp:include>
 	</c:if>
 
+    <!--If user clicks register  -->
 	<c:if test="${UserHasClickedRegister==true}">
 		<jsp:include page="Registration.jsp"></jsp:include>
 	</c:if>
 
+    <!--To display Admin page  -->
 	<c:if test="${isAdmin==true}">
 		<jsp:include page="Admin_home.jsp"></jsp:include>
 	</c:if>
@@ -103,8 +119,14 @@ h4 {
 		<jsp:include page="AddProduct.jsp"></jsp:include>
 	</c:if>
 	
+
+	<c:if test="${UserHasClickedProductListPage==true}">
+		<jsp:include page="ProductList.jsp"></jsp:include>
+	</c:if>
 	
-	
+	<c:if test="${UserHasSelectedProduct==true}">
+		<jsp:include page="SelectedProduct.jsp"></jsp:include>
+	</c:if>
 
 	<jsp:include page="Footer.jsp"></jsp:include>
  

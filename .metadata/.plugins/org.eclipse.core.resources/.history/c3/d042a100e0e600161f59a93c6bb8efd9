@@ -1,0 +1,45 @@
+package com.niit.shoppingcart;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.ShippingAddressDAO;
+import com.niit.shoppingcart.model.ShippingAddress;
+import junit.framework.Assert;
+
+@SuppressWarnings("deprecation")
+public class ShippingAddressDAOTestCase {
+
+	@Autowired
+	static ShippingAddressDAO shippingAddressDAO;
+	
+	@Autowired
+	static ShippingAddress shippingAddress;
+	
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+	
+	@BeforeClass
+	public static void init() {
+		context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+
+		shippingAddress = (ShippingAddress) context.getBean("shippingAddressDAOImpl");
+		shippingAddress= (ShippingAddress) context.getBean("ShippingAddress");
+	}
+	
+	@Test
+	public void saveTestCase() {
+		shippingAddress.setShippingAddressId("sh-101");
+		shippingAddress.setLine1("Flatno-4, AAA complex");
+		shippingAddress.setCity("Pune");
+		shippingAddress.setCountry("India");
+		shippingAddress.setPincode("890789");
+
+		Assert.assertEquals("saveTestCase", true, shippingAddressDAO.save(shippingAddress));
+	}
+
+}

@@ -1,5 +1,7 @@
 package controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +47,10 @@ public class ProductController {
 
 	@Autowired
 	public Category category;
-
+	
+	@Autowired
+	public HttpSession session;
+	
 	public String path = "webapp/resources/Images";
 
 	@RequestMapping("/AddProduct")
@@ -123,14 +128,35 @@ public class ProductController {
 	{
 		log.debug("The method processEditProduct is started");
 		product=productDAO.get(id);
-		model.addAttribute("ThisProductIsSelected", product);
+		model.addAttribute("This`ProductIsSelected", product);
 		log.debug("The method processEditCategory is execueted");
 		return "forward:/AddProduct";
 		
 	}
 
+	
+	@RequestMapping("/SelectedProduct")
+	public ModelAndView UserSelectedProduct(@RequestParam("pid")String id)
+		{
+		log.debug("ProductController --->The method SelectedProduct is started()");
+		
+			ModelAndView mv = new ModelAndView("Home");
+			product=productDAO.get(id);
+			mv.addObject("ProductID", product.id);
+			mv.addObject("ProductName", product.getName());
+			mv.addObject("product", product);
+			mv.addObject("productlist", productDAO.list());
+		    mv.addObject("UserHasSelectedProduct", "true");
+		    mv.addObject("ProductPrice", product.getPrice());
+		    
+		    log.debug("ProductController --->The method SelectedProduct has been executed");
+				return mv;
+		}
 
-}
+		
+	}
+
+
 
 		
 		

@@ -23,7 +23,7 @@
 		<evaluate
 			expression="orderWebFlow.addShippingAddress(flowScope.order,shippingAddress)"></evaluate>
 	<transition on="success" to="viewBillingDetails"></transition>
-		<!-- <transition on="fail" to="cart_checkout"></transition> -->
+    <transition on="fail" to="cart_checkout"></transition> 
 	</action-state>
 
 	<view-state id="viewBillingDetails" view="user1/billingAddress"

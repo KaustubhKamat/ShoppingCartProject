@@ -1,0 +1,93 @@
+package com.niit.shoppingcart.DAOImpl;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.hibernate.Query;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.niit.shoppingcart.DAO.ShippingAddressDAO;
+import com.niit.shoppingcart.model.ShippingAddress;
+import com.niit.shoppingcart.model.Supplier;
+
+public class ShippingAddressDAOImpl implements ShippingAddressDAO {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	public ShippingAddressDAOImpl(SessionFactory sessionFactory) {
+
+		this.sessionFactory = sessionFactory;
+	}
+	
+
+	@Transactional
+	public boolean save(Supplier supplier) {
+		
+			try {
+				sessionFactory.getCurrentSession().save(supplier);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				return false;
+				 
+			}
+		
+		return true;
+	}
+
+	@Transactional
+	public boolean update(Supplier supplier) {
+
+		try {
+			sessionFactory.getCurrentSession().update(supplier);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+
+		return true;
+	}
+
+	@Transactional
+	public boolean delete(Supplier supplier)
+	{
+		try {
+			sessionFactory.getCurrentSession().delete(supplier);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return true;
+		}
+		return false;
+	}
+
+	public boolean save(ShippingAddress shippingAddress) {
+		try {
+			sessionFactory.getCurrentSession().save(shippingAddress);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+			 
+		}
+	
+	return true;
+	}
+
+	public boolean delete(ShippingAddress shippingAddress) {
+		try {
+			sessionFactory.getCurrentSession().delete(supplier);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return true;
+		}
+		return false;
+	}
+
+	public ShippingAddress get(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

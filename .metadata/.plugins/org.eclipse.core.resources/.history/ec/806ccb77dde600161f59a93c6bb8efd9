@@ -1,0 +1,53 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.ShippingAddressDAO;
+import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.ShippingAddress;
+import com.niit.shoppingcart.model.Supplier;
+
+import junit.framework.Assert;
+
+public class ShippingAddressDAOTestCase {
+
+	@Autowired
+	static ShippingAddressDAO shippingAddressDAO;
+	
+	@Autowired
+	static ShippingAddress shippingAddress;
+	
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+	
+	@BeforeClass
+	public static void init() {
+		context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+
+		shippingAddress = (ShippingAddress) context.getBean("shippingAddressDAOImpl");
+		shippingAddress= (ShippingAddress) context.getBean("shippingAddress ");
+	}
+	
+	@SuppressWarnings("deprecation")
+	public void saveTestCase() {
+		shippingAddress.setShippingAddressId("sh-101");
+		shippingAddress.setLine1("Flatno-4, AAA complex");
+		shippingAddress.setCity("Pune");
+		shippingAddress.setCountry("India");
+		shippingAddress.setPincode("890789");
+		
+		/*supplier.setId("018");
+		supplier.setName("Abhay_Motors");
+		supplier.setAddress("Pune");*/
+
+		Assert.assertEquals("saveTestCase", true, supplierDAO.save(supplier));
+	}
+
+}
