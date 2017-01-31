@@ -12,6 +12,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -47,10 +48,10 @@ public class ProductController {
 
 	@Autowired
 	public Category category;
-	
+
 	@Autowired
 	public HttpSession session;
-	
+
 	public String path = "webapp/resources/Images";
 
 	@RequestMapping("/AddProduct")
@@ -79,84 +80,87 @@ public class ProductController {
 	}
 
 	@RequestMapping("/AddProduct_add")
-		public String processAddProduct(@ModelAttribute("product") Product product, @RequestParam("image")
-			MultipartFile file,	Model model) throws Exception
-		
-		{
-			log.debug("The method processaddproduct is started ");
-			category=categoryDAO.getName(product.getCategory().getName());
-			//supplier=supplierDAO.getName(product.getSupplier().getName());
-			
-			supplier=supplierDAO.getName(product.getCategory().getName());
-			product.setCategory(category);
-			product.setSupplier(supplier);
-			
-			
-			//product.setSupplier_id(supplier.getId());
-			product.setCategory_id(category.getid());
-			
-			product.setId(product.getId());
-			productDAO.save(product);
-			
-            FileUtil.imageUpload(path, file, product.getId()+ ".jpg");
-            log.debug("The method processAddProduct has been exceuted");
-            model.addAttribute("product",new Product());
-            model.addAttribute("productList",this.productDAO.list());
-		
-			return "/Home";
+	public String processAddProduct(@ModelAttribute("product") Product product,
+			@RequestParam("image") MultipartFile file, Model model) throws Exception
 
-		}
+	{
+		log.debug("The method processaddproduct is started ");
+		category = categoryDAO.getName(product.getCategory().getName());
+		// supplier=supplierDAO.getName(product.getSupplier().getName());
+
+		supplier = supplierDAO.getName(product.getCategory().getName());
+		product.setCategory(category);
+		product.setSupplier(supplier);
+
+		// product.setSupplier_id(supplier.getId());
+		product.setCategory_id(category.getid());
+
+		product.setId(product.getId());
+		productDAO.save(product);
+
+		FileUtil.imageUpload(path, file, product.getId() + ".jpg");
+		log.debug("The method processAddProduct has been exceuted");
+		model.addAttribute("product", new Product());
+		model.addAttribute("productList", this.productDAO.list());
+
+		return "/Home";
+
+	}
 
 	@RequestMapping("/AddProduct/delete")
-	public String processDeleteProduct(@RequestParam("pid")String id, ModelMap model )throws Exception
-	{
+	public String processDeleteProduct(@RequestParam("pid") String id, ModelMap model) throws Exception {
 		log.debug("The method processDeleteProduct has been started");
-		
-		try{
+
+		try {
 			productDAO.delete(product);
 			model.addAttribute("SuccessDeleteProduct", "ProductIsSuccesfullyDeleted");
-		}
-		catch(Exception e){
+		} catch (Exception e) {
 			model.addAttribute("ErrorDeleteProduct", "Product is not deleted");
 		}
 		return "forward:/AddProduct";
-		
+
 	}
-	
+
 	@RequestMapping("/AddProduct/edit")
-	public String processEditProduct(@RequestParam("pid")String id, Model model)
-	{
+	public String processEditProduct(@RequestParam("pid") String id, Model model) {
 		log.debug("The method processEditProduct is started");
-		product=productDAO.get(id);
+		product = productDAO.get(id);
 		model.addAttribute("This`ProductIsSelected", product);
 		log.debug("The method processEditCategory is execueted");
 		return "forward:/AddProduct";
-		
+
 	}
 
-	
 	@RequestMapping("/SelectedProduct")
-	public ModelAndView UserSelectedProduct(@RequestParam("pid")String id)
-		{
+	public ModelAndView UserSelectedProduct(@RequestParam("pid") String id) {
 		log.debug("ProductController --->The method SelectedProduct is started()");
-		
-			ModelAndView mv = new ModelAndView("Home");
-			product=productDAO.get(id);
-			mv.addObject("ProductID", product.id);
-			mv.addObject("ProductName", product.getName());
-			mv.addObject("product", product);
-			mv.addObject("productlist", productDAO.list());
-		    mv.addObject("UserHasSelectedProduct", "true");
-		    mv.addObject("ProductPrice", product.getPrice());
-		    
-		    log.debug("ProductController --->The method SelectedProduct has been executed");
-				return mv;
-		}
 
-		
+		ModelAndView mv = new ModelAndView("Home");
+		product = productDAO.get(id);
+		mv.addObject("ProductID", product.id);
+		mv.addObject("ProductName", product.getName());
+		mv.addObject("product", product);
+		mv.addObject("productlist", productDAO.list());
+		mv.addObject("UserHasSelectedProduct", "true");
+		mv.addObject("ProductPrice", product.getPrice());
+
+		log.debug("ProductController --->The method SelectedProduct is executed");
+		return mv;
 	}
 
+	/*@RequestMapping("/cart_checkout")
+	public ModelAndView UserSelectedProductCheckout() {
+		log.debug("ProductController->The method UserSelectedProductCheckout is started()");
 
+		ModelAndView mv = new ModelAndView("Home");
+		mv.addObject("ProductID", product.id);
+		mv.addObject("ProductName", product.getName());
+		mv.addObject("product", product);
+		mv.addObject("productlist", productDAO.list());
+		mv.addObject("UserClicksCheckoutButton", "true");
 
-		
-		
+		log.debug("ProductController->The method UserSelectedProductCheckout is executed");
+		return mv;
+	}*/
+
+}

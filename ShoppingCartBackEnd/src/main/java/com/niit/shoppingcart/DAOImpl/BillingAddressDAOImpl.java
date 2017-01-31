@@ -13,10 +13,10 @@ import com.niit.shoppingcart.model.BillingAddress;
 public class BillingAddressDAOImpl implements BillingAddressDAO {
 	
 	@Autowired
-	private SessionFactory  sessionFactory;
+	private SessionFactory sessionFactory;
 	
-	public BillingAddressDAOImpl(SessionFactory sessionFactory) {
-		this.sessionFactory=sessionFactory;
+	public BillingAddressDAOImpl(SessionFactory sessionFactory){
+		this.sessionFactory=sessionFactory;		
 	}
 
 	

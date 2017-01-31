@@ -1,0 +1,19 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.niit.shoppingcart.DAO.BillingAddressDAO;
+import com.niit.shoppingcart.model.BillingAddress;
+
+public class BillingAddressDAOTestCase {
+
+	@Autowired
+	static BillingAddressDAO billingAddressDAO;
+	
+	@Autowired
+	static BillingAddress billingAddress;
+
+}

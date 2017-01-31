@@ -10,7 +10,7 @@
 </head>
 <body>
     <div align="center">
-        <form:form action="shippingAddress" method="post" modelAttribute="shippingAddress">
+        <form:form action="" method="post" modelAttribute="shippingAddress">
             <table border="0">
                 <tr>
                     <td colspan="2" align="center"><h2>Shipping Address</h2></td>
@@ -33,7 +33,8 @@
                 </tr>
                 
                 <tr>
-                    <td colspan="2" align="center"><input type="submit" value="Submit" /></td>
+                    <td colspan="2" align="center"><input type="submit" name="submitShippingAddress" 
+                    value="Submit" /></td>
                 </tr>
             </table>
         </form:form>

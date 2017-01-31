@@ -1,0 +1,54 @@
+package com.niit.shoppingcart;
+
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.BillingAddressDAO;
+import com.niit.shoppingcart.model.BillingAddress;
+
+public class BillingAddressDAOTestCase {
+
+	@Autowired
+	static BillingAddressDAO billingAddressDAO;
+	
+	@Autowired
+	static BillingAddress billingAddress;
+
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+	
+	@BeforeClass
+	public static void initBillingAddress()
+	{
+		context=new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+		
+		billingAddressDAO=(BillingAddressDAO) context.getBean("billingAddressDAOImpl");
+		billingAddress=(BillingAddress) context.getBean("billingAddress");
+	}
+	
+	@Test
+	public void saveBillingAddressTestCase()
+	{
+		billingAddress.setBillingAddressId("B102");
+		billingAddress.setLine1("AAA Complex Flat no-6");
+		billingAddress.setCity("Pune");
+		billingAddress.setCountry("India");
+		billingAddress.setPincode("411051");
+		
+		Assert.assertEquals("saveBillingAddressTestCase", true, billingAddressDAO.save(billingAddress));
+	}
+	
+	@Test
+	public void deleteBillingAddressTestCase()
+	{
+		billingAddressDAO.get("B101");
+		
+		Assert.assertEquals("deleteBillingAddressTestCase", true, billingAddressDAO.delete(billingAddress));
+	}
+	
+}

@@ -2,6 +2,7 @@ package com.niit.shoppingcart.model;
 
 import java.io.Serializable;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
@@ -11,69 +12,81 @@ public class Order implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	public String id;
-	
-	public String getId() {
-		return id;
-	}
+public String Order_id;
 
-	public void setId(String id) {
-		this.id = id;
-	}
+public String getOrder_id() {
+	return Order_id;
+}
 
-	public String getOrderId() {
-		return orderId;
-	}
+public void setOrder_id(String order_id) {
+	Order_id = order_id;
+}
 
-	public void setOrderId(String orderId) {
-		this.orderId = orderId;
-	}
+public String getProduct_Name() {
+	return Product_Name;
+}
 
-	public ShippingAddress getShippingAddress() {
-		return shippingAddress;
-	}
+public void setProduct_Name(String product_Name) {
+	Product_Name = product_Name;
+}
 
-	public void setShippingAddress(ShippingAddress shippingAddress) {
-		this.shippingAddress = shippingAddress;
-	}
+public String getProduct_price() {
+	return Product_price;
+}
 
-	public BillingAddress getBillingAddress() {
-		return billingAddress;
-	}
+public void setProduct_price(String product_price) {
+	Product_price = product_price;
+}
 
-	public void setBillingAddress(BillingAddress billingAddress) {
-		this.billingAddress = billingAddress;
-	}
+public String getUser_id() {
+	return user_id;
+}
 
-	public long getTotalAmount() {
-		return totalAmount;
-	}
+public void setUser_id(String user_id) {
+	this.user_id = user_id;
+}
 
-	public void setTotalAmount(long totalAmount) {
-		this.totalAmount = totalAmount;
-	}
+public PaymentMethod getPaymentMethod() {
+	return paymentMethod;
+}
 
-	public String orderId;
-	
-	public ShippingAddress shippingAddress;
-	
-	public BillingAddress billingAddress;
-	
-	public long totalAmount;
-	
-	public String paymentMethod;
+public void setPaymentMethod(PaymentMethod paymentMethod) {
+	this.paymentMethod = paymentMethod;
+}
 
-	public String getPaymentMethod() {
-		return paymentMethod;
-	}
+public ShippingAddress getShippingAddress() {
+	return shippingAddress;
+}
 
-	public void setPaymentMethod(String paymentMethod) {
-		this.paymentMethod = paymentMethod;
-	}
-	
-	
-	
-	
-	
-	
+public void setShippingAddress(ShippingAddress shippingAddress) {
+	this.shippingAddress = shippingAddress;
+}
+
+public BillingAddress getBillingAddress() {
+	return billingAddress;
+}
+
+public void setBillingAddress(BillingAddress billingAddress) {
+	this.billingAddress = billingAddress;
+}
+
+public static long getSerialversionuid() {
+	return serialVersionUID;
+}
+
+public String Product_Name;
+
+public String Product_price;
+
+public String user_id;
+
+@Autowired
+public PaymentMethod paymentMethod;
+
+@Autowired
+public ShippingAddress shippingAddress;
+
+@Autowired
+public BillingAddress billingAddress;
+
 }

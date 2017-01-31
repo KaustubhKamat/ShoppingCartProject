@@ -1,0 +1,9 @@
+package com.niit.shoppingcart.model;
+
+import javax.persistence.Entity;
+
+@Component
+@Entity
+public class PaymentMethod {
+
+}
