@@ -1,0 +1,54 @@
+package com.niit.shoppingcart;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shoppingcart.DAO.OrderDAO;
+import com.niit.shoppingcart.DAO.SupplierDAO;
+import com.niit.shoppingcart.model.Order;
+import com.niit.shoppingcart.model.Supplier;
+
+import junit.framework.Assert;
+
+public class OrderDAOTestCase {
+
+	@Autowired
+	static OrderDAO orderDAO;
+
+	@Autowired
+	static Order order;
+
+	@Autowired
+	static AnnotationConfigApplicationContext context;
+
+	@BeforeClass
+	public static void init() {
+		context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shoppingcart");
+		context.refresh();
+
+		orderDAO=(OrderDAO) context.getBean("orderDAOImpl");
+		order=(Order) context.getBean("order");
+	}
+
+	@Test
+	@SuppressWarnings("deprecation")
+	public void saveOrderTestCase() {
+		order.setOrder_id("O101");
+		order.setUser_id("kaustubh235@gmail.com");
+		order.setProduct_Name("Maruti Ritz");
+		order.setProduct_price("2000");
+		/*order.setShippingAddress(shippingAddress);
+		order.setBillingAddress(billingAddress);
+		order.setPaymentMethod(paymentMethod);
+		*/
+		Assert.assertEquals("saveOrderTestCase", true, orderDAO.saveOrder(order));
+	}
+
+	
+}
+	

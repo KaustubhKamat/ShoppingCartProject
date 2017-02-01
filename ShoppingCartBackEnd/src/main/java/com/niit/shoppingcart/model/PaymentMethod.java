@@ -15,20 +15,20 @@ public class PaymentMethod implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public String PaymentMethod;
+	public String paymentmethod;
 
 	public String getPaymentMethod() {
-		return PaymentMethod;
+		return paymentmethod;
 	}
 
 	public void setPaymentMethod(String paymentMethod) {
-		PaymentMethod = paymentMethod;
+		paymentmethod = paymentMethod;
 	}
 	
 	@Override
 	public String toString()
 	{
-		return PaymentMethod;
+		return paymentmethod;
 		
 	}
 	

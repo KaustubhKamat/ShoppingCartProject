@@ -2,7 +2,7 @@
 <flow xmlns="http://www.springframework.org/schema/webflow"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/webflow
-                          http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.3.xsd">
 
 
 	<var name="shippingAddress" class="com.niit.shoppingcart.model.ShippingAddress" />
@@ -15,7 +15,7 @@
  	<evaluate expression="OrderWebFlow.initflow()" result="flowScope.order"></evaluate>
  </on-start>
  
- <view-state id="flowExecutor" view="shippingAddress" model="ShippingAddress"> 
+ <view-state id="flowExecutor" view="ShippingAddress" model="shippingAddress"> 
  	<transition on="submitShippingAddress" to="shippingDetails"></transition>
  </view-state>
  
@@ -26,7 +26,7 @@
  	<transition on="fail" to="cart_checkout"></transition>
  </action-state>
  
- <view-state id="viewBillingDetails" view="billingAddress" model="billingAddress">
+ <view-state id="viewBillingDetails" view="BillingAddress" model="billingAddress">
  	<transition on="submitBillingAddress" to="billingDetails"></transition>
  	<transition on="backToShippingAddress" to="cart_checkout"></transition>
  </view-state>
@@ -37,12 +37,12 @@
  	<transition on="success" to="viewPaymentDetails"></transition>
  </action-state>
  
- <view-state id="viewPaymentDetails" view="PaymentMethod" model="PaymentMethod">
+ <view-state id="viewPaymentDetails" view="PaymentMethod" model="paymentMethod">
  	<transition on="submitPaymentMethod" to="paymentDetails"></transition>
  </view-state>
  
  <action-state id="paymentDetails">
- 	<evaluate expression="OrderWebFlow.addPaymentMethod(flowScope.order,PaymentMethod)"></evaluate>
+ 	<evaluate expression="OrderWebFlow.addPaymentMethod(flowScope.order,paymentMethod)"></evaluate>
  	
  	<transition on="success" to="orderConfirm"></transition>
  </action-state>

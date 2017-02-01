@@ -24,7 +24,7 @@ button2{
 </head>
 <body>
 
- <c:set var="Images" value="webapp/resources/Images/"></c:set>
+ <c:set var="Images" value="/resources/Images/"></c:set>
   
  <div class="container col-md-8">
 			<div class="list col-md-4 ">

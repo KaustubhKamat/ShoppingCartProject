@@ -2,16 +2,21 @@ package com.niit.shoppingcart.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @Component
 @ComponentScan("com.niit.shoppingcart")
+@Entity
 public class Order implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+@Id	
 public String Order_id;
 
 public String getOrder_id() {

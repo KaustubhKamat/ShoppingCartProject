@@ -73,6 +73,7 @@ public class ShippingAddress implements Serializable {
 	@NotBlank(message="Please enter the pincode")
 	public String pincode;
 	
+	@Override
 	public String toString()
 	{
 		return Line1 + "," + city + "," + country +"," + pincode ;
