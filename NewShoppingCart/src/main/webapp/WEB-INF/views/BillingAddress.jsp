@@ -8,46 +8,67 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Billing Address</title>
 </head>
 <body>
-    <div align="center">
-        <form:form action="billingAddress" method="post" modelAttribute="billingAddress">
-            <table border="0">
-                <tr>
-                    <td colspan="2" align="center"><h2>Billing Address</h2></td>
-                </tr>
-                <tr>
-                    <td>Line 1</td>
-                    <td><form:input path="Line1" /></td>
-                </tr>
-                <tr>
-                    <td>City</td>
-                    <td><form:input path="city" /></td>
-                </tr>
-                <tr>
-                    <td>Country</td>
-                    <td><form:input path="country" /></td>
-                </tr>
-                <tr>
-                    <td>Pincode</td>
-                    <td><form:input path="pincode" /></td>
-                </tr>
-                
-                <tr>
-                    <td colspan="2" align="center"><input type="submit" value="Submit" /></td>
-                </tr>
-            </table>
-        </form:form>
-    </div>
+<h2>Please Enter the Billing Address</h2>
+
+    <form:form action="" class="well form-veritical" modelAttribute="billingAddress" >
+<div class="row">
+<div class="col-md-4">
+<label><h4><strong>Address Line1</strong></h4></label>
+</div>
+<div class="col-md-6">
+<form:input type="text" name="Line1" path="Line1" class="form-control input-lg" required="true"></form:input>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+<label><h4><strong>City</strong></h4></label>
+</div>
+<div class="col-md-6">
+<form:input type="text" name="city" path="city" required="true"  class="form-control input-lg"></form:input>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+<label><h4><strong>Country</strong></h4></label>
+</div>
+<div class="col-md-6">
+<form:input type="text" name="country" path="country" required="true"  class="form-control input-lg"></form:input>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4">
+<label><h4><strong>Pincode</strong></h4></label>
+</div>
+<div class="col-md-6">
+<form:input type="text" name="pincode" class="form-control input-lg" required="true" path="pincode" pattern="^[1-9][0-9]{5}$" title="PinCode should only contains Numbers and only 5 digits" ></form:input>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-3 col-md-offset-4">
+<input type="submit" name="_eventId_submitBillingAddress" class="btn btn-success btn-lg" value="Save">
+</div>
+<div class="col-md-3">
+<input type="submit" name="eventId_cancel" class="btn btn-danger btn-lg" value="Cancel">
+</div>
+</div>
+
+</form:form>
+
+
+
+</body>
+</html>
 </body>
 </html>

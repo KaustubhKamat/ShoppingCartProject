@@ -4,5 +4,7 @@ controller\HomeController.class
 controller\AddCategory.class
 controller\CategoryController.class
 controller\UserController.class
+com\niit\shoppingcart\util\FileUtil.class
 controller\ProductController.class
 controller\Employee_Test_Controller.class
+controller\CartController.class

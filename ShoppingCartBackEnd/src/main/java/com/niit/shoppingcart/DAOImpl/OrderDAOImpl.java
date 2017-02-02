@@ -48,7 +48,7 @@ public class OrderDAOImpl implements OrderDAO {
 	}
 
 	@Transactional
-	public Order get(String id) {
+	public Order get(int id) {
 		// TODO Auto-generated method stub
 		return (Order) sessionFactory.getCurrentSession().get(Order.class, id);
 	}

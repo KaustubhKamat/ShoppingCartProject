@@ -156,9 +156,9 @@ public class HomeController {
 		return mv;
 	}
 	
-	@RequestMapping("/HatchBack")
-	public ModelAndView showHatchBackPage() {
-		ModelAndView mv = new ModelAndView("HatchBack");
+	@RequestMapping("/ShippingAddress")
+	public ModelAndView showShippingAddressPage() {
+		ModelAndView mv = new ModelAndView("ShippingAddress");
 		return mv;
 	}
 

@@ -1,7 +1,5 @@
 package com.niit.shoppingcart.model;
 
-import javax.persistence.Entity;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +15,7 @@ public class OrderWebFlow {
 	
 	@Autowired
 	Order order;
-	
+
 
 public Order initflow()
 {

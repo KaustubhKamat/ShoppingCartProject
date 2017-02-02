@@ -8,5 +8,5 @@ public interface OrderDAO {
 	
 	public boolean deleteOrder(Order order);
 	
-	public Order get(String id);
+	public Order get(int id);
 }

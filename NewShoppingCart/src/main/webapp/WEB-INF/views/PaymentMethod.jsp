@@ -17,16 +17,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 	<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Billing Address</title>
+<title>Payment Method</title>
 </head>
 <body>
+    
+    <h2>Please Select the Payment Method</h2>
     <div align="center">
+    
+    
 <form:form modelAttribute="paymentMethod">
 <form:select path="paymentMethod">
-<form:option value="COD">Cash On Delivery</form:option>
+<form:option value="CashOnDelivery">Cash On Delivery</form:option>
 <form:option value="Credit Card/Debit Card">Credit Card/Debit Card</form:option>
 </form:select>
-           
+<input type="submit" name="_eventId_submitPaymentMethod" class="btn btn-success btn-lg" value="Save">
         </form:form>
     </div>
 </body>

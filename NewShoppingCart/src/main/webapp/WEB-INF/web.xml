@@ -18,6 +18,10 @@
 		<url-pattern>/</url-pattern>   <!-- this is changed from*.html to / -->
 	</servlet-mapping>
 
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/mvc-dispatcher-servlet.xml,  /WEB-INF/SpringSecurity.xml </param-value>
@@ -38,7 +42,5 @@
 	</filter-mapping> 
 	
 	
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
+	
 </web-app>

@@ -2,7 +2,7 @@
 <flow xmlns="http://www.springframework.org/schema/webflow"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/webflow
-                          http://www.springframework.org/schema/webflow/spring-webflow-2.3.xsd">
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
 
 	<var name="shippingAddress" class="com.niit.shoppingcart.model.ShippingAddress" />
@@ -11,8 +11,8 @@
 	<var name="order" class="com.niit.shoppingcart.model.Order" />
 	<var name="paymentMethod" class="com.niit.shoppingcart.model.PaymentMethod" />
 
-	<on-start>
- 	<evaluate expression="OrderWebFlow.initflow()" result="flowScope.order"></evaluate>
+	 <on-start>
+ 	<evaluate expression="orderWebFlow.initflow()" result="flowScope.order"></evaluate>
  </on-start>
  
  <view-state id="flowExecutor" view="ShippingAddress" model="shippingAddress"> 
@@ -20,7 +20,7 @@
  </view-state>
  
  <action-state id="shippingDetails">
-<evaluate expression="OrderWebFlow.addShippingAddress(flowScope.order,shippingAddress)"></evaluate>
+<evaluate expression="orderWebFlow.addShippingAddress(flowScope.order,shippingAddress)"></evaluate>
  	
  	<transition on="success" to="viewBillingDetails"></transition>
  	<transition on="fail" to="cart_checkout"></transition>
@@ -32,7 +32,7 @@
  </view-state>
  
  <action-state id="billingDetails">
- 	<evaluate expression="OrderWebFlow.addBillingAddress(flowScope.order,billingAddress)"></evaluate>
+ 	<evaluate expression="orderWebFlow.addBillingAddress(flowScope.order,billingAddress)"></evaluate>
  	
  	<transition on="success" to="viewPaymentDetails"></transition>
  </action-state>
@@ -42,12 +42,12 @@
  </view-state>
  
  <action-state id="paymentDetails">
- 	<evaluate expression="OrderWebFlow.addPaymentMethod(flowScope.order,paymentMethod)"></evaluate>
+ 	<evaluate expression="orderWebFlow.addPaymentMethod(flowScope.order,paymentMethod)"></evaluate>
  	
  	<transition on="success" to="orderConfirm"></transition>
  </action-state>
  
- <view-state id="orderConfirm" view="orderConfirmed" model="order">
+ <view-state id="orderConfirm" view="OrderConfirmed" model="order">
  	<transition on="finalHome" to="toHome"></transition>
   </view-state>
  

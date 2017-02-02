@@ -18,52 +18,47 @@ public class Cart implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	public Long id;
+	public String id;
 	
-	@Column
-	public String emailid;
-
-	@Column
-	public String Total_Price;
-	
-	public String getTotal_Price() {
-		return Total_Price;
-	}
-
-	public void setTotal_Price(String total_Price) {
-		Total_Price = total_Price;
-	}
-
-	public String getEmailid() {
-		return emailid;
-	}
-
-	public void setEmailid(String emailid) {
-		this.emailid = emailid;
-	}
-
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	public String getProduct_name() {
-		return product_name;
+	public String getUser_Id() {
+		return User_Id;
 	}
 
-	public void setProduct_name(String product_name) {
-		this.product_name = product_name;
+	public void setUser_Id(String user_Id) {
+		User_Id = user_Id;
 	}
 
+	public String getProduct_Name() {
+		return Product_Name;
+	}
 
-	public String product_name;
-	
-	
-	
-	public String Quantity;
+	public void setProduct_Name(String product_Name) {
+		Product_Name = product_Name;
+	}
+
+	public String getPrice() {
+		return price;
+	}
+
+	public void setPrice(String price) {
+		this.price = price;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
 	public String getQuantity() {
 		return Quantity;
@@ -72,6 +67,25 @@ public class Cart implements Serializable{
 	public void setQuantity(String quantity) {
 		Quantity = quantity;
 	}
+
+	public Date getDate_Added() {
+		return Date_Added;
+	}
+
+	public void setDate_Added(Date date_Added) {
+		Date_Added = date_Added;
+	}
+
+	public String User_Id;
 	
+	public String Product_Name;
+
+	public String price;
 	
+	public String status;
+	
+	public String Quantity;
+	
+	@Column(name="Date")
+	public Date Date_Added;
 }

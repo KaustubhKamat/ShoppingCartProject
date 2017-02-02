@@ -1,0 +1,20 @@
+package com.niit.shoppingcart.DAO;
+
+import java.util.*;
+
+import com.niit.shoppingcart.model.Cart;
+
+public interface CartDAO {
+
+	public List<Cart> list(String id);
+	
+	public boolean SaveCart(Cart cart);
+	
+	public boolean DeleteCart(String id);
+	
+	public boolean UpdateCart(Cart cart);
+	
+	public long getTotalAmount(String id);
+	
+	
+}

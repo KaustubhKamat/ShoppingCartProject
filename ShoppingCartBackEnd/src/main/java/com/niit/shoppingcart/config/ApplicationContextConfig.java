@@ -30,10 +30,11 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 
 @Configuration
-@ComponentScan
+@ComponentScan("com.niit")
 @EnableTransactionManagement
 public class ApplicationContextConfig {
 	
+	@Autowired
 	@Bean(name="dataSource")
 	public DriverManagerDataSource getDataSource()
 	{
@@ -82,7 +83,8 @@ public class ApplicationContextConfig {
 		return transactionManager;
 	}
 
-	/*@Bean
+	/*@Autowired
+	@Bean
 	public CommonsMultipartResolver multipartResolver() {
 	    CommonsMultipartResolver resolver=new CommonsMultipartResolver();
 	    resolver.setDefaultEncoding("utf-8");

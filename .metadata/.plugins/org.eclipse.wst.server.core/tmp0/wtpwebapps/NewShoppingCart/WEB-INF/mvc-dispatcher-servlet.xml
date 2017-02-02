@@ -11,19 +11,19 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-3.0.xsd
         http://www.springframework.org/schema/webflow-config
-        http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.xsd">
-       
+        http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd">
 
-	
+
+
 	<mvc:resources location="/images/" mapping="/images/**" />
 
 	<mvc:default-servlet-handler />
 
-	<context:component-scan base-package="com.niit.shoppingcart" />
-	
-<!-- <import resource="CheckOut.xml"/> -->
+	<context:component-scan base-package="controller" />
 
-	<bean
+	<!-- <import resource="CheckOut.xml"/> -->
+
+	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/views/</value>
@@ -32,33 +32,35 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
-	
+
 	<bean id="multipartResolver"
-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="100000000"/>
-    </bean>
-    
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="100000000" />
+	</bean>
+
 	<mvc:annotation-driven />
 
 	<webflow:flow-executor id="flowExecutor"></webflow:flow-executor>
-	
-	<webflow:flow-registry id="flowRegistry" flow-builder-services="flowBuilderServices" base-path="/WEB-INF">
+
+	<webflow:flow-registry id="flowRegistry"
+		flow-builder-services="flowBuilderServices" base-path="/WEB-INF">
 		<webflow:flow-location id="cart_checkout" path="/CheckOut.xml"></webflow:flow-location>
 	</webflow:flow-registry>
- 
-	<webflow:flow-builder-services id="flowBuilderServices" view-factory-creator="viewFactoryCreator" />
-	
+
+	<webflow:flow-builder-services id="flowBuilderServices"
+		view-factory-creator="viewFactoryCreator" />
+
 	<bean id="viewFactoryCreator"
-        class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator">
-        <property name="viewResolvers" ref="viewResolver" />
-    </bean>
-	
+		class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator">
+		<property name="viewResolvers" ref="viewResolver" />
+	</bean>
+
 	<bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
 		<property name="flowExecutor" ref="flowExecutor"></property>
-	</bean>	
-	
+	</bean>
+
 	<bean class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping">
 		<property name="flowRegistry" ref="flowRegistry"></property>
 		<property name="order" value="0"></property>
-	</bean>
+	</bean> 
 </beans>

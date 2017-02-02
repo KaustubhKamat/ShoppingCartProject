@@ -3,27 +3,33 @@ package com.niit.shoppingcart.model;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 @Component
 @ComponentScan("com.niit.shoppingcart")
 @Entity
+@Table(name="userorder")
 public class Order implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 @Id	
-public String Order_id;
+@GeneratedValue(strategy=GenerationType.SEQUENCE)
+public int Order_id;
 
-public String getOrder_id() {
+public int getOrder_id() {
 	return Order_id;
 }
 
-public void setOrder_id(String order_id) {
+public void setOrder_id(int order_id) {
 	Order_id = order_id;
 }
 
@@ -35,11 +41,11 @@ public void setProduct_Name(String product_Name) {
 	Product_Name = product_Name;
 }
 
-public String getProduct_price() {
+public int getProduct_price() {
 	return Product_price;
 }
 
-public void setProduct_price(String product_price) {
+public void setProduct_price(int product_price) {
 	Product_price = product_price;
 }
 
@@ -81,7 +87,7 @@ public static long getSerialversionuid() {
 
 public String Product_Name;
 
-public String Product_price;
+public int Product_price;
 
 public String user_id;
 

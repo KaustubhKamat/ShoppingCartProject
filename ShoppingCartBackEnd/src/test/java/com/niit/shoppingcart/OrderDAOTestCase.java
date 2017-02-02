@@ -34,15 +34,16 @@ public class OrderDAOTestCase {
 	@Test
 	@SuppressWarnings("deprecation")
 	public void saveOrderTestCase() {
-		order.setOrder_id("O101");
+		order.setOrder_id(101);
 		order.setUser_id("kaustubh235@gmail.com");
 		order.setProduct_Name("Maruti Ritz");
-		order.setProduct_price("2000");
-		/*order.setShippingAddress(shippingAddress);
+		order.setProduct_price(2000);
+		/*order.setShippingAddress();
 		order.setBillingAddress(billingAddress);
-		order.setPaymentMethod(paymentMethod);
-		*/
-		Assert.assertEquals("saveOrderTestCase", true, orderDAO.saveOrder(order));
+		order.setPaymentMethod(paymentMethod);*/
+		boolean status=orderDAO.saveOrder(order);
+		
+		Assert.assertEquals("saveOrderTestCase",true,  status);
 	}
 
 	

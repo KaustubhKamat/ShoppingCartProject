@@ -1,0 +1,92 @@
+package com.niit.shoppingcart.DAOImpl;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
+
+import com.niit.shoppingcart.DAO.CartDAO;
+import com.niit.shoppingcart.model.Cart;
+
+@Repository
+public class CartDAOImpl implements CartDAO {
+	
+	public Logger log=LoggerFactory.getLogger(CartDAOImpl.class);
+	
+	public SessionFactory sessionFactory;
+
+	public CartDAOImpl (SessionFactory sessionFactory)
+	{
+		this.sessionFactory=sessionFactory;
+	}
+
+	public List<Cart> list(String id) {
+		String hql = "FROM Cart WHERE USER_ID=:user_id ";
+
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		return query.list();
+
+	
+	}
+
+	@Transactional
+	public boolean SaveCart(Cart cart) {
+		try {
+			sessionFactory.getCurrentSession().save(cart);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	@Transactional
+	public boolean DeleteCart(String id) {
+		Cart cart=new Cart();
+		cart.setUser_Id(id);
+		try {
+			sessionFactory.getCurrentSession().delete(cart);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;
+	}
+
+	public boolean UpdateCart(Cart cart) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Integer getMaxId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean deleteByCartId(String id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Transactional
+	public Cart get(String id) {
+		return (Cart) sessionFactory.getCurrentSession().get(Cart.class, id);
+	}
+
+	public long getTotalAmount(String id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	
+
+	
+}
