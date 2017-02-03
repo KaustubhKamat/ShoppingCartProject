@@ -13,8 +13,23 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Billing Address</title>
+<style>
+.button {
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
 </head>
+
 <body>
+<jsp:include page="NavBar.jsp"></jsp:include>
+
 <h2>Please Enter the Billing Address</h2>
 
     <form:form action="" class="well form-veritical" modelAttribute="billingAddress" >
@@ -57,7 +72,7 @@
 
 <div class="row">
 <div class="col-md-3 col-md-offset-4">
-<input type="submit" name="_eventId_submitBillingAddress" class="btn btn-success btn-lg" value="Save">
+<input type="submit" name="_eventId_submitBillingAddress" class="btn btn-success btn-lg" value="Submit">
 </div>
 <div class="col-md-3">
 <input type="submit" name="eventId_cancel" class="btn btn-danger btn-lg" value="Cancel">
@@ -66,6 +81,7 @@
 
 </form:form>
 
+<jsp:include page="Footer.jsp"></jsp:include>
 
 
 </body>

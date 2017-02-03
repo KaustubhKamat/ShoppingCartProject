@@ -1,3 +1,5 @@
+<html>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -15,14 +17,16 @@
 	
 	<style>
 	
-	h2,h4{color: lightgreen;font-family: sans-serif}
+	h2,h4{color: black;font-family: sans-serif}
 	
 	</style>
 	
 <body>
-<div class="jumbotron" style="background-color: black">
-<h2 style="color:black;">Thanks for Purchasing from Shopping Cart. Your Order has been Processed</h2>
-<h2>The Product Will be Delivered to the mentioned Shipping Address in 4 working days</h2>
+<jsp:include page="NavBar.jsp"></jsp:include>
+
+<div class="col-md-8 col-md-offset-1">
+<h2>Thanks for Purchasing from Shopping Cart. Your Order has been Processed</h2>
+<h2>The Product Will be Delivered to your Shipping Address in 4 working days</h2>
 <h3>Have a Good Day !!!!!</h3>
 <br>
 <h4>
@@ -32,12 +36,13 @@ Order Number :- ${order.order_id }</h4>
 
 
 <form:form>
+<div class="col-md-3 col-md-offset-4">
 <input type="submit" name="_eventId_finalHome" class="btn btn-success btn-lg" value="Save">
-
+</div>
 </form:form>
 
-
-
+<br>
+<jsp:include page="Footer.jsp"></jsp:include>
 
 
 </div>

@@ -13,8 +13,22 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Shipping Address</title>
+<style>
+.button {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
 </head>
 <body>
+<jsp:include page="NavBar.jsp"></jsp:include>
+
 <h2>Please Enter The Shipping Address</h2>
 
 
@@ -58,7 +72,7 @@
 
 <div class="row">
 <div class="col-md-3 col-md-offset-4">
-<input type="submit" name="_eventId_submitShippingAddress" class="btn btn-success btn-lg" value="Save">
+<input type="submit" name="_eventId_submitShippingAddress" class="btn btn-success btn-lg" value="Submit">
 </div>
 <div class="col-md-3">
 <input type="submit" name="eventId_cancel" class="btn btn-danger btn-lg" value="Cancel">
@@ -67,7 +81,7 @@
 
 </form:form>
 
-
+<jsp:include page="Footer.jsp"></jsp:include>
 
 </body>
 </html>

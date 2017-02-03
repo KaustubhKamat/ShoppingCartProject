@@ -62,7 +62,8 @@ h4 {
 
 	<!--If user clicks logout -->
 	<c:if test="${UserhasclickedLogout==true}">
-      ${logoutMessage}
+	 <jsp:include page="Logout.jsp"></jsp:include>
+	 <jsp:include page="Carousel.jsp"></jsp:include>
 	</c:if>
 
 	<!--If user clicks About us  -->
@@ -73,6 +74,12 @@ h4 {
 	<!--If user clicks register  -->
 	<c:if test="${UserHasClickedRegister==true}">
 		<jsp:include page="Registration.jsp"></jsp:include>
+	</c:if>
+
+	<!--If User has logged in then To display User page  -->
+	<c:if test="${isUser==true}">
+		<jsp:include page="HomeForUser.jsp"></jsp:include>
+		<jsp:include page="Video.jsp"></jsp:include>
 	</c:if>
 
 	<!--If admin has logged in then To display Admin page  -->
@@ -105,7 +112,7 @@ h4 {
 	${SuccessSaveMessage}		
 	</c:if>
 	<!------------------------------------------------------------------------------------------------- -->
-	
+
 	<!-- IF Admin goes to ManageSupplier section -->
 	<c:if test="${adminhasclickedManageSuppliers==true}">
 		<jsp:include page="ManageSupplier.jsp"></jsp:include>
@@ -114,9 +121,9 @@ h4 {
 	<c:if test="${AdminHasClickedAddSupplier==true}">
 		<jsp:include page="AddSupplier.jsp"></jsp:include>
 	</c:if>
-	
+
 	<!----------------------------------------------------------------------------------------------- -->
-	
+
 	<!-- If Admin goes to Manage Products  -->
 	<c:if test="${adminHasClickedManageProducts==true}">
 		<jsp:include page="ManageProduct.jsp"></jsp:include>
@@ -130,16 +137,16 @@ h4 {
 	<c:if test="${UserHasClickedProductListPage==true}">
 		<jsp:include page="ProductList.jsp"></jsp:include>
 	</c:if>
-	
+
 	<!-- -------------------------------------------------------------------------------------------- -->
 	<!-- To view the selected product  -->
 	<c:if test="${UserHasSelectedProduct==true}">
 		<jsp:include page="SelectedProduct.jsp"></jsp:include>
 	</c:if>
 
-	<!-- If the user clicks cart_checkout button  -->
-	<c:if test="${UserClicksCheckoutButton==true}">
-		<jsp:include page="ShippingAddress.jsp"></jsp:include>
+	<!-- To view the cart page  -->
+	<c:if test="${UserhasclickedCart==true}">
+		<jsp:include page="Cart.jsp"></jsp:include>
 	</c:if>
 
 	<jsp:include page="Footer.jsp"></jsp:include>

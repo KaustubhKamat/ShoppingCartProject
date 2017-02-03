@@ -18,7 +18,7 @@ public interface CartDAO {
 	
 	public boolean deleteByCartId(Cart cart);
 	
-	public Cart get(String id);
+	public Cart get(Integer id);
 	
 	public long getTotalAmount(String id);
 	

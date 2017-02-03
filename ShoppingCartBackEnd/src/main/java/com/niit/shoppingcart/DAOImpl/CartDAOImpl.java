@@ -29,9 +29,11 @@ public class CartDAOImpl implements CartDAO {
 	@Transactional
 	public List<Cart> list(String id) {
 		String hql = "FROM Cart WHERE USER_ID=:user_id ";
-
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
-		return query.list();
+		query.setString("user_id", id);
+		@SuppressWarnings("unused")
+		List<Cart> list=query.list();
+		return list;
 	}
 
 	@Transactional
@@ -106,6 +108,11 @@ public class CartDAOImpl implements CartDAO {
 			return false;
 		}
 	
+	}
+
+	public Cart get(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

@@ -21,6 +21,7 @@
 </head>
 <body>
     
+    <jsp:include page="NavBar.jsp"></jsp:include>
     <h2>Please Select the Payment Method</h2>
     <div align="center">
     
@@ -30,8 +31,12 @@
 <form:option value="CashOnDelivery">Cash On Delivery</form:option>
 <form:option value="Credit Card/Debit Card">Credit Card/Debit Card</form:option>
 </form:select>
-<input type="submit" name="_eventId_submitPaymentMethod" class="btn btn-success btn-lg" value="Save">
+<input type="submit" name="_eventId_submitPaymentMethod" class="btn btn-success btn-lg" value="Submit">
+
+<jsp:include page="Footer.jsp"></jsp:include>
         </form:form>
     </div>
+    
+    
 </body>
 </html>

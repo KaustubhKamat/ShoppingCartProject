@@ -23,7 +23,12 @@ a {
 <title>Insert title here</title>
 </head>
 <body>
+
+<div class="col-md-8 col-md-offset-4">
+<h2>Welcome Admin</h2>
+</div>
 	<div id="AdminHome">
+	<div class="col-md-5 col-md-offset-3">
 		<ul class="nav navbar-nav">
 			<!--  <li class="active"><a href=>Link <span class="sr-only">(current)</span></a></li> -->
 			<li class="dropdown"><a href="ManageCategory"
@@ -50,6 +55,12 @@ a {
 					<li><a href="AddProduct">Add Product</a></li>
 					
 				</ul></li>
+				</ul>
+				</div>
 	</div>
+	<br>
+	<br>
+	
+	
 </body>
 </html>

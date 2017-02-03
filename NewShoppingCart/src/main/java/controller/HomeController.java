@@ -14,10 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.shoppingcart.DAO.CartDAO;
 import com.niit.shoppingcart.DAO.CategoryDAO;
 import com.niit.shoppingcart.DAO.ProductDAO;
 import com.niit.shoppingcart.DAO.UserDAO;
 import com.niit.shoppingcart.DAOImpl.UserDAOImpl;
+import com.niit.shoppingcart.model.Cart;
 import com.niit.shoppingcart.model.Category;
 import com.niit.shoppingcart.model.Product;
 import com.niit.shoppingcart.model.User1;
@@ -47,6 +49,12 @@ public class HomeController {
 	
 	@Autowired
 	User1 user;
+	
+	@Autowired
+	Cart cart;
+	
+	@Autowired
+	CartDAO cartDAO;
 	
 	@Autowired
 	public HttpSession session;
@@ -156,12 +164,18 @@ public class HomeController {
 		return mv;
 	}
 	
-	@RequestMapping("/ShippingAddress")
-	public ModelAndView showShippingAddressPage() {
-		ModelAndView mv = new ModelAndView("ShippingAddress");
+	/*@RequestMapping("/Cart")
+	public ModelAndView showCartListPage() {
+		log.debug("The method showCartPage is started");
+		ModelAndView mv = new ModelAndView("Home");
+		//session.setAttribute("cartList",cartDAO.list());
+		session.setAttribute("category", category);
+		session.setAttribute("productList", productDAO.list());
+		mv.addObject("UserhasclickedCart", true);
+		log.debug("The method showCartListPage is executed");
 		return mv;
 	}
-
+*/
 	
 	
 }

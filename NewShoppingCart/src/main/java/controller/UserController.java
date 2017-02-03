@@ -89,8 +89,20 @@ public class UserController {
 																		// buying
 																		// the
 																		// product
-
+		
 			session.setAttribute("user", user);
+			
+			if(user.getRole().equals("Customer"))
+			{
+				mv.addObject("isUser", true);
+				session.setAttribute("category", category);
+				session.setAttribute("categoryList", categoryDAO.list());
+				session.setAttribute("product", product);
+				session.setAttribute("productList", productDAO.list());
+			}
+			else {
+				mv.addObject("isUser", false);
+			}
 
 			if (user.getRole().equals("Admin")) {
 				mv.addObject("isAdmin", true);

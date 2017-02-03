@@ -34,13 +34,13 @@ public class CartDAOTestCase {
 	}
 
 	@SuppressWarnings("deprecation")
-	//@Test
+	@Test
 	public void SaveCartTestCase() {
-		cart.setId("102");
-		cart.setUser_Id("ali@gmail.com");
-		cart.setPrice("30000");
-		cart.setProduct_Name("Maruti Celerio");
-		cart.setQuantity("1");
+		cart.setId(104);
+		cart.setUser_Id("abcd@gmail.com");
+		cart.setPrice(30000);
+		cart.setProduct_Name("Maruti Wagonr");
+		cart.setQuantity("2");
 		cart.setStatus("Valid");
 		Date date = new Date();
 		cart.setDate_Added(date);
@@ -48,9 +48,24 @@ public class CartDAOTestCase {
 		Assert.assertEquals("SaveCartTestCase", true, status);
 	}
 
-	@Test
+	//@Test
 	public void DeleteCartTestCase() {
 		boolean status=cartDAO.DeleteCart("102");
 		Assert.assertEquals("DeleteCartTestCase", true, status);
 	}
+	
+	//@Test
+	public void getTotalAmountTestCase()
+	{
+		long l=cartDAO.getTotalAmount("abcd@gmail.com");
+		System.out.println(l);
+	}
+
+	//@Test
+	public void getCartListTestCase()
+	{
+	cart=(Cart) cartDAO.list("kaustubh235@gmail.com");
+	System.out.println(cart.getPrice());
+	}
+
 }
