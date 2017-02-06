@@ -62,8 +62,8 @@ h4 {
 
 	<!--If user clicks logout -->
 	<c:if test="${UserhasclickedLogout==true}">
-	 <jsp:include page="Logout.jsp"></jsp:include>
-	 <jsp:include page="Carousel.jsp"></jsp:include>
+		<jsp:include page="Logout.jsp"></jsp:include>
+		<jsp:include page="Carousel.jsp"></jsp:include>
 	</c:if>
 
 	<!--If user clicks About us  -->
@@ -137,6 +137,11 @@ h4 {
 	<c:if test="${UserHasClickedProductListPage==true}">
 		<jsp:include page="ProductList.jsp"></jsp:include>
 	</c:if>
+
+	<c:if test="${ProductInsertedSuccessfully==true}">
+		${ProductInsertedSuccessfully}
+	</c:if>
+
 
 	<!-- -------------------------------------------------------------------------------------------- -->
 	<!-- To view the selected product  -->

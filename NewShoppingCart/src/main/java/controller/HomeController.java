@@ -2,29 +2,22 @@ package controller;
 
 import javax.servlet.http.HttpSession;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.shoppingcart.DAO.CartDAO;
 import com.niit.shoppingcart.DAO.CategoryDAO;
 import com.niit.shoppingcart.DAO.ProductDAO;
 import com.niit.shoppingcart.DAO.UserDAO;
-import com.niit.shoppingcart.DAOImpl.UserDAOImpl;
 import com.niit.shoppingcart.model.Cart;
 import com.niit.shoppingcart.model.Category;
 import com.niit.shoppingcart.model.Product;
 import com.niit.shoppingcart.model.User1;
-
-import sun.print.resources.serviceui;
 
 @Controller
 @ComponentScan("com.niit.shoppingcart")

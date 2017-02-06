@@ -35,7 +35,7 @@ text-decoration: none;
 	<div class="container col-md-8">
 	<form:form action="" modelAttribute="cart">
 		<h3>My Cart</h3>
-		<h1 style border-radius: 5px; height: 5px"></h1>
+		<h1 style="background-color: #c4e17f; border-radius: 5px; height: 5px"></h1>
 		<table style="width: 100%;border-spacing:25px">
 		<tr style="height: 50px;color: black;">
 		<th><h4><strong>Cart Id</strong></h4></th>

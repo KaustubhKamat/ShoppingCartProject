@@ -1,12 +1,17 @@
 package com.niit.shoppingcart.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.validation.constraints.NotNull;
 
+import org.hibernate.annotations.Cascade;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -16,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class Product {
 
 @Id
+@Column(name="id",unique=true)
 public String id;
 public String getId() {
 	return id;
@@ -47,10 +53,10 @@ public String getSupplier_id() {
 public void setSupplier_id(String supplier_id) {
 	this.supplier_id = supplier_id;
 }
-public String getPrice() {
+public int getPrice() {
 	return price;
 }
-public void setPrice(String price) {
+public void setPrice(int price) {
 	this.price = price;
 }
 public String getStock() {
@@ -63,7 +69,7 @@ public String name;
 public String description;
 public String category_id;
 public String supplier_id;
-public String price;
+public int price;
 public String stock;
 
 @ManyToOne
@@ -82,13 +88,13 @@ public Supplier getSupplier() {
 public void setSupplier(Supplier supplier) {
 	this.supplier = supplier;
 }
-@ManyToOne
-@JoinColumn(name="supplier_id", updatable=false,insertable=false, nullable=false)
+
+@ManyToOne(cascade=CascadeType.ALL)
+@JoinColumn(name="supplier_id",updatable=false,insertable=false,nullable=false)
 public Supplier supplier;
 
 @Transient
 public MultipartFile image;
-
 public MultipartFile getImage()
 {
 	return image;

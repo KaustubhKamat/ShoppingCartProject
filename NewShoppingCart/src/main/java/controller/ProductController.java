@@ -79,20 +79,20 @@ public class ProductController {
 		return mv;
 	}
 
-	@RequestMapping("/AddProduct_add")
+	/*@RequestMapping(value="/AddProduct_add", method=RequestMethod.POST)
 	public String processAddProduct(@ModelAttribute("product") Product product,
 			@RequestParam("image") MultipartFile file, Model model) throws Exception
 
 	{
 		log.debug("The method processaddproduct is started ");
 		category = categoryDAO.getName(product.getCategory().getName());
-		// supplier=supplierDAO.getName(product.getSupplier().getName());
+		supplier=supplierDAO.getName(product.getSupplier().getName());
 
 		supplier = supplierDAO.getName(product.getCategory().getName());
 		product.setCategory(category);
 		product.setSupplier(supplier);
 
-		// product.setSupplier_id(supplier.getId());
+		product.setSupplier_id(supplier.getId());
 		product.setCategory_id(category.getid());
 
 		product.setId(product.getId());
@@ -105,7 +105,25 @@ public class ProductController {
 
 		return "/Home";
 
+	}*/
+	
+	@RequestMapping(value="/AddProduct_add", method=RequestMethod.POST)
+	public ModelAndView processAddProduct(@ModelAttribute Product product, MultipartFile file)
+	{
+		log.debug("Starting the method processAddProduct");
+		ModelAndView mv=new ModelAndView("Home");
+		System.out.println(product.getName());
+		file=product.getImage();
+		
+		FileUtil.imageUpload(path, file, product.getId());
+		productDAO.save(product);
+		mv.addObject("product", product);
+		mv.addObject("productList", this.productDAO.list());
+		mv.addObject("ProductInsertedSuccessfully","The product has been successfully inserted");
+		log.debug("The method processAddProduct has been executed");
+		return mv;
 	}
+	
 
 	@RequestMapping("/AddProduct/delete")
 	public String processDeleteProduct(@RequestParam("pid") String id, ModelMap model) throws Exception {

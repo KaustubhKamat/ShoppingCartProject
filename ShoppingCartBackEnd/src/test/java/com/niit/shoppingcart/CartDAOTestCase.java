@@ -34,7 +34,7 @@ public class CartDAOTestCase {
 	}
 
 	@SuppressWarnings("deprecation")
-	@Test
+	//@Test
 	public void SaveCartTestCase() {
 		cart.setId(104);
 		cart.setUser_Id("abcd@gmail.com");
@@ -54,7 +54,7 @@ public class CartDAOTestCase {
 		Assert.assertEquals("DeleteCartTestCase", true, status);
 	}
 	
-	//@Test
+	@Test
 	public void getTotalAmountTestCase()
 	{
 		long l=cartDAO.getTotalAmount("abcd@gmail.com");

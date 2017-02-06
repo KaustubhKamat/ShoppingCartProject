@@ -33,13 +33,13 @@ public class ProductDAOTestCase {
 		product = (Product) context.getBean("product");
 	}
 
-	// @Test
+	@Test
 	@SuppressWarnings("deprecation")
 	public void saveTestCase() {
-		product.setId("M0103");
+		product.setId("M0104");
 		product.setName("Maruti Ertiga");
 		product.setDescription("This is VXI + version");
-		product.setPrice("2000");
+		product.setPrice(2000);
 		product.setStock("8");
 
 		Assert.assertEquals("saveTestCase", true, productDAO.save(product));
@@ -57,11 +57,17 @@ public class ProductDAOTestCase {
 	}
 
 	@SuppressWarnings("deprecation")
-	@Test
+	// @Test
 	public void deleteTestCase() {
 		product = productDAO.get("M0102");
 		Assert.assertEquals("deleteTestCase", false, productDAO.delete(product));
+		System.out.println(product.getPrice());
 
 	}
 
+	//@Test
+	public void getProductTestCase() {
+		product = productDAO.get(",P101");
+		System.out.println(product.getSupplier_id());
+	}
 }

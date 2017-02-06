@@ -95,7 +95,7 @@ public class CartDAOImpl implements CartDAO {
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		query.setString("user_id", id);
 		Long sum = (Long) query.uniqueResult();
-		return sum;
+		return (Long) query.uniqueResult();
 	}
 
 	@Transactional

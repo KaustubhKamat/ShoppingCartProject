@@ -1,7 +1,5 @@
 package controller;
 
-import java.lang.ProcessBuilder.Redirect;
-
 import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,8 +38,8 @@ public class CartController {
 
 
 	
-	@RequestMapping(value="/Cart", method=RequestMethod.POST)
-	public ModelAndView showMyCart(HttpSession httpSession)
+	@RequestMapping("/Cart")
+	public ModelAndView showMyCart(HttpSession session)
 	{
 		log.debug("CartController-> Starting the method showMyCart ");
 		ModelAndView mv=new ModelAndView("Home");
@@ -54,25 +52,45 @@ public class CartController {
 		
 	}
 	
+	
+	@RequestMapping(value="/AddToCart", method=RequestMethod.GET)
 	public String AddtoCart(@RequestParam("pid")String id, HttpSession session, Model model){
 		log.debug("CartController-> Starting the method AddToCart");
-		String userloggedin=(String) session.getAttribute("emailid");
+		String userLoggedIn=(String) session.getAttribute("userLoggedIn");
 		
-		if (userloggedin==null)
+		if (userLoggedIn==null)
 		{
 			log.debug("CartController-Ending the method AddtoCart");
-			return "redirect:/Login";
+		
 		}
 		System.out.println(id);
 		Product product=productDAO.get(id);
+		@SuppressWarnings("unused")
 		String emailid= (String) session.getAttribute("emailid");
-		cart.setUser_Id(userloggedin);
+		cart.setUser_Id(userLoggedIn);
 		cart.setStatus("valid");
 		cart.setQuantity("1");
 		cart.setId(cartDAO.getMaxId());
-	
+		cart.setProduct_Name(product.getName());
+		cart.setPrice(product.getPrice());
+		cartDAO.SaveCart(cart);
+		model.addAttribute("SuccessfullyAddedToCart", "The item is added to the cart successfully");
 		
-		return null;
+		log.debug("CartController-> Ending the method AddToCart");	
+		return "redirect:/Cart";
+		
+	}
+	
+	
+	@RequestMapping(value="/DeleteCart", method=RequestMethod.GET)
+	public String DeleteCart(@RequestParam("cid")Integer id, HttpSession session, Model model)
+	{
+		log.debug("CartController-> Starting the Method DeleteCart");
+		cart=cartDAO.get(id);
+		cartDAO.deleteByCartId(cart);
+		model.addAttribute("CartDeletedSuccessfully", "The item has been deleted from the cart");
+		log.debug("CartController-> Ending the method DeleteCart");
+		return "redirect:/Cart";
 		
 	}
 }
