@@ -18,17 +18,19 @@ table, th, td {
 
 </head>
 <body>
-${msg}
+<div class="col-sm-offset-5 col-md-5" >
 	<h3>Add Category</h3>
+	 </div>
 	<c:url var="addAction" value="/AddCategory_add"></c:url>
+	<div class="col-sm-offset-4 col-md-6" >
 	<form:form action="${addAction}" modelAttribute="category"  method="post">
 		<table>
 			<tr>
 			
-		<td><form:label path="id"  > <spring:message text="Enter ID" /><label class="col-sm-5 control-label"></label>	</form:label></td>
+		<td><form:label path="id"  > <spring:message text="Enter Category ID" /><label class="col-sm-5 control-label"></label>	</form:label></td>
 				<c:choose>
 					<c:when test="${!empty category.id}">
-						<td><form:input path="id"  readonly="true" /></td>
+						<td><form:input path="id" readonly="true" /></td>
 					</c:when>
 					<c:otherwise>
 						<td><form:input path="id" pattern=".{3,7}" required="true"
@@ -58,8 +60,11 @@ ${msg}
 		</table>
 	</form:form>
 	<br>
-	<div class="col-sm-offset-3 col-sm-20">
-	<h3>Category List</h3>
+	<br>
+	</div>
+	<br>
+	<div class="col-sm-offset-4 col-sm-10">
+	<h3>Existing Category List</h3>
 	</div>
 	<div class="col-sm-offset-2 col-sm-20">
 	<c:if test="${!empty categoryList}">
@@ -71,6 +76,7 @@ ${msg}
 				<th width="150">Edit</th>
 				<th width="150">Delete</th>
 			</tr>
+			</div>
 			<c:forEach items="${categoryList}" var="category" >
 				<tr>
 					<td>${category.id}</td>
@@ -83,6 +89,7 @@ ${msg}
 			</c:forEach>
 		</table>
 	</c:if>
+	
 </body>
 </html>
 

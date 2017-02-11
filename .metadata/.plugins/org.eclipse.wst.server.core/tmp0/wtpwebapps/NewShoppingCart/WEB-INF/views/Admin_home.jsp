@@ -24,8 +24,8 @@ a {
 </head>
 <body>
 
-<div class="col-md-8 col-md-offset-4">
-<h2>Welcome Admin</h2>
+<div class="col-md-10 col-md-offset-1">
+<h3>Welcome ${LoggedInUser}. Please Select from the below to Manage Categories/Products/Suppliers</h3>
 </div>
 	<div id="AdminHome">
 	<div class="col-md-5 col-md-offset-3">

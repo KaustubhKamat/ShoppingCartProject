@@ -53,10 +53,10 @@ public class CategoryDAOTestCase {
 
 	}
 	
-	//@Test
+	@Test
 	@SuppressWarnings("deprecation")
 	public void deleteTestCase() {
-		category = categoryDAO.get("0102");
+		category = categoryDAO.get(",C101,,C101,,C101,,C101");
 
 		Assert.assertEquals("deleteTestCase", true, categoryDAO.delete(category));
 

@@ -1,5 +1,7 @@
 <html>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -15,16 +17,25 @@
 <style>
 table, th, td {
     border: 2px solid black;
-    border-collapse: collapse;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: medium;
  
 }
 th, td {
-    padding: 5px;
+    padding: 10px;
 }
  
+ h4{
+ text-align: center;
+ color: blue;
+ }
 a
 {
 text-decoration: none;
+}
+.button {
+background-color: black;
 }
 </style>
 
@@ -34,32 +45,34 @@ text-decoration: none;
 
 	<div class="container col-md-8">
 	<form:form action="" modelAttribute="cart">
+	<div class="col-sm-offset-5 col-md-5" >
 		<h3>My Cart</h3>
-		<h1 style="background-color: #c4e17f; border-radius: 5px; height: 5px"></h1>
-		<table style="width: 100%;border-spacing:25px">
-		<tr style="height: 50px;color: black;">
+		</div>
+		<h1 style="border-radius: 5px; height: 5px"></h1>
+		<table style="width: 150%;border-spacing:25px">
+		<tr style="height: 50px;color: black;" >
 		<th><h4><strong>Cart Id</strong></h4></th>
 		<th><h4><strong>Product Name</strong></h4></th>
 		<th><h4><strong>Quantity</strong></h4></th>
 		<th><h4><strong>Price</strong></h4></th>
+		<th><h4><strong>Delete</strong></h4></th>
 		</tr>
-		 <c:forEach items="${cartlist}" var="cart">
+		 <c:forEach items="${cartList}" var="cart">
 		  <c:url var="deletecart" value="/DeleteCart?cid=${cart.id}"></c:url>
 	<tr style="height: 30px">
 		<td>${cart.id}</td>
 		<td>${cart.product_Name}</td>
 		<td>${cart.quantity}</td>
 		<td>${cart.price}</td>
-		<td><a class="btn btn-lg btn-warning" href="${deletecart}">Delete</a></button></td>
+		<td><a class="btn btn-lg btn-primary" href="${deletecart}">Delete</a></td>
 	 	</tr>
 		</c:forEach> 		
 		</table><br><br>
 		
-		<div class="row col-md-offset-2">
-<label class="col-md-4"><h4><strong>Total Amount</strong></h4></label>		
-	<h4>	 <input class="col-md-2" type="text" class="form-control input-lg" value="Rs.${TotalAmount}" readonly="true"></h4>
-	<h4> <a class="btn btn-success col-md-offset-2" href="cart_checkout">Checkout</a></h4>
-	
+		<div class="row col-md-offset-1">
+<label class="col-md-4"><h4><strong>Total Amount of Items in Cart</strong></h4></label>		
+	<h4>	 <input class="col-md-2" type="text" class="form-control input-lg" value="Rs.${getTotalAmount}" readonly="true"></h4>
+	<h4> <a class="btn btn-primary col-md-offset-2" href="cart_checkout">Checkout</a></h4>
 		</div>
 		
 		

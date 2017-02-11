@@ -1,0 +1,98 @@
+package controller;
+
+import javax.servlet.http.HttpSession;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.niit.shoppingcart.DAO.CartDAO;
+import com.niit.shoppingcart.DAO.ProductDAO;
+import com.niit.shoppingcart.model.Cart;
+import com.niit.shoppingcart.model.Product;
+
+@Controller
+public class CartController {
+
+	Logger log=LoggerFactory.getLogger(CartController.class);
+	
+	@Autowired
+	public ProductDAO productDAO;
+	
+	@Autowired
+	public Product product;
+	
+	@Autowired
+	public CartDAO cartDAO;
+	
+	@Autowired
+	public Cart cart;
+	
+	@Autowired
+	public HttpSession httpSession;
+
+
+	
+	@RequestMapping("/Cart")
+	public ModelAndView showMyCart(HttpSession session)
+	{
+		log.debug("CartController-> Starting the method showMyCart ");
+		ModelAndView mv=new ModelAndView("Home");
+		String LoggedInUser=(String) httpSession.getAttribute("LoggedInUser");
+		mv.addObject("cart", cart);
+		mv.addObject("cartList", cartDAO.list(LoggedInUser));
+		mv.addObject("getTotalAmount",cartDAO.getTotalAmount(user_Id));
+		mv.addObject("UserhasclickedCart", true);
+		log.debug("CartController-> Ending the method showMyCart");
+		return mv;
+		
+	}
+	
+	
+	@RequestMapping(value="/AddToCart", method=RequestMethod.GET)
+	public String AddtoCart(@RequestParam("pid")String id, HttpSession session, Model model){
+		log.debug("CartController-> Starting the method AddToCart");
+		String LoggedInUser=(String) session.getAttribute("LoggedInUser");
+		
+		if (LoggedInUser==null)
+		{
+			log.debug("CartController-Ending the method AddtoCart");
+		
+		}
+		System.out.println(id);
+		Product product=productDAO.get(id);
+		@SuppressWarnings("unused")
+		String emailid= (String) session.getAttribute("emailid");
+		cart.setUser_Id(LoggedInUser);
+		cart.setStatus("valid");
+		cart.setQuantity("1");
+		cart.setDate_Added(java.sql.Date.valueOf("2017-06-02"));
+		cart.setId(cartDAO.getMaxId());
+		cart.setProduct_Name(product.getName());
+		cart.setPrice(product.getPrice());
+		cartDAO.SaveCart(cart);
+		model.addAttribute("SuccessfullyAddedToCart", "The item is added to the cart successfully");
+		
+		log.debug("CartController-> Ending the method AddToCart");	
+		return "redirect:/Cart";
+		
+	}
+	
+	
+	@RequestMapping(value="/DeleteCart", method=RequestMethod.GET)
+	public String DeleteCart(@RequestParam("cid")Integer id, HttpSession session, Model model)
+	{
+		log.debug("CartController-> Starting the Method DeleteCart");
+		cart=cartDAO.get(id);
+		cartDAO.deleteByCartId(cart);
+		model.addAttribute("CartDeletedSuccessfully", "The item has been deleted from the cart");
+		log.debug("CartController-> Ending the method DeleteCart");
+		return "redirect:/Cart";
+		
+	}
+}

@@ -52,7 +52,7 @@ public class ProductController {
 	@Autowired
 	public HttpSession session;
 
-	public String path = "webapp/resources/Images";
+	public String path = "D:/Shopping Cart New Project/NewShoppingCart/src/main/webapp/resources/Images/";
 
 	@RequestMapping("/AddProduct")
 	public ModelAndView showAddProductPage() {
@@ -79,7 +79,7 @@ public class ProductController {
 		return mv;
 	}
 
-	/*@RequestMapping(value="/AddProduct_add", method=RequestMethod.POST)
+	@RequestMapping(value="/AddProduct_add", method=RequestMethod.POST)
 	public String processAddProduct(@ModelAttribute("product") Product product,
 			@RequestParam("image") MultipartFile file, Model model) throws Exception
 
@@ -88,7 +88,6 @@ public class ProductController {
 		category = categoryDAO.getName(product.getCategory().getName());
 		supplier=supplierDAO.getName(product.getSupplier().getName());
 
-		supplier = supplierDAO.getName(product.getCategory().getName());
 		product.setCategory(category);
 		product.setSupplier(supplier);
 
@@ -105,9 +104,9 @@ public class ProductController {
 
 		return "/Home";
 
-	}*/
+	}
 	
-	@RequestMapping(value="/AddProduct_add", method=RequestMethod.POST)
+	/*@RequestMapping(value="/AddProduct_add", method=RequestMethod.POST)
 	public ModelAndView processAddProduct(@ModelAttribute Product product, MultipartFile file)
 	{
 		log.debug("Starting the method processAddProduct");
@@ -123,7 +122,7 @@ public class ProductController {
 		log.debug("The method processAddProduct has been executed");
 		return mv;
 	}
-	
+	*/
 
 	@RequestMapping("/AddProduct/delete")
 	public String processDeleteProduct(@RequestParam("pid") String id, ModelMap model) throws Exception {
@@ -166,19 +165,6 @@ public class ProductController {
 		return mv;
 	}
 
-	/*@RequestMapping("/cart_checkout")
-	public ModelAndView UserSelectedProductCheckout() {
-		log.debug("ProductController->The method UserSelectedProductCheckout is started()");
-
-		ModelAndView mv = new ModelAndView("Home");
-		mv.addObject("ProductID", product.id);
-		mv.addObject("ProductName", product.getName());
-		mv.addObject("product", product);
-		mv.addObject("productlist", productDAO.list());
-		mv.addObject("UserClicksCheckoutButton", "true");
-
-		log.debug("ProductController->The method UserSelectedProductCheckout is executed");
-		return mv;
-	}*/
+	
 
 }

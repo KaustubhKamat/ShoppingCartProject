@@ -8,23 +8,25 @@
 <title>Insert title here</title>
 </head>
 <style>
-.navbar-default {
-	background-color: #F75D59;
-	font-size: medium;
+.navbar-inverse {
+    background-color:#229922;
+    color:#ffffff;
+    border-radius:0;
 }
 
 .dropdown-menu>li>a:hover {
-	background-color: silver;;
+	background-color: red;;
 	background-image: none;
 }
 .LoggedInUser{
 color: white;
 
+
 }
 </style>
 <body>
 
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse  navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"

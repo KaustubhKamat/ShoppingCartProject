@@ -28,8 +28,11 @@
 </head>
 <body>
  <div id="main">
+ <div class="col-md-7 col-md-offset-3">
+        <h3>From the Below Categories Please Select the Products</h3>
+        </div>
         
-       
+       <div class="col-md-6 col-md-offset-4">
     <ul class="nav navbar-nav">
 			<!--  <li class="active"><a href=>Link <span class="sr-only">(current)</span></a></li> -->
 			<c:forEach items="${categoryList}" var="category">
@@ -43,9 +46,12 @@
 					</c:forEach>
 				</ul>
 				</li>
-				</c:forEach>
+				</c:forEach> 
    </ul>
-   
+   </div>
+   <br>
+   <br>
+   <br>
    
     </div> 
 </body>

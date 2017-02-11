@@ -91,11 +91,13 @@ public class CartDAOImpl implements CartDAO {
 
 	@Transactional
 	public long getTotalAmount(String id) {
-		String hql="select sum(price) from Cart where USER_ID=:user_id";
+		String hql="select sum(price) from Cart where User_Id=:user_Id";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
-		query.setString("user_id", id);
+		query.setString("user_Id", id);
 		Long sum = (Long) query.uniqueResult();
+		System.out.println(sum);
 		return (Long) query.uniqueResult();
+		
 	}
 
 	@Transactional
@@ -109,6 +111,7 @@ public class CartDAOImpl implements CartDAO {
 		}
 	
 	}
+	
 
 	public Cart get(Integer id) {
 		// TODO Auto-generated method stub

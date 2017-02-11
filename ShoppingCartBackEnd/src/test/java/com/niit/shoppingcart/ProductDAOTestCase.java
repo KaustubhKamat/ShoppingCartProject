@@ -33,7 +33,7 @@ public class ProductDAOTestCase {
 		product = (Product) context.getBean("product");
 	}
 
-	@Test
+	//@Test
 	@SuppressWarnings("deprecation")
 	public void saveTestCase() {
 		product.setId("M0104");
@@ -57,11 +57,10 @@ public class ProductDAOTestCase {
 	}
 
 	@SuppressWarnings("deprecation")
-	// @Test
+	 @Test
 	public void deleteTestCase() {
-		product = productDAO.get("M0102");
-		Assert.assertEquals("deleteTestCase", false, productDAO.delete(product));
-		System.out.println(product.getPrice());
+		product.setId(",P104");
+		Assert.assertEquals("deleteTestCase", true, productDAO.delete(product));
 
 	}
 

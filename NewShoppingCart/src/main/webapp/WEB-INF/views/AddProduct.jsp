@@ -8,7 +8,7 @@
 <style>
 table, th, td {
 	border-style: groove; text-align : center; font-family : sans-serif;
-	font-size : medium;
+	font-size : small;
 	padding: 1px;
 	text-align: center;
 	text-align: center;
@@ -19,15 +19,18 @@ table, th, td {
 
 </head>
 <body>
+	<div class="col-sm-offset-5 col-md-5" >
 	<h2>Add Product</h2>
 	<c:url var="addAction" value="/AddProduct_add"></c:url>
+	</div>
+	<div class="col-sm-offset-3 col-md-6" >
 	<form:form action="${addAction}" modelAttribute="product"
 		enctype="multipart/form-data" method="post">
 		<table>
 			<tr>
 
 				<td><form:label path="id">
-						<spring:message text="Enter ID" />
+						<spring:message text="Enter Product ID" />
 						<label class="col-sm-5 control-label"></label>
 					</form:label></td>
 				<c:choose>
@@ -73,7 +76,7 @@ table, th, td {
 			</tr>
 			<tr>
 				<td><form:label path="price">
-						<spring:message text="Enter Price" />
+						<spring:message text="Enter Price in INR" />
 						<label class="col-sm-5 control-label"></label>
 					</form:label></td>
 				<td><form:input path="price" required="true" /></td>
@@ -98,13 +101,20 @@ table, th, td {
 					</c:if> <c:if test="${empty product.name}">
 						<input type="submit" value="<spring:message text="Add Product"/>" />
 					</c:if></td>
+					
 			</tr>
-
 		</table>
 	</form:form>
 	<br>
-	<div class="col-sm-offset-3 col-sm-20">
-		<h3>Product List</h3>
+	<br>
+	</div>
+	
+	
+	<br>
+	<br>
+	<br>
+	<div class="col-sm-offset-5 col-sm-10">
+		<h3>Existing Product List</h3>
 	</div>
 	<div class="col-sm-offset-0 col-sm-20">
 		<c:if test="${!empty productList}">
@@ -113,8 +123,8 @@ table, th, td {
 					<th width="200">Product ID</th>
 					<th width="200">Product Name</th>
 					<th width="200">Product Description</th>
-					<th width="200">Supplier Name</th>
-					<th width="200">Category Name</th>
+					<th width="200">Supplier ID</th>
+					<th width="200">Category ID</th>
 					<th width="200">Price</th>
 					<th width="200">Stock</th>
 					<th width="150">Edit</th>
@@ -138,6 +148,7 @@ table, th, td {
 				</c:forEach>
 			</table>
 		</c:if>
+		</div>
 </body>
 </html>
 

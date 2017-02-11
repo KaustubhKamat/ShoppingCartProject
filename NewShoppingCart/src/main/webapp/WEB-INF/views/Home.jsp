@@ -16,11 +16,7 @@
 body {
 	font-family: sans-serif;
 	font-size: medium;
-	background-color: white;
-}
-
-.navbar-default {
-	background-color: #F75D59;
+	background-color: blue;
 }
 
 h4 {
@@ -29,14 +25,7 @@ h4 {
 	font-weight: bold;
 }
 
-#Footer {
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	height: 30px;
-	width: 100%;
-	background: #999;
-}
+
 </style>
 </head>
 <body>

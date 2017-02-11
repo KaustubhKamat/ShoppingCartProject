@@ -13,8 +13,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div class="col-md-8 col-md-offset-1">
-<h3>You have been successfully Logged-Out from Shopping Cart</h3>
+<div class="col-md-10 col-md-offset-1">
+<h3>You have been successfully Logged-Out from Shopping Cart. Please Re-Login to Continue</h3>
 </div>
 
 <br>

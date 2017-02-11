@@ -1,7 +1,0 @@
-package com.niit.shoppingcart.DAOImpl;
-
-import com.niit.shoppingcart.DAO.ShippingAddressDAO;
-
-public class ShippingAddressDAOImpl implements ShippingAddressDAO {
-
-}
